@@ -213,6 +213,12 @@
       <DependentUpon>memberReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Report\MembershipReportDiag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\MembershipReportDiag.Designer.cs">
+      <DependentUpon>MembershipReportDiag.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report\RecordRequestEyeglasses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +235,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RequestEyeglassReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\try.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>try.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Resources\smsNotification.cs">
@@ -402,6 +414,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>memberReport.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\MembershipReportDiag.resx">
+      <DependentUpon>MembershipReportDiag.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\RecordRequestEyeglasses.resx">
       <DependentUpon>RecordRequestEyeglasses.cs</DependentUpon>
     </EmbeddedResource>
@@ -411,6 +426,10 @@
     <EmbeddedResource Include="Report\RequestEyeglassReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RequestEyeglassReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\try.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>try.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\smsNotification.resx">
       <DependentUpon>smsNotification.cs</DependentUpon>

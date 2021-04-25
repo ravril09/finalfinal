@@ -10,20 +10,24 @@ using System.Windows.Forms;
 using AForge;
 using AForge.Video;
 using AForge.Video.DirectShow;
-using System.Drawing;
 using System.Drawing.Imaging;
+using CST.Models;
 
 namespace CST.Volunteer
 {
     public partial class Webcam : Form
     {
+
+        
         private FilterInfoCollection CaptureDevice;
         private VideoCaptureDevice videoSource;
-
-        public Webcam()
+        string sno = "";
+        BasicDetailsController detailsController = new BasicDetailsController();
+        public Webcam(string sno)
         {
             InitializeComponent();
             getallcameralist();
+            this.sno = sno;
         }
 
         void getallcameralist()
@@ -75,7 +79,7 @@ namespace CST.Volunteer
             //pictureBox2.Invalidate();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private async void button3_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Title = "Save Image As";
@@ -94,6 +98,12 @@ namespace CST.Volunteer
                         break;
                 }
                 pictureBox2.Image.Save(sfd.FileName, imagefrmt);
+
+               await detailsController.updateImgPath(sfd.FileName, sno);
+
+
+             
+                this.Hide();
             }
         }
 

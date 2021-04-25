@@ -49,11 +49,15 @@ namespace CST.Volunteer
 
             MessageBox.Show("Successfully Added Payment fee");
 
+
+
+            RegistrarRecord registrarRecord = new RegistrarRecord();
+            registrarRecord.Show();
             this.Hide();
 
-            Webcam frm = new Webcam();
+            //Webcam frm = new Webcam(sno);
 
-            frm.Show();
+            //frm.Show();
            
         }
 

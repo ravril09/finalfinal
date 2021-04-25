@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
 using MySql.Data.MySqlClient;
+using System.Data.Common;
 
 namespace CST
 {
@@ -134,9 +135,27 @@ namespace CST
             }
         }
 
-        
 
-    
+
+        public async Task<DbDataReader> RetrieveRecordsAsync(string sql, List<MySqlParameter> parameters)
+        {
+            try
+            {
+                await cn.OpenAsync().ConfigureAwait(false);
+                cmd = new MySqlCommand(sql, cn);
+                if (parameters != null) cmd.Parameters.AddRange(parameters.ToArray<MySqlParameter>());
+
+                return await cmd.ExecuteReaderAsync();
+
+
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("" + e.Message);
+                return null;
+            }
+        }
 
         public void CloseConnection()
         {

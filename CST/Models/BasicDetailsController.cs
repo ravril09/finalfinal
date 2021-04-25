@@ -1,9 +1,10 @@
-﻿using MySql.Data.MySqlClient;
+﻿using CST.Models.Member;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
+
+using System.Data.Common;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -74,6 +75,83 @@ namespace CST.Models
             cs.ExecuteQuery(sql);
         }
 
+
+        public async Task<SeniorBasicDetail> getModel(string sno)
+        {
+            SeniorBasicDetail seniorBasicDetail = new SeniorBasicDetail();
+            string sql = @"SELECT * FROM senior_basic_detail WHERE sno = @sno";
+
+            List<MySqlParameter> mySqlParameters = new List<MySqlParameter>()
+            {
+                (new MySqlParameter("@sno",sno))
+            };
+
+            DbDataReader reader = await cs.RetrieveRecordsAsync(sql, mySqlParameters);
+
+            if (await reader.ReadAsync())
+            {
+
+                seniorBasicDetail.senior_id = int.Parse(reader["senior_id"].ToString());
+                seniorBasicDetail.sno = reader["sno"].ToString();
+                seniorBasicDetail.firstname = reader["firstname"].ToString();
+                seniorBasicDetail.middlename = reader["middlename"].ToString();
+                seniorBasicDetail.lastname = reader["lastname"].ToString();
+                seniorBasicDetail.civilstatus = reader["CivilStatus"].ToString();
+                seniorBasicDetail.age = int.Parse(reader["age"].ToString());
+                seniorBasicDetail.gender = reader["gender"].ToString();
+                seniorBasicDetail.birthdate = reader["birthdate"].ToString();
+                seniorBasicDetail.pob = reader["pob"].ToString();
+                seniorBasicDetail.cno = reader["contact_no"].ToString();
+                seniorBasicDetail.nat = reader["nationality"].ToString();
+                seniorBasicDetail.religion = reader["religion"].ToString();
+                seniorBasicDetail.address = reader["address"].ToString();
+                seniorBasicDetail.imgPath = reader["imgPath"].ToString();
+
+            }
+
+
+            cs.CloseConnection();
+
+            return seniorBasicDetail;
+        }
+
+
+        public async Task updateImgPath(string path,string sno)
+        {
+            string sql = @"UPDATE senior_basic_detail SET imgPath = @img WHERE sno  = @sno";
+
+            List<MySqlParameter> mySqlParameters = new List<MySqlParameter>()
+            {
+                (new MySqlParameter("@img",path)),
+                (new MySqlParameter("@sno",sno))
+            };
+
+            await cs.ExecuteAsync(sql, mySqlParameters);
+        }
+
+        public async Task<string> getImgPath(string sno)
+        {
+            string imgPath = "";
+            string sql = @"SELECT * FROM senior_basic_detail WHERE sno = @sno";
+
+            List<MySqlParameter> mySqlParameters = new List<MySqlParameter>()
+            {
+                (new MySqlParameter("@sno",sno))
+            };
+
+            DbDataReader reader = await cs.RetrieveRecordsAsync(sql, mySqlParameters);
+
+            if(await reader.ReadAsync())
+            {
+                imgPath = reader["imgPath"].ToString();
+            }
+
+
+            cs.CloseConnection();
+
+
+            return imgPath;
+        }
 
        
         public void fillDataGridDetails(ref DataGridView dg)

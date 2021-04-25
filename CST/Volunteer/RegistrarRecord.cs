@@ -12,6 +12,7 @@ using CST.Registrar;
 using CST.Models;
 using CST.Report;
 using CST.Models.Student;
+using CST.Volunteer;
 
 namespace CST
 {
@@ -211,6 +212,36 @@ namespace CST
             RecordsRep rep = new RecordsRep(ds);
             rep.ShowDialog();
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 0)
+                return;
+
+
+            if (clickedBut != "Personal")
+                return;
+
+
+
+            MembershipReportDiag membershipReportDiag = new MembershipReportDiag(
+                                    dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            membershipReportDiag.ShowDialog();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 0)
+                return;
+
+
+            if (clickedBut != "Personal")
+                return;
+
+
+            Webcam form = new Webcam(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            form.ShowDialog();
         }
     }
 }

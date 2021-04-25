@@ -38,6 +38,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label7 = new System.Windows.Forms.Label();
@@ -46,8 +48,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -75,6 +77,8 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Controls.Add(this.button9);
+            this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.dataGridView1);
@@ -188,6 +192,24 @@
             this.txtUsername.Size = new System.Drawing.Size(234, 26);
             this.txtUsername.TabIndex = 203;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Firebrick;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Location = new System.Drawing.Point(12, 538);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(150, 42);
+            this.panel3.TabIndex = 233;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Firebrick;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Location = new System.Drawing.Point(509, 543);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(149, 37);
+            this.panel5.TabIndex = 307;
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.White;
@@ -285,23 +307,37 @@
             this.pictureBox1.TabIndex = 231;
             this.pictureBox1.TabStop = false;
             // 
-            // panel3
+            // button7
             // 
-            this.panel3.BackColor = System.Drawing.Color.Firebrick;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(12, 538);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(150, 42);
-            this.panel3.TabIndex = 233;
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.Firebrick;
+            this.button7.Location = new System.Drawing.Point(293, 543);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(201, 37);
+            this.button7.TabIndex = 308;
+            this.button7.Text = "Print Membership Form";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // panel5
+            // button9
             // 
-            this.panel5.BackColor = System.Drawing.Color.Firebrick;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(509, 543);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(149, 37);
-            this.panel5.TabIndex = 307;
+            this.button9.BackColor = System.Drawing.Color.Transparent;
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.Firebrick;
+            this.button9.Location = new System.Drawing.Point(181, 545);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(117, 37);
+            this.button9.TabIndex = 309;
+            this.button9.Text = "Camera";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // RegistrarRecord
             // 
@@ -352,5 +388,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button9;
     }
 }
