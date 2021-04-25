@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CST.Models.Member;
 using MySql.Data.MySqlClient;
 
 namespace CST.Models
@@ -13,6 +15,39 @@ namespace CST.Models
         crudFile cs = new crudFile();
        public IDDetailsController()
         {
+
+        }
+
+
+        public async Task<SeniorIdDetails> getModel(string sno)
+        {
+            SeniorIdDetails seniorIdDetails = new SeniorIdDetails();
+            string sql = @"SELECT * FROM senior_id_details WHERE sno = @sno";
+
+            List<MySqlParameter> mySqlParameters = new List<MySqlParameter>()
+            {
+                (new MySqlParameter("@sno",sno))
+            };
+
+            DbDataReader reader = await cs.RetrieveRecordsAsync(sql, mySqlParameters);
+
+
+            while(await reader.ReadAsync())
+            {
+
+                seniorIdDetails.senior_id = int.Parse(reader["senior_id "].ToString());
+                seniorIdDetails.sno = reader["sno"].ToString();
+                seniorIdDetails.osca = reader["OSCA"].ToString();
+                seniorIdDetails.tin = reader["TIN"].ToString();
+                seniorIdDetails.ph = reader["PHILHEALTH"].ToString();
+                seniorIdDetails.gsis = reader["GSIS"].ToString();
+                seniorIdDetails.sss = reader["SSS"].ToString();
+
+
+
+            }
+            cs.CloseConnection();
+            return seniorIdDetails;
 
         }
 

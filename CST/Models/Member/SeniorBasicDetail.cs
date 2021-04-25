@@ -20,7 +20,7 @@ namespace CST.Models.Member
         public string birthdate { get; set; }
         public string pob { get; set; }
         public string cno { get; set; }
-        public string nat { get; set}
+        public string nat { get; set; }
         public string religion { get; set; }
         public string address { get; set; }
         public string imgPath { get; set; }

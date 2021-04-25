@@ -88,7 +88,7 @@ namespace CST.Models
 
             DbDataReader reader = await cs.RetrieveRecordsAsync(sql, mySqlParameters);
 
-            if (await reader.ReadAsync())
+            while (await reader.ReadAsync())
             {
 
                 seniorBasicDetail.senior_id = int.Parse(reader["senior_id"].ToString());
