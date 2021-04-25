@@ -1223,7 +1223,7 @@
             this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(43, 260);
+            this.label13.Location = new System.Drawing.Point(43, 237);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(83, 19);
             this.label13.TabIndex = 140;
@@ -1397,7 +1397,7 @@
             this.txtNationality.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNationality.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNationality.ForeColor = System.Drawing.Color.Black;
-            this.txtNationality.Location = new System.Drawing.Point(18, 279);
+            this.txtNationality.Location = new System.Drawing.Point(18, 267);
             this.txtNationality.Name = "txtNationality";
             this.txtNationality.Size = new System.Drawing.Size(269, 25);
             this.txtNationality.TabIndex = 8;
@@ -1476,7 +1476,7 @@
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.IndianRed;
             this.label35.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label35.Location = new System.Drawing.Point(21, 256);
+            this.label35.Location = new System.Drawing.Point(21, 229);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(24, 29);
             this.label35.TabIndex = 246;

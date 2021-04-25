@@ -175,6 +175,7 @@
     <Compile Include="Models\FamilyDetailController.cs" />
     <Compile Include="Models\Member\ApplicationNationalIDModel.cs" />
     <Compile Include="Models\Member\SeniorBasicDetail.cs" />
+    <Compile Include="Models\Member\SeniorChildrenDetails.cs" />
     <Compile Include="Models\Member\SeniorIdDetails.cs" />
     <Compile Include="Models\OrController.cs" />
     <Compile Include="Models\OtherDetailsController.cs" />

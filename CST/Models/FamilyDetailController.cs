@@ -119,12 +119,12 @@ namespace CST.Models
             
 
             DbDataReader reader = await cs.RetrieveRecordsAsync(sql, mySqlParameters);
-
+            if(await reader.ReadAsync())
             {
-                seniorChildren.senior_children_id = int.Parse(reader["senior_children_id "].ToString());
-                seniorChildren.sno = reader["sno "].ToString();
+                seniorChildren.senior_children_id = int.Parse(reader["senior_children_id"].ToString());
+                seniorChildren.sno = reader["sno"].ToString();
                 seniorChildren.childName1 = reader["children1_name"].ToString();
-                seniorChildren.childNO1 = reader["snchildren1_noo"].ToString();
+                seniorChildren.childNO1 = reader["children1_no"].ToString();
                 seniorChildren.childAdd1 = reader["children1_address"].ToString();
                 seniorChildren.childName2 = reader["children2_name"].ToString();
                 seniorChildren.childNO2 = reader["children2_no"].ToString();

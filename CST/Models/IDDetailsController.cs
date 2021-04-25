@@ -35,7 +35,7 @@ namespace CST.Models
             while(await reader.ReadAsync())
             {
 
-                seniorIdDetails.senior_id = int.Parse(reader["senior_id "].ToString());
+                seniorIdDetails.senior_id = int.Parse(reader["senior_id"].ToString());
                 seniorIdDetails.sno = reader["sno"].ToString();
                 seniorIdDetails.osca = reader["OSCA"].ToString();
                 seniorIdDetails.tin = reader["TIN"].ToString();
