@@ -12,11 +12,11 @@ using CST.Models;
 
 namespace CST
 {
-    public partial class AuditTrail : Form
+    public partial class AuditTrailController : Form
     {
         globalVariables gv = new globalVariables();
         AuditTrailControl auditTrailControl = new AuditTrailControl();
-        public AuditTrail(string MyLabelText, string hi)                 
+        public AuditTrailController(string MyLabelText, string hi)                 
         {
           
             InitializeComponent();
@@ -24,6 +24,10 @@ namespace CST
             comboBox1.SelectedIndex = 0;
        
 
+        }
+
+        public AuditTrailController()
+        {
         }
 
         private void button2_Click(object sender, EventArgs e )

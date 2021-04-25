@@ -35,8 +35,9 @@ namespace CST
         private void Login_Load(object sender, EventArgs e)
         {
             btnLogin.Enabled = false;
-                txtUN.Hide();
+            txtUN.Hide();
             txtUT.Hide();
+            label1.Hide();
             DateTime my = DateTimeOffset.Now.DateTime.ToLocalTime().ToUniversalTime();
 
 

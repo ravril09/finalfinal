@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Globalization;
 using CST.Registrar;
 using CST.Models;
+using CST.Report;
 using CST.Models.Student;
 
 namespace CST
@@ -130,8 +131,6 @@ namespace CST
                                                             dataGridView1.SelectedRows[0].Cells[3].Value.ToString(),
                                                             dataGridView1.SelectedRows[0].Cells[4].Value.ToString(),
                                                             dataGridView1.SelectedRows[0].Cells[5].Value.ToString(),
-                                                            dataGridView1.SelectedRows[0].Cells[6].Value.ToString(),
-                                                            dataGridView1.SelectedRows[0].Cells[7].Value.ToString(),
                                                             dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
                         frm.ShowDialog();
 
@@ -178,6 +177,39 @@ namespace CST
 
         private void button12_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private async  void button6_Click(object sender, EventArgs e)
+        {
+            //if(dataGridView1.Rows.Count > 0)
+            //{
+                DataSet ds = new DataSet();
+
+             ds = await studentsDetailsController.getDs();
+            //   DataTable dt = new DataTable();
+
+            // dt.Columns.Add("try", typeof(string));
+
+
+            //   for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            //{
+
+            //   dt.Rows.Add(dataGridView1.Rows[i].Cells[0].Value.ToString());
+            //    }
+
+            // ds.Tables.Add(dt);
+            //dataGridView1.DataSource = null;
+            //dataGridView1.DataSource = ds.Tables[0];
+            //dataGridView1.AutoResizeColumns();
+
+            //ds.WriteXmlSchema("Renci.SshNet.xml");
+            //}
+
+
+
+            RecordsRep rep = new RecordsRep(ds);
+            rep.ShowDialog();
 
         }
     }

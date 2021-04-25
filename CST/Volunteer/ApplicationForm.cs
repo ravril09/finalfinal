@@ -406,7 +406,10 @@ namespace CST.Volunteer
         {
             if (currentTab == 0)
             {
-
+                if (int.Parse(textBox19.Text.Trim()) < 50)
+                {
+                    MessageBox.Show("Invalid!");
+                }
 
                 int changedPage = tabControl1.SelectedIndex;
                 bool isValidToNextPage = validationTab1();
@@ -540,6 +543,46 @@ namespace CST.Volunteer
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label30_Click(object sender, EventArgs e)
         {
 
         }

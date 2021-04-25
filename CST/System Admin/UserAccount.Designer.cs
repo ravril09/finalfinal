@@ -83,7 +83,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.dgUserAccounts);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.ForeColor = System.Drawing.Color.Firebrick;
             this.groupBox1.Location = new System.Drawing.Point(12, 102);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(775, 234);
@@ -110,14 +110,15 @@
             // 
             // btnResetPass
             // 
-            this.btnResetPass.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnResetPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.btnResetPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnResetPass.FlatAppearance.BorderSize = 0;
             this.btnResetPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetPass.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResetPass.ForeColor = System.Drawing.Color.Gold;
-            this.btnResetPass.Location = new System.Drawing.Point(279, 342);
+            this.btnResetPass.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnResetPass.Location = new System.Drawing.Point(384, 352);
             this.btnResetPass.Name = "btnResetPass";
-            this.btnResetPass.Size = new System.Drawing.Size(142, 30);
+            this.btnResetPass.Size = new System.Drawing.Size(167, 42);
             this.btnResetPass.TabIndex = 202;
             this.btnResetPass.Text = "Reset Password";
             this.btnResetPass.UseVisualStyleBackColor = false;
@@ -144,10 +145,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Firebrick;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(1, 26);
+            this.label2.Location = new System.Drawing.Point(1, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 19);
             this.label2.TabIndex = 198;
@@ -165,23 +166,24 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(94)))), ((int)(((byte)(104)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(-1, 45);
+            this.panel4.Location = new System.Drawing.Point(2, 45);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(779, 10);
+            this.panel4.Size = new System.Drawing.Size(795, 10);
             this.panel4.TabIndex = 199;
             // 
             // btnRemove
             // 
-            this.btnRemove.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.btnRemove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemove.ForeColor = System.Drawing.Color.Gold;
-            this.btnRemove.Location = new System.Drawing.Point(453, 342);
+            this.btnRemove.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnRemove.Location = new System.Drawing.Point(572, 352);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(95, 30);
+            this.btnRemove.Size = new System.Drawing.Size(152, 42);
             this.btnRemove.TabIndex = 203;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = false;
@@ -422,14 +424,15 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkBlue;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Gold;
-            this.button2.Location = new System.Drawing.Point(158, 342);
+            this.button2.ForeColor = System.Drawing.Color.Firebrick;
+            this.button2.Location = new System.Drawing.Point(220, 351);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 30);
+            this.button2.Size = new System.Drawing.Size(143, 44);
             this.button2.TabIndex = 211;
             this.button2.Tag = " ";
             this.button2.Text = "Edit";
@@ -438,14 +441,15 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkBlue;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Gold;
-            this.button3.Location = new System.Drawing.Point(25, 342);
+            this.button3.ForeColor = System.Drawing.Color.Firebrick;
+            this.button3.Location = new System.Drawing.Point(50, 351);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 30);
+            this.button3.Size = new System.Drawing.Size(152, 45);
             this.button3.TabIndex = 212;
             this.button3.Tag = " ";
             this.button3.Text = "New";
@@ -460,8 +464,8 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Firebrick;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label4.Location = new System.Drawing.Point(12, 75);
             this.label4.Name = "label4";
@@ -498,7 +502,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
+            this.button4.BackColor = System.Drawing.Color.Firebrick;
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -521,42 +525,45 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gold;
-            this.panel1.Location = new System.Drawing.Point(20, 339);
+            this.panel1.BackColor = System.Drawing.Color.Firebrick;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(46, 348);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(104, 36);
+            this.panel1.Size = new System.Drawing.Size(159, 51);
             this.panel1.TabIndex = 216;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gold;
-            this.panel2.Location = new System.Drawing.Point(156, 339);
+            this.panel2.BackColor = System.Drawing.Color.Firebrick;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(217, 348);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(99, 36);
+            this.panel2.Size = new System.Drawing.Size(149, 51);
             this.panel2.TabIndex = 217;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Gold;
-            this.panel3.Location = new System.Drawing.Point(276, 339);
+            this.panel3.BackColor = System.Drawing.Color.Firebrick;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Location = new System.Drawing.Point(381, 349);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(148, 36);
+            this.panel3.Size = new System.Drawing.Size(172, 48);
             this.panel3.TabIndex = 218;
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Gold;
-            this.panel6.Location = new System.Drawing.Point(451, 339);
+            this.panel6.BackColor = System.Drawing.Color.Firebrick;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Location = new System.Drawing.Point(569, 349);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(99, 36);
-            this.panel6.TabIndex = 218;
+            this.panel6.Size = new System.Drawing.Size(158, 48);
+            this.panel6.TabIndex = 219;
             // 
             // UserAccount
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::CST.Properties.Resources.download2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(799, 416);
             this.Controls.Add(this.comboBox1);

@@ -47,16 +47,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label64 = new System.Windows.Forms.Label();
-            this.txtMonthDues = new System.Windows.Forms.TextBox();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.txtMemberFee = new System.Windows.Forms.TextBox();
-            this.label72 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // pbClose
@@ -289,92 +281,6 @@
             this.label59.TabIndex = 251;
             this.label59.Text = "*";
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.label64);
-            this.groupBox5.Controls.Add(this.txtMonthDues);
-            this.groupBox5.Controls.Add(this.label63);
-            this.groupBox5.Controls.Add(this.label70);
-            this.groupBox5.Controls.Add(this.txtMemberFee);
-            this.groupBox5.Controls.Add(this.label72);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(27, 229);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(999, 146);
-            this.groupBox5.TabIndex = 263;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Payment";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.BackColor = System.Drawing.Color.Transparent;
-            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.ForeColor = System.Drawing.Color.IndianRed;
-            this.label64.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label64.Location = new System.Drawing.Point(608, 47);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(24, 29);
-            this.label64.TabIndex = 254;
-            this.label64.Text = "*";
-            // 
-            // txtMonthDues
-            // 
-            this.txtMonthDues.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMonthDues.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMonthDues.ForeColor = System.Drawing.Color.Black;
-            this.txtMonthDues.Location = new System.Drawing.Point(363, 79);
-            this.txtMonthDues.Name = "txtMonthDues";
-            this.txtMonthDues.Size = new System.Drawing.Size(314, 26);
-            this.txtMonthDues.TabIndex = 253;
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.ForeColor = System.Drawing.Color.Black;
-            this.label63.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label63.Location = new System.Drawing.Point(363, 57);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(239, 16);
-            this.label63.TabIndex = 252;
-            this.label63.Text = "MONTHLY DUES (P10 per month)";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.ForeColor = System.Drawing.Color.Black;
-            this.label70.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label70.Location = new System.Drawing.Point(27, 57);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(141, 16);
-            this.label70.TabIndex = 144;
-            this.label70.Text = "MEMBERSHIP FEE";
-            // 
-            // txtMemberFee
-            // 
-            this.txtMemberFee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMemberFee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMemberFee.ForeColor = System.Drawing.Color.Black;
-            this.txtMemberFee.Location = new System.Drawing.Point(12, 79);
-            this.txtMemberFee.Name = "txtMemberFee";
-            this.txtMemberFee.Size = new System.Drawing.Size(323, 26);
-            this.txtMemberFee.TabIndex = 145;
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.BackColor = System.Drawing.Color.Transparent;
-            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.ForeColor = System.Drawing.Color.IndianRed;
-            this.label72.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label72.Location = new System.Drawing.Point(174, 47);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(24, 29);
-            this.label72.TabIndex = 251;
-            this.label72.Text = "*";
-            // 
             // editStudHist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -382,7 +288,6 @@
             this.BackgroundImage = global::CST.Properties.Resources.cool_white_background_free_download_desktop_white_background_hd;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1050, 509);
-            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pbClose);
@@ -394,8 +299,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -419,12 +322,5 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label64;
-        public System.Windows.Forms.TextBox txtMonthDues;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label70;
-        public System.Windows.Forms.TextBox txtMemberFee;
-        private System.Windows.Forms.Label label72;
     }
 }

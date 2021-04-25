@@ -27,7 +27,7 @@ namespace CST.Models
                                   string emerela,
                                   string emeno) 
         {
-            string sql = String.Format(@"INSERT INTO `student_family_details`
+            string sql = String.Format(@"INSERT INTO `senior_children_details`
                                                     (`sno`, `children1_name`, `children1_no`, `children1_address`, `children2_name`,
                                                      `children2_no`, `children2_address`, `children3_name`, `children3_no`, `children3_address`,
                                                      `emergency_name`, `emergency_address`, `emergency_relation`, `emergency_contact`) VALUES 
@@ -44,7 +44,7 @@ namespace CST.Models
 
             string[] famDetails = new string[12];
 
-            string sql = String.Format(@"SELECT * FROM `student_family_details` WHERE sno = '{0}'", sno);
+            string sql = String.Format(@"SELECT * FROM `senior_children_details` WHERE sno = '{0}'", sno);
 
             MySqlDataReader reader = null;
 
@@ -79,7 +79,7 @@ namespace CST.Models
         public void updateFamDetails(string sno,string c1na, string c1n, string c1ad, string c2na, string c2n ,
                                     string c2ad, string c3na, string c3n, string c3ad, string en, string ead, string erl, string econ)
         {
-            string sql = String.Format(@"UPDATE `student_family_details`
+            string sql = String.Format(@"UPDATE `senior_children_details`
                                                         SET `children1_name`='{0}',`children1_no`='{1}',`children1_address`='{2}',`children2_name`='{3}',
                                                         `children2_no`='{4}',`children2_address`='{5}',`children3_name`='{6}',`children3_no`='{7}',
                                                         `children3_address`='{8}',`emergency_name`='{9}',`emergency_address`='{10}',`emergency_relation`='{11}',
@@ -96,7 +96,7 @@ namespace CST.Models
             string sql = String.Format(@"SELECT `sno`, `children1_name`, `children1_no`, `children1_address`, `children2_name`, 
                                             `children2_no`, `children2_address`, `children3_name`, `children3_no`, `children3_address`,
                                                 `emergency_name`, `emergency_address`, `emergency_relation`, `emergency_contact` FROM
-                                                `student_family_details` WHERE student_fam_id");
+                                                `senior_children_details` WHERE senior_children_id");
 
             cs.FillDataGrid(sql,ref dg);
         }

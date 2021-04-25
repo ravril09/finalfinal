@@ -10,11 +10,14 @@ using System.Windows.Forms;
 using System.Threading;
 using CST.Models;
 using CST.Models.Student;
+using CST.Volunteer;
 
 namespace CST
 {
     public partial class StudentForm : Form
     {
+        public static string SetValueForText1 = "";
+
         BasicDetailsController basicdetailController = new BasicDetailsController();
         ChildrenDetailsController studFam = new ChildrenDetailsController();
         IDDetailsController studHis = new IDDetailsController();
@@ -37,8 +40,8 @@ namespace CST
         private void StudentForm_Load(object sender, EventArgs e)
         {
             label44.Hide();
-
-
+            SetValueForText1 = txtStudentID.Text;
+           
             txtStudentID.Text = generateSNO();
             txtStudentID.Enabled = false;
             SeniorModel.setSno(generateSNO());
@@ -117,6 +120,9 @@ namespace CST
         {
             MessageBox.Show("Succesfully Added Senior Citizen Details");
 
+            Payment frm = new Payment(txtStudentID.Text.Trim(), txtFirstname.Text.Trim() + " " + txtLastname.Text.Trim());
+            frm.Show();
+
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -144,13 +150,12 @@ namespace CST
                                         txtC2Mobile.Text.Trim(), txtC2Address.Text.Trim(), txtC3Fullname.Text.Trim(), txtC3Mobile.Text.Trim(), txtC3Address.Text.Trim(), txtEfullName.Text.Trim(),
                                          txtEAddress.Text.Trim(), txtERelation.Text.Trim(), txtEContactNo.Text.Trim());
                 studHis.addIDDetails(txtStudentID.Text.Trim(), txtOSCA.Text.Trim(), txtTin.Text.Trim(), txtPhilHealth.Text.Trim(), txtGSIS.Text.Trim(),
-                                       txtSSS.Text.Trim(), txtMemberFee.Text.Trim(), txtMonthDues.Text.Trim());
+                                       txtSSS.Text.Trim());
 
 
                 auditTrail.addAudit(label44.Text, "Add Senior Data " + txtStudentID.Text.Trim());
 
-                RegistrarForm a = new RegistrarForm();
-                a.Show();
+               
                 this.Hide();
 
 
@@ -706,15 +711,7 @@ namespace CST
             SeniorModel.setSSS(txtSSS.Text.Trim());
         }
 
-        private void txtMemberFee_TextChanged(object sender, EventArgs e)
-        {
-            SeniorModel.setMemship(txtMemberFee.Text.Trim());
-        }
-
-        private void txtMonthDues_TextChanged(object sender, EventArgs e)
-        {
-            SeniorModel.setMonthly(txtMonthDues.Text.Trim());
-        }
+      
 
         private void label44_Click(object sender, EventArgs e)
         {

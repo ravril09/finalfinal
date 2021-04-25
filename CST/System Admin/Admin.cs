@@ -29,8 +29,8 @@ namespace CST {
         {
             InitializeComponent();
 
-            this.label5.Text = UserLog.getUserName();
-            this.label1.Text = UserLog.getRole();
+            this.label4.Text = UserLog.getUserName();
+            this.label2.Text = UserLog.getRole();
 
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
@@ -56,7 +56,7 @@ namespace CST {
                 DisableButton();
 
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(78, 77, 84);
+                currentBtn.BackColor = Color.FromArgb(254, 251, 244);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -80,10 +80,10 @@ namespace CST {
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(51, 65, 78);
-                currentBtn.ForeColor = Color.Gainsboro;
+                currentBtn.BackColor = Color.FromArgb(226, 220, 220);
+                currentBtn.ForeColor = Color.Firebrick;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Gainsboro;
+                currentBtn.IconColor = Color.Firebrick;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -180,13 +180,13 @@ namespace CST {
         private void btnRegistration_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new UserAccount(label5.Text, label1.Text));
+            OpenChildForm(new UserAccount(label4.Text, label2.Text));
         }
 
         private void BtnAudit_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new AuditTrail(label5.Text, label1.Text));
+            OpenChildForm(new AuditTrailController(label4.Text, label2.Text));
          
         }
 
@@ -241,6 +241,11 @@ namespace CST {
                 this.Hide();
 
             }
+        }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 

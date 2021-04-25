@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CST.Models;
+using CST.Report;
 
 namespace CST.Volunteer
 {
@@ -123,13 +124,25 @@ namespace CST.Volunteer
             timer1.Enabled = true;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private  void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private async void button9_Click(object sender, EventArgs e)
         {
+            DataSet ds = new DataSet();
+            //DataTable dt = new DataTable();
+
+            ds = await requesteyecontroller.getRequestEyeglasses();
+
+            //ds.Tables.Add(dt);
+            //dataGridView1.DataSource = null;
+            //dataGridView1.DataSource = ds.Tables[0];
+            //dataGridView1.AutoResizeColumns();
+            //ds.WriteXmlSchema("C:\\xmlrep PrintMedicalRecord.xml");
+            RecordRequestEyeglasses rep = new RecordRequestEyeglasses(ds);
+            rep.ShowDialog();
 
         }
     }

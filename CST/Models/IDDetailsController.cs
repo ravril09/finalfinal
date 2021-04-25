@@ -21,12 +21,11 @@ namespace CST.Models
                                  string tin,
                                  string philhealth,
                                  string gsis,
-                                 string sss,
-                                 string memb,
-                                 string month)
+                                 string sss
+                                 )
         {
-            string sql = String.Format(@"INSERT INTO `stud_history_details`(`sno`, `OSCA`, `TIN`, `PHILHEALTH`, `GSIS`, `SSS`, `membershipfee`, `monthlyfee`) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}',{7})",
-                                        sno, osca, tin, philhealth, gsis, sss, memb, month);
+            string sql = String.Format(@"INSERT INTO `senior_id_details`(`sno`, `OSCA`, `TIN`, `PHILHEALTH`, `GSIS`, `SSS`) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}')",
+                                        sno, osca, tin, philhealth, gsis, sss);
 
             cs.ExecuteQuery(sql);
 
@@ -37,16 +36,13 @@ namespace CST.Models
                                     string tin,
                                     string phil,
                                     string gsis,
-                                    string sss,
-                                    string mem,
-                                    string mont
+                                    string sss                                   
                                     )
         {
-            string sql = String.Format(@"UPDATE `stud_history_details` 
-                                                        SET `OSCA`='{0}',`TIN`='{1}',`PHILHEALTH`='{2}',`GSIS`='{3}',`SSS`='{4}',
-                                                            `membershipfee`='{5}',`monthlyfee`='{6}' WHERE sno = '{7}'",
+            string sql = String.Format(@"UPDATE `senior_id_details` 
+                                                        SET `OSCA`='{0}',`TIN`='{1}',`PHILHEALTH`='{2}',`GSIS`='{3}',`SSS`='{4}' WHERE sno = '{5}'",
                                                             osca, tin, phil, gsis, sss
-                                                            , mem, mont,sno);
+                                                            ,sno);
 
             cs.ExecuteQuery(sql);
         }
@@ -54,7 +50,7 @@ namespace CST.Models
         public void fillDataHist(ref DataGridView dg)
         {
             string sql = String.Format(@"SELECT 
-                                            `sno`, `OSCA`, `TIN`, `PHILHEALTH`, `GSIS`, `SSS`, `membershipfee`, `monthlyfee` FROM `stud_history_details` WHERE stud_his_id");
+                                            `sno`, `OSCA`, `TIN`, `PHILHEALTH`, `GSIS`, `SSS` FROM `senior_id_details` WHERE senior_id");
 
             cs.FillDataGrid(sql, ref dg);
         }
@@ -64,7 +60,7 @@ namespace CST.Models
         {
             string[] IDDetail = new string[7];
 
-            string sql = String.Format(@"SELECT * FROM `stud_history_details` WHERE sno = '{0}'", sno);
+            string sql = String.Format(@"SELECT * FROM `senior_id_details` WHERE sno = '{0}'", sno);
 
             MySqlDataReader reader = null;
 
@@ -77,10 +73,7 @@ namespace CST.Models
                 IDDetail[2] = reader["PHILHEALTH"].ToString();
                 IDDetail[3] = reader["GSIS"].ToString();
                 IDDetail[4] = reader["SSS"].ToString();
-                IDDetail[5] = reader["membershipfee"].ToString();
-                IDDetail[6] = reader["monthlyfee"].ToString();
-              
-
+                
             }
 
             cs.CloseConnection();

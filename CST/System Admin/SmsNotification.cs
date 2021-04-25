@@ -15,64 +15,94 @@ namespace CST.System_Admin
 {
     public partial class SmsNotification : Form
     {
-        public string apiKey { get; set; }
-        public string numbers { get; set; }
-        public string message { get; set; }
-        public string sender { get; set; }
-        public string result;
+        //public string apiKey { get; set; }
+        //public string numbers { get; set; }
+        //public string message { get; set; }
+        //public string sender { get; set; }
+        //public string result;
        
-        AuditTrailControl auditTrail = new AuditTrailControl();
+        //AuditTrailControl auditTrail = new AuditTrailControl();
 
         public SmsNotification()
         {
             InitializeComponent();
             timer1.Start();
         }
+        public object itexmo(string Number, string Message, string ApiCode, string ApiPassword)
+        {
+            object functionReturnValue = null;
+            using (System.Net.WebClient client = new System.Net.WebClient())
+            {
+                System.Collections.Specialized.NameValueCollection parameter = new System.Collections.Specialized.NameValueCollection();
+                string url = "https://www.itexmo.com/php_api/api.php";
+                parameter.Add("1", Number);
+                parameter.Add("2", Message);
+                parameter.Add("3", ApiCode);
+                parameter.Add("passwd", ApiPassword);
+                dynamic rpb = client.UploadValues(url, "POST", parameter);
+                functionReturnValue = (new System.Text.UTF8Encoding()).GetString(rpb);
+            }
+            return functionReturnValue;
+        }
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+            string number = txtPhoneNumber.Text.Trim();
+            string message = txtMessage.Text.Trim();
+            string api = txtAPI.Text.Trim();
+            string password = txtSender.Text.Trim();
 
-            apiKey = txtAPI.Text;
-            numbers = txtPhoneNumber.Text;
-            message = txtMessage.Text;
-            sender = txtPassword.Text;
-
-            string url = "https://api.txtlocal.com/send/?apikey=" + apiKey + "&numbers=" + numbers + "&message=" + message + "&sender=" + sender;
-            StreamWriter myWriter = null;
-            HttpWebRequest objRequest = (HttpWebRequest)WebRequest.Create(url);
-
-            objRequest.Method = "POST";
-            objRequest.ContentLength = Encoding.UTF8.GetByteCount(url);
-            objRequest.ContentType = "application/x-www-form-urlencoded";
-            try
+            dynamic result = itexmo(number, message, api, password);
+            if (result == "0")
             {
-                myWriter = new StreamWriter(objRequest.GetRequestStream());
-                myWriter.Write(url);
+                MessageBox.Show("Message Sent");
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(null, "the error is" + ex, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Error num " + result + " was encountered");
             }
 
-            finally
-            {
-                myWriter.Close();
-            }
+            //apiKey = txtAPI.Text;
+            //numbers = txtPhoneNumber.Text;
+            //message = txtMessage.Text;
+            //sender = txtPassword.Text;
 
-            HttpWebResponse objResponse = (HttpWebResponse)objRequest.GetResponse();
-            using (StreamReader sr = new StreamReader(objResponse.GetResponseStream()))
-            {
-                result = sr.ReadToEnd();
-                sr.Close();
-            }
-            MessageBox.Show(this, "Successfully Sent!", "Message has been Sent", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            txtAPI.Text = String.Empty;
-            txtPassword.Text = String.Empty;
-            txtPhoneNumber.Text = String.Empty;
-            txtMessage.Text = String.Empty;
+            //string url = "https://api.txtlocal.com/send/?apikey=" + apiKey + "&numbers=" + numbers + "&message=" + message + "&sender=" + sender;
+            //StreamWriter myWriter = null;
+            //HttpWebRequest objRequest = (HttpWebRequest)WebRequest.Create(url);
 
-            auditTrail.addAudit(label7.Text, "Addded new User Accounts");
-          
+            //objRequest.Method = "POST";
+            //objRequest.ContentLength = Encoding.UTF8.GetByteCount(url);
+            //objRequest.ContentType = "application/x-www-form-urlencoded";
+            //try
+            //{
+            //    myWriter = new StreamWriter(objRequest.GetRequestStream());
+            //    myWriter.Write(url);
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(null, "the error is" + ex, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+
+            //finally
+            //{
+            //    myWriter.Close();
+            //}
+
+            //HttpWebResponse objResponse = (HttpWebResponse)objRequest.GetResponse();
+            //using (StreamReader sr = new StreamReader(objResponse.GetResponseStream()))
+            //{
+            //    result = sr.ReadToEnd();
+            //    sr.Close();
+            //}
+            //MessageBox.Show(this, "Successfully Sent!", "Message has been Sent", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //txtAPI.Text = String.Empty;
+            //txtPassword.Text = String.Empty;
+            //txtPhoneNumber.Text = String.Empty;
+            //txtMessage.Text = String.Empty;
+
+            //auditTrail.addAudit(label7.Text, "Addded new User Accounts");
+
             //using (System.Net.WebClient client = new System.Net.WebClient()) 
             //{
             //    try
@@ -158,6 +188,11 @@ namespace CST.System_Admin
             label7.Text = my.ToString("MM/dd/yyyy  hh:mm:ss tt");
 
             timer1.Enabled = true;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

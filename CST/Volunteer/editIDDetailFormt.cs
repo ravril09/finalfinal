@@ -17,7 +17,7 @@ namespace CST.Registrar
         string isVacine = "";
         string sno = "";
         IDDetailsController studHist = new IDDetailsController();
-        public editStudHist(string osca,string tin,string phil,string gsis,string sss,string mem,string month,string sno)
+        public editStudHist(string osca,string tin,string phil,string gsis,string sss, string sno)
         {
             InitializeComponent();
             txtOSCA.Text = osca;
@@ -25,9 +25,7 @@ namespace CST.Registrar
             txtPhilHealth.Text = phil;
             txtGSIS.Text = gsis;
             txtSSS.Text = sss;
-            txtMemberFee.Text = mem;
-            txtMonthDues.Text = month;
-
+           
             this.sno = sno;
         }
 
@@ -44,11 +42,7 @@ namespace CST.Registrar
             isValid = !(txtGSIS.Text.Trim() == "") && isValid;
 
             isValid = !(txtSSS.Text.Trim() == "") && isValid;
-
-            isValid = !(txtMemberFee.Text.Trim() == "") && isValid;
-
-            isValid = !(txtMonthDues.Text.Trim() == "") && isValid;
-
+            
 
             return isValid;
 
@@ -69,21 +63,12 @@ namespace CST.Registrar
             if (validationTab3())
             {
                 studHist.updateHisDetails(sno, txtOSCA.Text.Trim(), txtTin.Text.Trim(), txtPhilHealth.Text.Trim(),txtGSIS.Text.Trim(),
-                                        txtSSS.Text.Trim(), txtMemberFee.Text.Trim(), txtMonthDues.Text.Trim());
+                                        txtSSS.Text.Trim());
                 MessageBox.Show("Succesfully Updated");
                 this.Hide();
             }
         }
 
-        private void txtMonthDues_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMemberFee_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtTin_TextChanged(object sender, EventArgs e)
         {

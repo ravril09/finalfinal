@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,14 @@ namespace CST.Models
     class RequestEyeglassController
     {
         crudFile cs = new crudFile();
+
+        public async Task<DataSet> getRequestEyeglasses()
+        {
+            DataSet ds = await cs.GetDataSetAsync(@"SELECT * FROM requesteyeglasss",
+                null);
+
+            return ds;
+        }
 
         public void addRequestEyeglass(string sno,
                                        string fn,

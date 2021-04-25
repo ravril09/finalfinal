@@ -33,28 +33,31 @@
             this.label5 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label7 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.txtRequetMedical = new FontAwesome.Sharp.IconButton();
-            this.btnNationalIdRecord = new FontAwesome.Sharp.IconButton();
-            this.btnNationalD = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.btnLogout = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.btnEnroll = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnEnroll = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnNationalD = new FontAwesome.Sharp.IconButton();
+            this.btnNationalIdRecord = new FontAwesome.Sharp.IconButton();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.txtRequetMedical = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
@@ -62,24 +65,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(620, 112);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.Location = new System.Drawing.Point(418, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 25);
+            this.label1.Size = new System.Drawing.Size(115, 26);
             this.label1.TabIndex = 214;
             this.label1.Text = "User Type";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(305, 112);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Firebrick;
+            this.label5.Location = new System.Drawing.Point(94, 96);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 25);
+            this.label5.Size = new System.Drawing.Size(115, 26);
             this.label5.TabIndex = 211;
             this.label5.Text = "Username";
             // 
@@ -91,48 +94,21 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Firebrick;
             this.label7.Location = new System.Drawing.Point(43, 380);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 25);
+            this.label7.Size = new System.Drawing.Size(124, 26);
             this.label7.TabIndex = 216;
             this.label7.Text = "Date & Time";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(356, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(330, 37);
-            this.label3.TabIndex = 220;
-            this.label3.Text = "Senior Citizens Molino VI";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(410, 61);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(199, 20);
-            this.label4.TabIndex = 221;
-            this.label4.Text = "Management Infomation System";
-            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.panel7);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -141,6 +117,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -150,23 +127,46 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CST.Properties.Resources.mislogo;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 12);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::CST.Properties.Resources.download_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(194, 133);
+            this.pictureBox1.Size = new System.Drawing.Size(237, 159);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Controls.Add(this.label5);
+            this.panel7.Controls.Add(this.label1);
+            this.panel7.Location = new System.Drawing.Point(251, 5);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(640, 156);
+            this.panel7.TabIndex = 223;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Firebrick;
+            this.label3.Location = new System.Drawing.Point(142, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(361, 32);
+            this.label3.TabIndex = 227;
+            this.label3.Text = "Senior Citizens of Molino VI";
+            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.btnLogout);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel9);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -174,119 +174,52 @@
             this.panel2.TabIndex = 226;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // iconButton3
+            // panel4
             // 
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.PollH;
-            this.iconButton3.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton3.IconSize = 30;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 88);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton3.Rotation = 0D;
-            this.iconButton3.Size = new System.Drawing.Size(306, 40);
-            this.iconButton3.TabIndex = 232;
-            this.iconButton3.Text = "Request Record";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton3.UseVisualStyleBackColor = true;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            this.panel4.Controls.Add(this.btnEnroll);
+            this.panel4.Controls.Add(this.iconButton2);
+            this.panel4.Location = new System.Drawing.Point(27, 201);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(272, 108);
+            this.panel4.TabIndex = 233;
             // 
-            // txtRequetMedical
+            // btnEnroll
             // 
-            this.txtRequetMedical.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtRequetMedical.FlatAppearance.BorderSize = 0;
-            this.txtRequetMedical.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtRequetMedical.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.txtRequetMedical.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRequetMedical.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtRequetMedical.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.txtRequetMedical.IconColor = System.Drawing.Color.Gainsboro;
-            this.txtRequetMedical.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.txtRequetMedical.IconSize = 30;
-            this.txtRequetMedical.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txtRequetMedical.Location = new System.Drawing.Point(0, 0);
-            this.txtRequetMedical.Name = "txtRequetMedical";
-            this.txtRequetMedical.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.txtRequetMedical.Rotation = 0D;
-            this.txtRequetMedical.Size = new System.Drawing.Size(306, 40);
-            this.txtRequetMedical.TabIndex = 231;
-            this.txtRequetMedical.Text = "Request Free Medical";
-            this.txtRequetMedical.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txtRequetMedical.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.txtRequetMedical.UseVisualStyleBackColor = true;
-            this.txtRequetMedical.Click += new System.EventHandler(this.txtRequetMedical_Click);
-            // 
-            // btnNationalIdRecord
-            // 
-            this.btnNationalIdRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
-            this.btnNationalIdRecord.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnNationalIdRecord.FlatAppearance.BorderSize = 0;
-            this.btnNationalIdRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNationalIdRecord.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnNationalIdRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNationalIdRecord.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnNationalIdRecord.IconChar = FontAwesome.Sharp.IconChar.Wpforms;
-            this.btnNationalIdRecord.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnNationalIdRecord.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnNationalIdRecord.IconSize = 30;
-            this.btnNationalIdRecord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNationalIdRecord.Location = new System.Drawing.Point(0, 62);
-            this.btnNationalIdRecord.Name = "btnNationalIdRecord";
-            this.btnNationalIdRecord.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnNationalIdRecord.Rotation = 0D;
-            this.btnNationalIdRecord.Size = new System.Drawing.Size(292, 53);
-            this.btnNationalIdRecord.TabIndex = 230;
-            this.btnNationalIdRecord.Text = "National ID Record";
-            this.btnNationalIdRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNationalIdRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNationalIdRecord.UseVisualStyleBackColor = false;
-            this.btnNationalIdRecord.Click += new System.EventHandler(this.btnNationalIdRecord_Click);
-            // 
-            // btnNationalD
-            // 
-            this.btnNationalD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
-            this.btnNationalD.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNationalD.FlatAppearance.BorderSize = 0;
-            this.btnNationalD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNationalD.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnNationalD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNationalD.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnNationalD.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.btnNationalD.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnNationalD.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnNationalD.IconSize = 30;
-            this.btnNationalD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNationalD.Location = new System.Drawing.Point(0, 0);
-            this.btnNationalD.Name = "btnNationalD";
-            this.btnNationalD.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnNationalD.Rotation = 0D;
-            this.btnNationalD.Size = new System.Drawing.Size(292, 53);
-            this.btnNationalD.TabIndex = 229;
-            this.btnNationalD.Text = "Appication for National ID";
-            this.btnNationalD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNationalD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNationalD.UseVisualStyleBackColor = false;
-            this.btnNationalD.Click += new System.EventHandler(this.btnNationalD_Click);
+            this.btnEnroll.BackColor = System.Drawing.Color.Transparent;
+            this.btnEnroll.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEnroll.FlatAppearance.BorderSize = 0;
+            this.btnEnroll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnroll.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnEnroll.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnroll.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnEnroll.IconChar = FontAwesome.Sharp.IconChar.StickyNote;
+            this.btnEnroll.IconColor = System.Drawing.Color.Firebrick;
+            this.btnEnroll.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEnroll.IconSize = 30;
+            this.btnEnroll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEnroll.Location = new System.Drawing.Point(0, 0);
+            this.btnEnroll.Name = "btnEnroll";
+            this.btnEnroll.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnEnroll.Rotation = 0D;
+            this.btnEnroll.Size = new System.Drawing.Size(272, 63);
+            this.btnEnroll.TabIndex = 217;
+            this.btnEnroll.Text = "Membership Registration";
+            this.btnEnroll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEnroll.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEnroll.UseVisualStyleBackColor = false;
+            this.btnEnroll.Click += new System.EventHandler(this.btnEnroll_Click_1);
             // 
             // iconButton2
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
+            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
             this.iconButton2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconButton2.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.Firebrick;
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Tasks;
-            this.iconButton2.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton2.IconColor = System.Drawing.Color.Firebrick;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 30;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -302,20 +235,31 @@
             this.iconButton2.UseVisualStyleBackColor = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.Controls.Add(this.btnLogout);
+            this.panel9.Controls.Add(this.panel5);
+            this.panel9.Controls.Add(this.panel6);
+            this.panel9.Location = new System.Drawing.Point(8, 199);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(883, 165);
+            this.panel9.TabIndex = 236;
+            // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnLogout.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.Firebrick;
             this.btnLogout.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
-            this.btnLogout.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnLogout.IconColor = System.Drawing.Color.Firebrick;
             this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLogout.IconSize = 30;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(27, 315);
+            this.btnLogout.Location = new System.Drawing.Point(25, 113);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnLogout.Rotation = 0D;
@@ -327,16 +271,114 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.Controls.Add(this.btnNationalD);
+            this.panel5.Controls.Add(this.btnNationalIdRecord);
+            this.panel5.Location = new System.Drawing.Point(304, 12);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(291, 115);
+            this.panel5.TabIndex = 234;
+            // 
+            // btnNationalD
+            // 
+            this.btnNationalD.BackColor = System.Drawing.Color.Transparent;
+            this.btnNationalD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNationalD.FlatAppearance.BorderSize = 0;
+            this.btnNationalD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNationalD.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnNationalD.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNationalD.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnNationalD.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.btnNationalD.IconColor = System.Drawing.Color.Firebrick;
+            this.btnNationalD.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNationalD.IconSize = 30;
+            this.btnNationalD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNationalD.Location = new System.Drawing.Point(0, 0);
+            this.btnNationalD.Name = "btnNationalD";
+            this.btnNationalD.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnNationalD.Rotation = 0D;
+            this.btnNationalD.Size = new System.Drawing.Size(291, 56);
+            this.btnNationalD.TabIndex = 229;
+            this.btnNationalD.Text = "Appication for National ID";
+            this.btnNationalD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNationalD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNationalD.UseVisualStyleBackColor = false;
+            this.btnNationalD.Click += new System.EventHandler(this.btnNationalD_Click);
+            // 
+            // btnNationalIdRecord
+            // 
+            this.btnNationalIdRecord.BackColor = System.Drawing.Color.Transparent;
+            this.btnNationalIdRecord.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnNationalIdRecord.FlatAppearance.BorderSize = 0;
+            this.btnNationalIdRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNationalIdRecord.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnNationalIdRecord.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNationalIdRecord.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnNationalIdRecord.IconChar = FontAwesome.Sharp.IconChar.Wpforms;
+            this.btnNationalIdRecord.IconColor = System.Drawing.Color.Firebrick;
+            this.btnNationalIdRecord.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNationalIdRecord.IconSize = 30;
+            this.btnNationalIdRecord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNationalIdRecord.Location = new System.Drawing.Point(0, 62);
+            this.btnNationalIdRecord.Name = "btnNationalIdRecord";
+            this.btnNationalIdRecord.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnNationalIdRecord.Rotation = 0D;
+            this.btnNationalIdRecord.Size = new System.Drawing.Size(291, 53);
+            this.btnNationalIdRecord.TabIndex = 230;
+            this.btnNationalIdRecord.Text = "National ID Record";
+            this.btnNationalIdRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNationalIdRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNationalIdRecord.UseVisualStyleBackColor = false;
+            this.btnNationalIdRecord.Click += new System.EventHandler(this.btnNationalIdRecord_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.Controls.Add(this.iconButton3);
+            this.panel6.Controls.Add(this.iconButton1);
+            this.panel6.Controls.Add(this.txtRequetMedical);
+            this.panel6.Location = new System.Drawing.Point(601, 12);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(276, 128);
+            this.panel6.TabIndex = 235;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton3.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.ForeColor = System.Drawing.Color.Firebrick;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.PollH;
+            this.iconButton3.IconColor = System.Drawing.Color.Firebrick;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton3.IconSize = 30;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(0, 88);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.iconButton3.Rotation = 0D;
+            this.iconButton3.Size = new System.Drawing.Size(276, 40);
+            this.iconButton3.TabIndex = 232;
+            this.iconButton3.Text = "Request Record";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
             // iconButton1
             // 
             this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconButton1.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.Firebrick;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.PeopleArrows;
-            this.iconButton1.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton1.IconColor = System.Drawing.Color.Firebrick;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 30;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -344,7 +386,7 @@
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.iconButton1.Rotation = 0D;
-            this.iconButton1.Size = new System.Drawing.Size(306, 40);
+            this.iconButton1.Size = new System.Drawing.Size(276, 40);
             this.iconButton1.TabIndex = 227;
             this.iconButton1.Text = "Request Free Eyeglasses";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -352,59 +394,30 @@
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
-            // btnEnroll
+            // txtRequetMedical
             // 
-            this.btnEnroll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
-            this.btnEnroll.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEnroll.FlatAppearance.BorderSize = 0;
-            this.btnEnroll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnroll.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnEnroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnroll.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnEnroll.IconChar = FontAwesome.Sharp.IconChar.StickyNote;
-            this.btnEnroll.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnEnroll.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEnroll.IconSize = 30;
-            this.btnEnroll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEnroll.Location = new System.Drawing.Point(0, 0);
-            this.btnEnroll.Name = "btnEnroll";
-            this.btnEnroll.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnEnroll.Rotation = 0D;
-            this.btnEnroll.Size = new System.Drawing.Size(272, 53);
-            this.btnEnroll.TabIndex = 217;
-            this.btnEnroll.Text = "Membership Registration";
-            this.btnEnroll.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEnroll.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEnroll.UseVisualStyleBackColor = false;
-            this.btnEnroll.Click += new System.EventHandler(this.btnEnroll_Click_1);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnEnroll);
-            this.panel4.Controls.Add(this.iconButton2);
-            this.panel4.Location = new System.Drawing.Point(27, 201);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(272, 108);
-            this.panel4.TabIndex = 233;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btnNationalD);
-            this.panel5.Controls.Add(this.btnNationalIdRecord);
-            this.panel5.Location = new System.Drawing.Point(317, 201);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(292, 115);
-            this.panel5.TabIndex = 234;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.iconButton3);
-            this.panel6.Controls.Add(this.iconButton1);
-            this.panel6.Controls.Add(this.txtRequetMedical);
-            this.panel6.Location = new System.Drawing.Point(615, 201);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(306, 128);
-            this.panel6.TabIndex = 235;
+            this.txtRequetMedical.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtRequetMedical.FlatAppearance.BorderSize = 0;
+            this.txtRequetMedical.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtRequetMedical.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.txtRequetMedical.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRequetMedical.ForeColor = System.Drawing.Color.Firebrick;
+            this.txtRequetMedical.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.txtRequetMedical.IconColor = System.Drawing.Color.Firebrick;
+            this.txtRequetMedical.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.txtRequetMedical.IconSize = 30;
+            this.txtRequetMedical.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtRequetMedical.Location = new System.Drawing.Point(0, 0);
+            this.txtRequetMedical.Name = "txtRequetMedical";
+            this.txtRequetMedical.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.txtRequetMedical.Rotation = 0D;
+            this.txtRequetMedical.Size = new System.Drawing.Size(276, 40);
+            this.txtRequetMedical.TabIndex = 231;
+            this.txtRequetMedical.Text = "Request Free Medical";
+            this.txtRequetMedical.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtRequetMedical.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.txtRequetMedical.UseVisualStyleBackColor = true;
+            this.txtRequetMedical.Click += new System.EventHandler(this.txtRequetMedical_Click);
             // 
             // RegistrarForm
             // 
@@ -421,12 +434,14 @@
             this.Text = "RegistrarForm";
             this.Load += new System.EventHandler(this.RegistrarForm_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -438,8 +453,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconButton btnEnroll;
@@ -455,5 +468,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel9;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using CST.Resources;
 using CST.System_Admin;
+using CST.Volunteer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace CST
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Webcam());
 
         }
     }
