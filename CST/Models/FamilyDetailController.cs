@@ -1,5 +1,8 @@
-﻿using System;
+﻿using CST.Models.Member;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -100,6 +103,44 @@ namespace CST.Models
                                                     f1fn,f1rs,f1age,f1occ,inc,f2fn,f2rs,f2age,f2occ,f2inc, f3fn, f3rs, f3age, f3occ, f3inc, f4fn, f4rs, f4age, f4occ, f4inc,
                                                     f5fn, f5rs, f5age, f5occ, f5inc, sno);
             cs.ExecuteQuery(sql);
+        }
+
+        public async Task<SeniorChildrenDetails> getModel(string sno)
+        {
+            SeniorChildrenDetails seniorChildren = new SeniorChildrenDetails();
+
+            string sql = @"SELECT * FROM `senior_children_details` WHERE sno = @sno";
+
+            List<MySqlParameter> mySqlParameters = new List<MySqlParameter>()
+            {
+                (new MySqlParameter("@sno",sno))
+            };
+
+            
+
+            DbDataReader reader = await cs.RetrieveRecordsAsync(sql, mySqlParameters);
+
+            {
+                seniorChildren.senior_children_id = int.Parse(reader["senior_children_id "].ToString());
+                seniorChildren.sno = reader["sno "].ToString();
+                seniorChildren.childName1 = reader["children1_name"].ToString();
+                seniorChildren.childNO1 = reader["snchildren1_noo"].ToString();
+                seniorChildren.childAdd1 = reader["children1_address"].ToString();
+                seniorChildren.childName2 = reader["children2_name"].ToString();
+                seniorChildren.childNO2 = reader["children2_no"].ToString();
+                seniorChildren.childAdd2 = reader["children2_address"].ToString();
+                seniorChildren.childName3 = reader["children3_name"].ToString();
+                seniorChildren.childNO3 = reader["children3_no"].ToString();
+                seniorChildren.childAdd3 = reader["children3_address"].ToString();
+                seniorChildren.emeName = reader["emergency_name"].ToString();
+                seniorChildren.emeAdd = reader["emergency_address"].ToString();
+                seniorChildren.emeRel = reader["emergency_relation"].ToString();
+                seniorChildren.emeCon = reader["emergency_contact"].ToString();
+            }
+
+            cs.CloseConnection();
+
+            return seniorChildren;
         }
     }
 }
