@@ -496,7 +496,7 @@ namespace CST.Volunteer
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            MessageBox.Show("Succesfully Added Student Details");
+            MessageBox.Show("Succesfully Added Senior Details");
 
             reqattachment rq = new reqattachment();
             rq.Show();

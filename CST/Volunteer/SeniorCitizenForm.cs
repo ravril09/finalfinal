@@ -120,7 +120,7 @@ namespace CST
         {
             MessageBox.Show("Succesfully Added Senior Citizen Details");
 
-            Payment frm = new Payment(txtStudentID.Text.Trim(), txtFirstname.Text.Trim() + " " + txtLastname.Text.Trim());
+            Membership_Fee frm = new Membership_Fee(txtStudentID.Text.Trim(), txtFirstname.Text.Trim() + " " + txtLastname.Text.Trim());
             frm.Show();
 
         }

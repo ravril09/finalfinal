@@ -65,3 +65,6 @@ C:\Users\ravril\Documents\EnrollmentC-master\CST\bin\Release\AForge.Video.xml
 C:\Users\ravril\Documents\EnrollmentC-master\CST\bin\Release\AForge.Video.DirectShow.xml
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.Webcam.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.MembershipReportDiag.resources
+C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.Membership_Fee.resources
+C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.SignatureForm.resources
+C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.ReceiptReport.resources

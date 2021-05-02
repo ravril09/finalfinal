@@ -243,5 +243,20 @@ namespace CST
             Webcam form = new Webcam(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
             form.ShowDialog();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 0)
+                return;
+
+
+            if (clickedBut != "Personal")
+                return;
+
+
+
+            SignatureForm signatureForm = new SignatureForm(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            signatureForm.ShowDialog();
+        }
     }
 }

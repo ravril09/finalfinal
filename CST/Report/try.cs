@@ -311,6 +311,14 @@ namespace CST.Report {
                 return this.DataDefinition.ParameterFields[27];
             }
         }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_signPathParam {
+            get {
+                return this.DataDefinition.ParameterFields[28];
+            }
+        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]

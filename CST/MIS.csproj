@@ -173,6 +173,7 @@
     <Compile Include="Docs\requirementmodel.cs" />
     <Compile Include="LoginPreferences.cs" />
     <Compile Include="Models\FamilyDetailController.cs" />
+    <Compile Include="Models\MembershipfeeController.cs" />
     <Compile Include="Models\Member\ApplicationNationalIDModel.cs" />
     <Compile Include="Models\Member\SeniorBasicDetail.cs" />
     <Compile Include="Models\Member\SeniorChildrenDetails.cs" />
@@ -221,6 +222,18 @@
     </Compile>
     <Compile Include="Report\MembershipReportDiag.Designer.cs">
       <DependentUpon>MembershipReportDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Receipt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Receipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\ReceiptReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReceiptReport.Designer.cs">
+      <DependentUpon>ReceiptReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Report\RecordRequestEyeglasses.cs">
       <SubType>Form</SubType>
@@ -350,6 +363,12 @@
     <Compile Include="Volunteer\editRequestMedical.Designer.cs">
       <DependentUpon>editRequestMedical.cs</DependentUpon>
     </Compile>
+    <Compile Include="Volunteer\Membership_Fee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volunteer\Membership_Fee.Designer.cs">
+      <DependentUpon>Membership_Fee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Volunteer\Payment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -398,6 +417,12 @@
     <Compile Include="Volunteer\SeniorCitizenForm.designer.cs">
       <DependentUpon>SeniorCitizenForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Volunteer\SignatureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volunteer\SignatureForm.Designer.cs">
+      <DependentUpon>SignatureForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Volunteer\Webcam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -419,6 +444,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report\MembershipReportDiag.resx">
       <DependentUpon>MembershipReportDiag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Receipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Receipt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReceiptReport.resx">
+      <DependentUpon>ReceiptReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\RecordRequestEyeglasses.resx">
       <DependentUpon>RecordRequestEyeglasses.cs</DependentUpon>
@@ -490,6 +522,9 @@
     <EmbeddedResource Include="Volunteer\editRequestMedical.resx">
       <DependentUpon>editRequestMedical.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Volunteer\Membership_Fee.resx">
+      <DependentUpon>Membership_Fee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Volunteer\Payment.resx">
       <DependentUpon>Payment.cs</DependentUpon>
     </EmbeddedResource>
@@ -513,6 +548,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Volunteer\SeniorCitizenForm.resx">
       <DependentUpon>SeniorCitizenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Volunteer\SignatureForm.resx">
+      <DependentUpon>SignatureForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Volunteer\Webcam.resx">
       <DependentUpon>Webcam.cs</DependentUpon>
@@ -607,6 +645,7 @@
     <None Include="Resources\download7.jpeg" />
     <None Include="Resources\download.png" />
     <None Include="Resources\download-removebg-preview.png" />
+    <None Include="Resources\download1.png" />
     <Content Include="Resources\icon-backup.png" />
     <Content Include="Resources\icon-database-connected.png" />
     <Content Include="Resources\icon-database-disconnected.png" />

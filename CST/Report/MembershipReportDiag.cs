@@ -51,7 +51,7 @@ namespace CST.Report
             //Basic Param
 
             try_Rpt.SetParameterValue("imgPathParam", seniorBasicDetail.imgPath);
-           
+            try_Rpt.SetParameterValue("signPathParam", seniorBasicDetail.imgPath2);
             try_Rpt.SetParameterValue("fnNameParam", seniorBasicDetail.firstname);
             try_Rpt.SetParameterValue("lnParam", seniorBasicDetail.lastname);
             try_Rpt.SetParameterValue("mnParam", seniorBasicDetail.middlename);

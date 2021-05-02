@@ -106,7 +106,7 @@ namespace CST.Models
                 seniorBasicDetail.religion = reader["religion"].ToString();
                 seniorBasicDetail.address = reader["address"].ToString();
                 seniorBasicDetail.imgPath = reader["imgPath"].ToString();
-
+                seniorBasicDetail.imgPath2 = reader["imgPath2"].ToString();
             }
 
 
@@ -119,6 +119,20 @@ namespace CST.Models
         public async Task updateImgPath(string path,string sno)
         {
             string sql = @"UPDATE senior_basic_detail SET imgPath = @img WHERE sno  = @sno";
+
+            List<MySqlParameter> mySqlParameters = new List<MySqlParameter>()
+            {
+                (new MySqlParameter("@img",path)),
+                (new MySqlParameter("@sno",sno))
+            };
+
+            await cs.ExecuteAsync(sql, mySqlParameters);
+        }
+
+
+        public async Task updateImgPath2(string path, string sno)
+        {
+            string sql = @"UPDATE senior_basic_detail SET imgPath2 = @img WHERE sno  = @sno";
 
             List<MySqlParameter> mySqlParameters = new List<MySqlParameter>()
             {
