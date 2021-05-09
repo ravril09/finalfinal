@@ -13,11 +13,13 @@ namespace CST.Volunteer
 {
     public partial class Membership_Fee : Form
     {
+        PaymentController paymentController = new PaymentController();
         BasicDetailsController basicDetailsController = new BasicDetailsController();
         MembershipfeeController membershipfeeController = new MembershipfeeController();
         AuditTrailController auditTrail = new AuditTrailController();
 
         string sno = "";
+        float monthlyPayment = 0;
 
         public Membership_Fee(string sno, string name)
         {
@@ -32,18 +34,36 @@ namespace CST.Volunteer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            membershipfeeController.addMembershipfee(sno, label44.Text.Trim(), int.Parse(textBox1.Text.Trim()));
+            bool isValidNumber = float.TryParse(textBox1.Text.Trim(), out _);
+
+
+
+            if (!isValidNumber)
+                return;
+
+
+            float payment = float.Parse(textBox1.Text.Trim());
+
+
+            if (monthlyPayment > payment)
+            {
+                MessageBox.Show("Monthly payment is greater than the payment", "validation", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+            membershipfeeController.addMembershipfee(sno, payment);
 
             MessageBox.Show("Successfully Added Payment fee");
-
-            RegistrarRecord registrarRecord = new RegistrarRecord();
-            registrarRecord.Show();
+ 
             this.Hide();
         }
 
-        private void Membership_Fee_Load(object sender, EventArgs e)
+        private async void Membership_Fee_Load(object sender, EventArgs e)
         {
             label44.Hide();
+            monthlyPayment = await paymentController.getPayment(sno);
 
             DateTime my = DateTimeOffset.Now.DateTime.ToLocalTime().ToUniversalTime();
 
@@ -51,6 +71,18 @@ namespace CST.Volunteer
             DateTime mys = DateTimeOffset.Now.UtcDateTime.ToLocalTime();
 
             label44.Text = my.ToString("MM/dd/yyyy  hh:mm:ss tt");
+
+            label5.Text = $"Monthly Payment: {monthlyPayment}";
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

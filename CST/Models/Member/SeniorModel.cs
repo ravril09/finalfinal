@@ -22,6 +22,7 @@ namespace CST.Models.Student
         private static string cn;
         private static string religion;
         private static string nationality;
+        private static string eduAttain;
         private static string addressGlob;
 
         //setter Details
@@ -84,6 +85,12 @@ namespace CST.Models.Student
         {
             nationality = nat;
         }
+
+        public static void setEduAtt(string educa)
+        {
+            eduAttain = educa;
+        }
+
 
         public static void setAddress(string address)
         {
@@ -157,6 +164,11 @@ namespace CST.Models.Student
         public static string getNat()
         {
             return nationality;
+        }
+
+        public static string getEduAtt()
+        {
+            return eduAttain;
         }
 
         public static string getAddress()

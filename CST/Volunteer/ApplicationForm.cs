@@ -586,5 +586,10 @@ namespace CST.Volunteer
         {
 
         }
+
+        private void label54_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

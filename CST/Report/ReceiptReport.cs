@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CST.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,24 @@ namespace CST.Report
 {
     public partial class ReceiptReport : Form
     {
-        public ReceiptReport()
+        // Control
+        BasicDetailsController basicDetailsController = new BasicDetailsController();
+
+        private string sno = "";
+        public ReceiptReport(string sno)
         {
             InitializeComponent();
+            this.sno = sno;
+        }
+
+        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ReceiptReport_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

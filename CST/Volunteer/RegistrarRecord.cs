@@ -95,6 +95,7 @@ namespace CST
                                                                   dataGridView1.SelectedRows[0].Cells[10].Value.ToString(),
                                                                   dataGridView1.SelectedRows[0].Cells[11].Value.ToString(),
                                                                   dataGridView1.SelectedRows[0].Cells[12].Value.ToString(),
+                                                                  dataGridView1.SelectedRows[0].Cells[13].Value.ToString(),
                                                                   dataGridView1.SelectedRows[0].Cells[0].Value.ToString()
                                                                   );
                         frm.ShowDialog();
@@ -257,6 +258,24 @@ namespace CST
 
             SignatureForm signatureForm = new SignatureForm(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
             signatureForm.ShowDialog();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+            if (dataGridView1.SelectedRows.Count == 0)
+                return;
+
+
+            if (clickedBut != "Personal")
+                return;
+
+            //firstname,lastname,middlename
+            string fullname = $"{dataGridView1.SelectedRows[0].Cells[1].Value.ToString()} {dataGridView1.SelectedRows[0].Cells[3].Value.ToString()}  {dataGridView1.SelectedRows[0].Cells[2].Value.ToString()}";
+
+            Membership_Fee form = new Membership_Fee(dataGridView1.SelectedRows[0].Cells[0].Value.ToString(),fullname);
+            form.ShowDialog();
+
         }
     }
 }

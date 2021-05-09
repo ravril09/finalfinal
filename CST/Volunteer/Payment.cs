@@ -51,14 +51,14 @@ namespace CST.Volunteer
 
 
 
-            //RegistrarRecord registrarRecord = new RegistrarRecord();
-            //registrarRecord.Show();
-            //this.Hide();
+            RegistrarRecord registrarRecord = new RegistrarRecord();
+            registrarRecord.Show();
+            this.Hide();
 
             //Webcam frm = new Webcam(sno);
 
             //frm.Show();
-           
+
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)

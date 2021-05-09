@@ -17,7 +17,7 @@ namespace CST.Registrar
         string gender = "";
         string civilstatus = "";
         public editStudentForm(string fn, string ln, string mn, string gen,
-                                int age, string civil, string bd, string pob, string cn, string nat, string rel, string add, string sno )
+                                int age, string civil, string bd, string pob, string cn, string nat, string rel, string EducAt, string add, string sno )
         {
             InitializeComponent();
             txtStudentID.Text = sno;
@@ -29,6 +29,7 @@ namespace CST.Registrar
             txtPOB.Text = pob;
             txtReligion.Text = rel;
             textBox24.Text = cn;
+            txtEdu.Text = EducAt;
             textBox19.Text = age +"";
 
             gender = gen;
@@ -72,7 +73,7 @@ namespace CST.Registrar
             {
                 studentsDetailsController.updateStudDetails(txtFirstname.Text.Trim(), txtLastname.Text.Trim(), txtMiddlename.Text.Trim(), gender,
                                                             int.Parse(textBox19.Text.Trim()), civilstatus, dateTimePicker1.Value.ToShortDateString(), txtPOB.Text.Trim(),
-                                                            textBox24.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), txtAddress.Text.Trim(), txtStudentID.Text.Trim());
+                                                            textBox24.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), txtEdu.Text.Trim() ,txtAddress.Text.Trim(), txtStudentID.Text.Trim());
                 MessageBox.Show("Succesfully Updated Student Personal Info");
                 this.Hide();
             }
@@ -109,6 +110,11 @@ namespace CST.Registrar
         }
 
         private void txtLastname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

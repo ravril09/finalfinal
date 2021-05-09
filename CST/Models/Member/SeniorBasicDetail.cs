@@ -25,5 +25,6 @@ namespace CST.Models.Member
         public string address { get; set; }
         public string imgPath { get; set; }
         public string imgPath2 { get; set; }
+        public int payment { get; set; }
     }
 }

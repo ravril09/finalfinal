@@ -11,15 +11,17 @@ namespace CST.Models
         crudFile cs = new crudFile();
 
         public void addMembershipfee(string sno,
-                                string paymentDate,
-                                int payment
+                                float payment
                                 )
         {
-            string sql = String.Format(@"INSERT INTO `membership_fee`(`sno`, `payment_date`, `Payment`) VALUES ('{0}','{1}','{2}')",
-                                        sno, paymentDate, payment);
+            string sql = String.Format(@"INSERT INTO `membership_fee`(`sno`, `Payment`) VALUES ('{0}',{1})",
+                                        sno, payment);
 
             cs.ExecuteQuery(sql);
 
         }
+
+
+
     }
 }
