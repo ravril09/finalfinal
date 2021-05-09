@@ -266,6 +266,7 @@
     <Compile Include="Resources\smsNotification.Designer.cs">
       <DependentUpon>smsNotification.cs</DependentUpon>
     </Compile>
+    <Compile Include="StaticData.cs" />
     <Compile Include="System Admin\addUserAccounts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,6 +305,7 @@
     <Compile Include="System Admin\UserAccount.Designer.cs">
       <DependentUpon>UserAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\ComboBoxItem.cs" />
     <Compile Include="Volunteer\ApplicationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -315,6 +317,12 @@
     </Compile>
     <Compile Include="Volunteer\ApplicationRecord.Designer.cs">
       <DependentUpon>ApplicationRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Volunteer\Dialog\MonthDiaglog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volunteer\Dialog\MonthDiaglog.Designer.cs">
+      <DependentUpon>MonthDiaglog.cs</DependentUpon>
     </Compile>
     <Compile Include="Volunteer\editFamilyDetails.cs">
       <SubType>Form</SubType>
@@ -504,6 +512,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Volunteer\ApplicationRecord.resx">
       <DependentUpon>ApplicationRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Volunteer\Dialog\MonthDiaglog.resx">
+      <DependentUpon>MonthDiaglog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Volunteer\editFamilyDetails.resx">
       <DependentUpon>editFamilyDetails.cs</DependentUpon>

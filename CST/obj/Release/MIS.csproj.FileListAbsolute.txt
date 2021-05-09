@@ -69,3 +69,4 @@ C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.Membe
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.SignatureForm.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.ReceiptReport.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.PaymentRecord.resources
+C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.Dialog.MonthDiaglog.resources

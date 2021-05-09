@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,24 @@ namespace CST.Models
 
         }
 
+
+        public async Task<int> getLatestNo()
+        {
+            int lastno = 0;
+            string sql = @"SELECT * FROM `membership_fee` ORDER BY `membership_fee`.`ID` DESC LIMIT 1";
+
+            DbDataReader reader = await cs.RetrieveRecordsAsync(sql, null);
+
+            if( await reader.ReadAsync())
+            {
+                lastno = int.Parse(reader["ID"].ToString());
+            }
+
+            cs.CloseConnection();
+
+            return lastno;
+
+        }
 
 
     }

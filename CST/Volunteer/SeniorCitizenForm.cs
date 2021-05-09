@@ -234,6 +234,8 @@ namespace CST
         {
             bool isValid = true;
 
+            isValid = (SeniorModel.getAge() > 50) && isValid;
+
             isValid = !(SeniorModel.getFn() == "") && isValid;
 
             isValid = !(SeniorModel.getLn() == "") && isValid;
@@ -256,6 +258,8 @@ namespace CST
 
             isValid = !(SeniorModel.getAddress() == "") && isValid;
 
+
+       
 
 
             return isValid;
@@ -331,10 +335,12 @@ namespace CST
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             SeniorModel.setBd(dateTimePicker1.Value.ToString("MM/dd/yyyy"));
+            
             int yrNow = DateTime.Now.Year;
             int bdate = dateTimePicker1.Value.Year;
             int age = yrNow - bdate;
             textBox19.Text = age.ToString();
+            SeniorModel.setAge(age);
         }
 
         private void textBox24_TextChanged(object sender, EventArgs e)

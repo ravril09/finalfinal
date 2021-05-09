@@ -148,5 +148,13 @@ namespace  CST
         {
            
         }
+
+        private void iconButton4_Click_1(object sender, EventArgs e)
+        {
+            PaymentRecord payment = new PaymentRecord();
+
+            payment.Show();
+            this.Hide();
+        }
     }
 }

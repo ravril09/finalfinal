@@ -1,4 +1,5 @@
 ﻿using CST.Models;
+using CST.Volunteer.Dialog;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace CST.Volunteer
         BasicDetailsController basicDetailsController = new BasicDetailsController();
         PaymentController paymentController = new PaymentController();
         AuditTrailController auditTrail = new AuditTrailController();
+     
 
         public PaymentRecord()
         {
@@ -35,6 +37,32 @@ namespace CST.Volunteer
         private void button2_Click(object sender, EventArgs e)
         {
             paymentController.fillDataGridDetails(ref dataGridView1);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MonthDiaglog form = new MonthDiaglog();
+            form.ShowDialog();
+          
+            if (form.monthnum == 0)
+                return;
+
+          
+
+            paymentController.fillDataNotPaidInMonth(form.monthnum, form.year, ref dataGridView1);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MonthDiaglog form = new MonthDiaglog();
+            form.ShowDialog();
+
+            if (form.monthnum == 0)
+                return;
+
+
+
+            paymentController.fillDataPaidInMonth(form.monthnum, form.year, ref dataGridView1);
         }
     }
 }

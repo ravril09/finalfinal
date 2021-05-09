@@ -81,12 +81,24 @@ namespace CST.Models
         }
 
 
-        public void fillDataNotPaidInMonth(int month,ref DataGridView dg)
+        public void fillDataNotPaidInMonth(int month,int year,ref DataGridView dg)
         {
-            string sql = String.Format(@"SELECT DISTINCT(senior_basic_detail.sno),CONCAT(senior_basic_detail.firstname,' ',senior_basic_detail.lastname) as 'Member_Name',
-                        membership_fee.payment_date,Payment FROM `membership_fee`
+            string sql = String.Format(@"SELECT DISTINCT(senior_basic_detail.sno),CONCAT(senior_basic_detail.firstname,' ',senior_basic_detail.lastname) as 'Member_Name' 
+						FROM membership_fee
                         RIGHT JOIN senior_basic_detail ON membership_fee.sno = senior_basic_detail.sno
-                        WHERE senior_basic_detail.sno NOT IN (SELECT sno FROM membership_fee WHERE MONTH(payment_date) = {0}) ", month);
+                        WHERE senior_basic_detail.sno NOT IN (SELECT sno FROM membership_fee WHERE MONTH(payment_date) = {0} 
+                        AND YEAR(payment_date) = {1}) ", month,year);
+
+            cs.FillDataGrid(sql, ref dg);
+        }
+
+        public void fillDataPaidInMonth(int month, int year, ref DataGridView dg)
+        {
+            string sql = String.Format(@"SELECT DISTINCT(membership_fee.sno),CONCAT(senior_basic_detail.firstname,' ',senior_basic_detail.lastname) as 'Member_Name',
+                        membership_fee.payment_date,Payment FROM `membership_fee`
+                        INNER JOIN senior_basic_detail ON membership_fee.sno = senior_basic_detail.sno
+                         WHERE  MONTH(payment_date) = {0}
+                        AND YEAR(payment_date) = {1} ", month, year);
 
             cs.FillDataGrid(sql, ref dg);
         }

@@ -1,4 +1,5 @@
 ﻿using CST.Models;
+using CST.Report;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace CST.Volunteer
 
         string sno = "";
         float monthlyPayment = 0;
+        string name = "";
 
         public Membership_Fee(string sno, string name)
         {
@@ -30,9 +32,10 @@ namespace CST.Volunteer
             label1.Text = label1.Text + " \t" + sno;
 
             this.sno = sno;
+            this.name = name;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             bool isValidNumber = float.TryParse(textBox1.Text.Trim(), out _);
 
@@ -56,7 +59,17 @@ namespace CST.Volunteer
             membershipfeeController.addMembershipfee(sno, payment);
 
             MessageBox.Show("Successfully Added Payment fee");
- 
+
+            Receipt rec = new Receipt();
+
+            rec.SetParameterValue("payername", name);
+            rec.SetParameterValue("totalAmt", payment);
+            int no = await membershipfeeController.getLatestNo();
+            rec.SetParameterValue("noParam", no);
+
+
+            rec.PrintToPrinter(1, false, 0, 0);
+
             this.Hide();
         }
 
