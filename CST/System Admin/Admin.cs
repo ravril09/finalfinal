@@ -12,6 +12,7 @@ using CST.Models;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
 using CST.System_Admin;
+using CST.Volunteer;
 
 namespace CST {  
     public partial class Admin : Form
@@ -223,6 +224,7 @@ namespace CST {
         private void btnReport_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new PaymentRecord());
         }
 
         private void iconButton1_Click(object sender, EventArgs e)

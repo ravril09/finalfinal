@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignatureForm));
             this.pix1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnupload = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pbClose = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pix1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             this.SuspendLayout();
             // 
             // pix1
@@ -79,11 +82,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pbClose
+            // 
+            this.pbClose.BackColor = System.Drawing.Color.Transparent;
+            this.pbClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbClose.BackgroundImage")));
+            this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbClose.Location = new System.Drawing.Point(433, 3);
+            this.pbClose.Name = "pbClose";
+            this.pbClose.Size = new System.Drawing.Size(36, 33);
+            this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbClose.TabIndex = 254;
+            this.pbClose.TabStop = false;
+            this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
+            // 
             // SignatureForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(477, 248);
+            this.Controls.Add(this.pbClose);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnupload);
             this.Controls.Add(this.label1);
@@ -93,6 +111,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignatureForm";
             ((System.ComponentModel.ISupportInitialize)(this.pix1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,5 +123,6 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Button btnupload;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pbClose;
     }
 }

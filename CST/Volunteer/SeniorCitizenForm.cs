@@ -234,7 +234,7 @@ namespace CST
         {
             bool isValid = true;
 
-            isValid = (SeniorModel.getAge() > 50) && isValid;
+            isValid = (SeniorModel.getAge() > 60) && isValid;
 
             isValid = !(SeniorModel.getFn() == "") && isValid;
 
@@ -419,6 +419,7 @@ namespace CST
                 else
                 {
                     e.Cancel = true;
+                    MessageBox.Show("Indicate if you are 60 and above", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     MessageBox.Show("Please Complete Information for the Personal Details", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     errorHandlingIsEmpty(ref txtAddress, "Enter Address");
                     errorHandlingIsEmpty(ref txtLastname, "Enter Lastname");

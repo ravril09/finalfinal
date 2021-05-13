@@ -59,7 +59,12 @@ namespace CST.Volunteer
                 pix1.Image = img;
             }
       
-        }                 
+        }
+
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
 

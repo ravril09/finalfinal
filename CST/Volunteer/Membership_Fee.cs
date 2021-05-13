@@ -18,7 +18,7 @@ namespace CST.Volunteer
         BasicDetailsController basicDetailsController = new BasicDetailsController();
         MembershipfeeController membershipfeeController = new MembershipfeeController();
         AuditTrailController auditTrail = new AuditTrailController();
-
+      
         string sno = "";
         float monthlyPayment = 0;
         string name = "";
@@ -96,6 +96,11 @@ namespace CST.Volunteer
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

@@ -57,11 +57,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Firebrick;
             this.label7.Location = new System.Drawing.Point(14, 297);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 22);
+            this.label7.Size = new System.Drawing.Size(108, 24);
             this.label7.TabIndex = 173;
             this.label7.Text = "Date & Time";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -122,10 +122,10 @@
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
             this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHome.Image = global::CST.Properties.Resources.download_removebg_preview;
-            this.btnHome.Location = new System.Drawing.Point(5, 3);
+            this.btnHome.Location = new System.Drawing.Point(11, 6);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(236, 124);
-            this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnHome.Size = new System.Drawing.Size(227, 121);
+            this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 184;
             this.btnHome.TabStop = false;
             this.btnHome.Click += new System.EventHandler(this.pbLogo_Click);
@@ -166,7 +166,7 @@
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton1.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton1.ForeColor = System.Drawing.Color.Firebrick;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
             this.iconButton1.IconColor = System.Drawing.Color.Firebrick;
@@ -192,7 +192,7 @@
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnLogout.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.Firebrick;
             this.btnLogout.IconChar = FontAwesome.Sharp.IconChar.CommentDots;
             this.btnLogout.IconColor = System.Drawing.Color.Firebrick;
@@ -218,7 +218,7 @@
             this.btnReport.FlatAppearance.BorderSize = 0;
             this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReport.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnReport.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.ForeColor = System.Drawing.Color.Firebrick;
             this.btnReport.IconChar = FontAwesome.Sharp.IconChar.Tasks;
             this.btnReport.IconColor = System.Drawing.Color.Firebrick;
@@ -244,7 +244,7 @@
             this.btnBio.FlatAppearance.BorderSize = 0;
             this.btnBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBio.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnBio.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBio.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBio.ForeColor = System.Drawing.Color.Firebrick;
             this.btnBio.IconChar = FontAwesome.Sharp.IconChar.CalendarAlt;
             this.btnBio.IconColor = System.Drawing.Color.Firebrick;
@@ -270,7 +270,7 @@
             this.BtnAudit.FlatAppearance.BorderSize = 0;
             this.BtnAudit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAudit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.BtnAudit.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAudit.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAudit.ForeColor = System.Drawing.Color.Firebrick;
             this.BtnAudit.IconChar = FontAwesome.Sharp.IconChar.Perbyte;
             this.BtnAudit.IconColor = System.Drawing.Color.Firebrick;
@@ -296,7 +296,7 @@
             this.btnUsercontrol.FlatAppearance.BorderSize = 0;
             this.btnUsercontrol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsercontrol.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnUsercontrol.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsercontrol.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsercontrol.ForeColor = System.Drawing.Color.Firebrick;
             this.btnUsercontrol.IconChar = FontAwesome.Sharp.IconChar.LaptopHouse;
             this.btnUsercontrol.IconColor = System.Drawing.Color.Firebrick;

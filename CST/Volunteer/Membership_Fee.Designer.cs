@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Membership_Fee));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -37,7 +38,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.pbClose = new System.Windows.Forms.PictureBox();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,7 +87,7 @@
             this.label44.BackColor = System.Drawing.Color.Transparent;
             this.label44.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.Color.Black;
-            this.label44.Location = new System.Drawing.Point(12, 28);
+            this.label44.Location = new System.Drawing.Point(27, 244);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(84, 19);
             this.label44.TabIndex = 264;
@@ -119,7 +122,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Controls.Add(this.label3);
-            this.panel7.Location = new System.Drawing.Point(102, 10);
+            this.panel7.Location = new System.Drawing.Point(60, 12);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(342, 63);
             this.panel7.TabIndex = 267;
@@ -137,11 +140,26 @@
             this.label3.Text = "MONTHLY FEE";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // pbClose
+            // 
+            this.pbClose.BackColor = System.Drawing.Color.Transparent;
+            this.pbClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbClose.BackgroundImage")));
+            this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbClose.Location = new System.Drawing.Point(418, 7);
+            this.pbClose.Name = "pbClose";
+            this.pbClose.Size = new System.Drawing.Size(36, 33);
+            this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbClose.TabIndex = 268;
+            this.pbClose.TabStop = false;
+            this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
+            // 
             // Membership_Fee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(459, 304);
+            this.Controls.Add(this.pbClose);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
@@ -157,6 +175,7 @@
             this.Load += new System.EventHandler(this.Membership_Fee_Load);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,5 +192,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pbClose;
     }
 }

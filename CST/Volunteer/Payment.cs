@@ -10,11 +10,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CST.Models.Student;
 using CST.Volunteer;
+using CST.Report;
 
 namespace CST.Volunteer
 {
     public partial class Payment : Form
     {
+        MembershipfeeController membershipfeeController = new MembershipfeeController();
         BasicDetailsController basicDetailsController = new BasicDetailsController();
         PaymentController paymentController = new PaymentController();
         AuditTrailController auditTrail = new AuditTrailController();
@@ -22,6 +24,8 @@ namespace CST.Volunteer
 
         bool isValid = false;
         string sno = "";
+        string name = "";
+        
         public Payment(string sno , string name)
         {
             InitializeComponent();
@@ -43,12 +47,27 @@ namespace CST.Volunteer
            
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private async void btnSave_Click(object sender, EventArgs e)
         {
             paymentController.addPayment(sno, int.Parse(txtOSCA.Text.Trim()), int.Parse(txtGSIS.Text.Trim()));
 
+            float payment = float.Parse(txtGSIS.Text.Trim());
+
             MessageBox.Show("Successfully Added Payment fee");
 
+            //membershipfeeController.addMembershipfee(sno, payment);
+
+            //Receipt rec = new Receipt();
+
+            //rec.SetParameterValue("payername", name);
+            //rec.SetParameterValue("totalAmt", payment);
+            //int no = await membershipfeeController.getLatestNo();
+            //rec.SetParameterValue("noParam", no);
+
+
+            //rec.PrintToPrinter(1, false, 0, 0);
+
+            //this.Hide();
 
 
             RegistrarRecord registrarRecord = new RegistrarRecord();

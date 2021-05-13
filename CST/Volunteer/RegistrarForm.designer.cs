@@ -51,7 +51,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnEnroll = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -203,7 +202,6 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Transparent;
-            this.panel9.Controls.Add(this.iconButton4);
             this.panel9.Controls.Add(this.panel5);
             this.panel9.Controls.Add(this.panel6);
             this.panel9.Controls.Add(this.panel4);
@@ -211,6 +209,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(910, 197);
             this.panel9.TabIndex = 236;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // panel5
             // 
@@ -421,27 +420,6 @@
             this.iconButton2.UseVisualStyleBackColor = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
-            // iconButton4
-            // 
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.Color.Firebrick;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Paste;
-            this.iconButton4.IconColor = System.Drawing.Color.Firebrick;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 48;
-            this.iconButton4.Location = new System.Drawing.Point(16, 136);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Rotation = 0D;
-            this.iconButton4.Size = new System.Drawing.Size(270, 48);
-            this.iconButton4.TabIndex = 236;
-            this.iconButton4.Text = "Payment Record";
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseVisualStyleBackColor = true;
-            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click_1);
-            // 
             // RegistrarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -494,6 +472,5 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel9;
-        private FontAwesome.Sharp.IconButton iconButton4;
     }
 }

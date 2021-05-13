@@ -49,8 +49,8 @@ namespace CST.System_Admin
         {
             string number = txtPhoneNumber.Text.Trim();
             string message = txtMessage.Text.Trim();
-            string api = txtAPI.Text.Trim();
-            string password = txtSender.Text.Trim();
+            string api = "TR-AFRIL915016_RFHGQ";
+            string password = "b{$&u$x}y9";
 
             dynamic result = itexmo(number, message, api, password);
             if (result == "0")

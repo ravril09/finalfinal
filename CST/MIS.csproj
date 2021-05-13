@@ -212,6 +212,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Report\RequestMedicalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RequestMedicalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Report\memberReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -293,6 +299,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System Admin\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System Admin\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="System Admin\SmsNotification.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -453,6 +465,10 @@
     <EmbeddedResource Include="IPConfigFormcs.resx">
       <DependentUpon>IPConfigFormcs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\RequestMedicalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RequestMedicalReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\memberReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>memberReport.cs</LastGenOutput>
@@ -500,6 +516,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System Admin\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="System Admin\SmsNotification.resx">
       <DependentUpon>SmsNotification.cs</DependentUpon>
@@ -694,7 +713,9 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>

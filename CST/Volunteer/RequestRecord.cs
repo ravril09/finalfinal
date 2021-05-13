@@ -16,6 +16,7 @@ namespace CST.Volunteer
     {
 
         RequestEyeglassController requesteyecontroller = new RequestEyeglassController();
+        RequestMedicalController requestMedicalController = new RequestMedicalController();
         RequestMedicalController requestmedicalcontroller = new RequestMedicalController();
         AuditTrailControl auditTrail = new AuditTrailControl();
         string clickedBut = "";
@@ -144,6 +145,22 @@ namespace CST.Volunteer
             RecordRequestEyeglasses rep = new RecordRequestEyeglasses(ds);
             rep.ShowDialog();
 
+        }
+
+        private async void button10_ClickAsync(object sender, EventArgs e)
+        {
+            //DataSet ds = new DataSet();
+            //DataTable dt = new DataTable();
+
+            //ds = await requestMedicalController.getMedicalRecord();
+
+            //ds.Tables.Add(dt);
+            //dataGridView1.DataSource = null;
+            //dataGridView1.DataSource = ds.Tables[0];
+            //dataGridView1.AutoResizeColumns();
+            //ds.WriteXmlSchema("C:\\xmlrep PrintMedicalRecord.xml");
+            //RecordRequestEyeglasses rep = new RecordRequestEyeglasses(ds);
+            //rep.ShowDialog();
         }
     }
 }
