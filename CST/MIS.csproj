@@ -299,6 +299,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System Admin\Biometric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System Admin\Biometric.Designer.cs">
+      <DependentUpon>Biometric.cs</DependentUpon>
+    </Compile>
     <Compile Include="System Admin\Report.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -517,6 +523,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="System Admin\Biometric.resx">
+      <DependentUpon>Biometric.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="System Admin\Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
@@ -686,6 +695,7 @@
     <None Include="Resources\download.png" />
     <None Include="Resources\download-removebg-preview.png" />
     <None Include="Resources\download1.png" />
+    <None Include="Resources\download2.png" />
     <Content Include="Resources\icon-backup.png" />
     <Content Include="Resources\icon-database-connected.png" />
     <Content Include="Resources\icon-database-disconnected.png" />

@@ -71,3 +71,4 @@ C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.ReceiptR
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.PaymentRecord.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.Dialog.MonthDiaglog.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.System_Admin.Report.resources
+C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.System_Admin.Biometric.resources

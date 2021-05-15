@@ -72,11 +72,11 @@ namespace CST.Volunteer
 
         private void BtnReset_Click(object sender, EventArgs e)
         {
-            //videoSource.Stop();
-            //pictureBox1.Image = null;
-            //pictureBox1.Invalidate();
-            //pictureBox2.Image = null;
-            //pictureBox2.Invalidate();
+            videoSource.Stop();
+            pictureBox1.Image = null;
+            pictureBox1.Invalidate();
+            pictureBox2.Image = null;
+            pictureBox2.Invalidate();
         }
 
         private async void button3_Click(object sender, EventArgs e)
@@ -110,6 +110,11 @@ namespace CST.Volunteer
         private void button4_Click(object sender, EventArgs e)
         {
             pictureBox2.Image = (Bitmap)pictureBox1.Image.Clone();
+        }
+
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

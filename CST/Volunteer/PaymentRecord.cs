@@ -64,5 +64,10 @@ namespace CST.Volunteer
 
             paymentController.fillDataPaidInMonth(form.monthnum, form.year, ref dataGridView1);
         }
+
+        private void PaymentRecord_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -55,19 +55,19 @@ namespace CST.Volunteer
 
             MessageBox.Show("Successfully Added Payment fee");
 
-            //membershipfeeController.addMembershipfee(sno, payment);
+            membershipfeeController.addMembershipfee(sno, payment);
 
-            //Receipt rec = new Receipt();
+            Receipt rec = new Receipt();
 
-            //rec.SetParameterValue("payername", name);
-            //rec.SetParameterValue("totalAmt", payment);
-            //int no = await membershipfeeController.getLatestNo();
-            //rec.SetParameterValue("noParam", no);
+            rec.SetParameterValue("payername", name);
+            rec.SetParameterValue("totalAmt", payment);
+            int no = await membershipfeeController.getLatestNo();
+            rec.SetParameterValue("noParam", no);
 
 
-            //rec.PrintToPrinter(1, false, 0, 0);
+            rec.PrintToPrinter(1, false, 0, 0);
 
-            //this.Hide();
+            this.Hide();
 
 
             RegistrarRecord registrarRecord = new RegistrarRecord();

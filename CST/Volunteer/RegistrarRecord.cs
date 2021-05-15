@@ -212,7 +212,7 @@ namespace CST
 
             RecordsRep rep = new RecordsRep(ds);
             rep.ShowDialog();
-
+        
         }
 
         private void button7_Click(object sender, EventArgs e)

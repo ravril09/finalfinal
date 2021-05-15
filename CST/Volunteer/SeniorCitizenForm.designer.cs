@@ -142,6 +142,8 @@
             this.label50 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -314,7 +316,7 @@
             this.txtTin.Location = new System.Drawing.Point(354, 69);
             this.txtTin.Name = "txtTin";
             this.txtTin.Size = new System.Drawing.Size(312, 32);
-            this.txtTin.TabIndex = 263;
+            this.txtTin.TabIndex = 2;
             this.txtTin.TextChanged += new System.EventHandler(this.txtTin_TextChanged);
             // 
             // txtOSCA
@@ -325,7 +327,7 @@
             this.txtOSCA.Location = new System.Drawing.Point(25, 69);
             this.txtOSCA.Name = "txtOSCA";
             this.txtOSCA.Size = new System.Drawing.Size(323, 32);
-            this.txtOSCA.TabIndex = 262;
+            this.txtOSCA.TabIndex = 1;
             this.txtOSCA.TextChanged += new System.EventHandler(this.txtOSCA_TextChanged);
             // 
             // label61
@@ -348,7 +350,7 @@
             this.txtSSS.Location = new System.Drawing.Point(677, 134);
             this.txtSSS.Name = "txtSSS";
             this.txtSSS.Size = new System.Drawing.Size(315, 32);
-            this.txtSSS.TabIndex = 260;
+            this.txtSSS.TabIndex = 5;
             this.txtSSS.TextChanged += new System.EventHandler(this.txtSSS_TextChanged);
             // 
             // label62
@@ -384,7 +386,7 @@
             this.txtGSIS.Location = new System.Drawing.Point(25, 134);
             this.txtGSIS.Name = "txtGSIS";
             this.txtGSIS.Size = new System.Drawing.Size(323, 32);
-            this.txtGSIS.TabIndex = 257;
+            this.txtGSIS.TabIndex = 4;
             this.txtGSIS.TextChanged += new System.EventHandler(this.txtGSIS_TextChanged);
             // 
             // label48
@@ -408,7 +410,7 @@
             this.txtPhilHealth.Location = new System.Drawing.Point(677, 69);
             this.txtPhilHealth.Name = "txtPhilHealth";
             this.txtPhilHealth.Size = new System.Drawing.Size(316, 32);
-            this.txtPhilHealth.TabIndex = 255;
+            this.txtPhilHealth.TabIndex = 3;
             this.txtPhilHealth.TextChanged += new System.EventHandler(this.txtPhilHealth_TextChanged);
             // 
             // label46
@@ -603,7 +605,7 @@
             this.txtC3Mobile.MaxLength = 11;
             this.txtC3Mobile.Name = "txtC3Mobile";
             this.txtC3Mobile.Size = new System.Drawing.Size(126, 32);
-            this.txtC3Mobile.TabIndex = 260;
+            this.txtC3Mobile.TabIndex = 8;
             this.txtC3Mobile.TextChanged += new System.EventHandler(this.txtC3Mobile_TextChanged);
             // 
             // txtC3Address
@@ -614,7 +616,7 @@
             this.txtC3Address.Location = new System.Drawing.Point(517, 236);
             this.txtC3Address.Name = "txtC3Address";
             this.txtC3Address.Size = new System.Drawing.Size(476, 32);
-            this.txtC3Address.TabIndex = 259;
+            this.txtC3Address.TabIndex = 9;
             this.txtC3Address.TextChanged += new System.EventHandler(this.txtC3Address_TextChanged);
             // 
             // label16
@@ -650,7 +652,7 @@
             this.txtC3Fullname.Location = new System.Drawing.Point(13, 236);
             this.txtC3Fullname.Name = "txtC3Fullname";
             this.txtC3Fullname.Size = new System.Drawing.Size(352, 32);
-            this.txtC3Fullname.TabIndex = 258;
+            this.txtC3Fullname.TabIndex = 7;
             this.txtC3Fullname.TextChanged += new System.EventHandler(this.txtC3Fullname_TextChanged);
             // 
             // label18
@@ -687,7 +689,7 @@
             this.txtERelation.MaxLength = 11;
             this.txtERelation.Name = "txtERelation";
             this.txtERelation.Size = new System.Drawing.Size(157, 32);
-            this.txtERelation.TabIndex = 185;
+            this.txtERelation.TabIndex = 12;
             this.txtERelation.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
             // 
             // label42
@@ -711,7 +713,7 @@
             this.txtEContactNo.MaxLength = 11;
             this.txtEContactNo.Name = "txtEContactNo";
             this.txtEContactNo.Size = new System.Drawing.Size(155, 32);
-            this.txtEContactNo.TabIndex = 183;
+            this.txtEContactNo.TabIndex = 13;
             this.txtEContactNo.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
             this.txtEContactNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox15_KeyPress);
             // 
@@ -735,7 +737,7 @@
             this.txtEAddress.Location = new System.Drawing.Point(263, 352);
             this.txtEAddress.Name = "txtEAddress";
             this.txtEAddress.Size = new System.Drawing.Size(366, 32);
-            this.txtEAddress.TabIndex = 181;
+            this.txtEAddress.TabIndex = 11;
             this.txtEAddress.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
             // 
             // label40
@@ -758,7 +760,7 @@
             this.txtEfullName.Location = new System.Drawing.Point(13, 351);
             this.txtEfullName.Name = "txtEfullName";
             this.txtEfullName.Size = new System.Drawing.Size(224, 32);
-            this.txtEfullName.TabIndex = 180;
+            this.txtEfullName.TabIndex = 10;
             this.txtEfullName.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
             // label39
@@ -794,7 +796,7 @@
             this.txtC2Mobile.MaxLength = 11;
             this.txtC2Mobile.Name = "txtC2Mobile";
             this.txtC2Mobile.Size = new System.Drawing.Size(126, 32);
-            this.txtC2Mobile.TabIndex = 166;
+            this.txtC2Mobile.TabIndex = 5;
             this.txtC2Mobile.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             this.txtC2Mobile.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
@@ -806,7 +808,7 @@
             this.txtC2Address.Location = new System.Drawing.Point(517, 145);
             this.txtC2Address.Name = "txtC2Address";
             this.txtC2Address.Size = new System.Drawing.Size(476, 32);
-            this.txtC2Address.TabIndex = 165;
+            this.txtC2Address.TabIndex = 6;
             this.txtC2Address.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label33
@@ -842,7 +844,7 @@
             this.txtC2Fullname.Location = new System.Drawing.Point(14, 146);
             this.txtC2Fullname.Name = "txtC2Fullname";
             this.txtC2Fullname.Size = new System.Drawing.Size(352, 32);
-            this.txtC2Fullname.TabIndex = 162;
+            this.txtC2Fullname.TabIndex = 4;
             this.txtC2Fullname.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // label37
@@ -892,7 +894,7 @@
             this.txtC1Mobile.MaxLength = 11;
             this.txtC1Mobile.Name = "txtC1Mobile";
             this.txtC1Mobile.Size = new System.Drawing.Size(126, 32);
-            this.txtC1Mobile.TabIndex = 148;
+            this.txtC1Mobile.TabIndex = 2;
             this.txtC1Mobile.TextChanged += new System.EventHandler(this.txtFMobile_TextChanged);
             this.txtC1Mobile.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFMobile_KeyPress);
             // 
@@ -904,7 +906,7 @@
             this.txtC1Address.Location = new System.Drawing.Point(517, 64);
             this.txtC1Address.Name = "txtC1Address";
             this.txtC1Address.Size = new System.Drawing.Size(476, 32);
-            this.txtC1Address.TabIndex = 147;
+            this.txtC1Address.TabIndex = 3;
             this.txtC1Address.TextChanged += new System.EventHandler(this.txtFOccupation_TextChanged);
             // 
             // label19
@@ -940,7 +942,7 @@
             this.txtC1Fullname.Location = new System.Drawing.Point(14, 65);
             this.txtC1Fullname.Name = "txtC1Fullname";
             this.txtC1Fullname.Size = new System.Drawing.Size(356, 32);
-            this.txtC1Fullname.TabIndex = 144;
+            this.txtC1Fullname.TabIndex = 1;
             this.txtC1Fullname.TextChanged += new System.EventHandler(this.txtFLast_TextChanged);
             // 
             // label27
@@ -1043,7 +1045,7 @@
             this.textBox1.Location = new System.Drawing.Point(18, 361);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(418, 32);
-            this.textBox1.TabIndex = 254;
+            this.textBox1.TabIndex = 11;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label31
@@ -1081,7 +1083,7 @@
             this.groupBox10.Location = new System.Drawing.Point(650, 183);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(329, 65);
-            this.groupBox10.TabIndex = 251;
+            this.groupBox10.TabIndex = 7;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Civil Status";
             this.groupBox10.Enter += new System.EventHandler(this.groupBox10_Enter);
@@ -1172,7 +1174,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(271, 210);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(235, 32);
-            this.dateTimePicker1.TabIndex = 164;
+            this.dateTimePicker1.TabIndex = 6;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // textBox19
@@ -1210,7 +1212,7 @@
             this.txtContact.MaxLength = 15;
             this.txtContact.Name = "txtContact";
             this.txtContact.Size = new System.Drawing.Size(291, 32);
-            this.txtContact.TabIndex = 160;
+            this.txtContact.TabIndex = 4;
             this.txtContact.TextChanged += new System.EventHandler(this.textBox24_TextChanged);
             this.txtContact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox24_KeyPress);
             // 
@@ -1234,7 +1236,7 @@
             this.groupBox2.Location = new System.Drawing.Point(18, 184);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(225, 72);
-            this.groupBox2.TabIndex = 146;
+            this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Gender";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
@@ -1294,7 +1296,7 @@
             this.txtAddress.Location = new System.Drawing.Point(467, 361);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(499, 32);
-            this.txtAddress.TabIndex = 9;
+            this.txtAddress.TabIndex = 12;
             this.txtAddress.TextChanged += new System.EventHandler(this.txtAddress_TextChanged);
             // 
             // txtMiddlename
@@ -1388,7 +1390,7 @@
             this.txtReligion.Location = new System.Drawing.Point(306, 293);
             this.txtReligion.Name = "txtReligion";
             this.txtReligion.Size = new System.Drawing.Size(349, 32);
-            this.txtReligion.TabIndex = 6;
+            this.txtReligion.TabIndex = 9;
             this.txtReligion.TextChanged += new System.EventHandler(this.txtReligion_TextChanged);
             // 
             // label3
@@ -1435,7 +1437,7 @@
             this.txtPOB.Location = new System.Drawing.Point(673, 293);
             this.txtPOB.Name = "txtPOB";
             this.txtPOB.Size = new System.Drawing.Size(291, 32);
-            this.txtPOB.TabIndex = 7;
+            this.txtPOB.TabIndex = 10;
             this.txtPOB.TextChanged += new System.EventHandler(this.txtPOB_TextChanged);
             // 
             // txtNationality
@@ -1585,6 +1587,8 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.HotTrack = true;
             this.tabControl1.Location = new System.Drawing.Point(16, 51);
@@ -1595,6 +1599,24 @@
             this.tabControl1.TabIndex = 234;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             this.tabControl1.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabControl1_Selecting);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 33);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1020, 444);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Photo";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 33);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(1020, 444);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Finger Print";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // StudentForm
             // 
@@ -1752,5 +1774,7 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
     }
 }

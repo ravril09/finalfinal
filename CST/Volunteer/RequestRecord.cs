@@ -149,18 +149,18 @@ namespace CST.Volunteer
 
         private async void button10_ClickAsync(object sender, EventArgs e)
         {
-            //DataSet ds = new DataSet();
-            //DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
 
             //ds = await requestMedicalController.getMedicalRecord();
 
-            //ds.Tables.Add(dt);
-            //dataGridView1.DataSource = null;
-            //dataGridView1.DataSource = ds.Tables[0];
-            //dataGridView1.AutoResizeColumns();
-            //ds.WriteXmlSchema("C:\\xmlrep PrintMedicalRecord.xml");
-            //RecordRequestEyeglasses rep = new RecordRequestEyeglasses(ds);
-            //rep.ShowDialog();
+            ds.Tables.Add(dt);
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = ds.Tables[0];
+            dataGridView1.AutoResizeColumns();
+            ds.WriteXmlSchema("C:\\xmlrep PrintEyeglasslRecord.xml");
+            RecordRequestEyeglasses rep = new RecordRequestEyeglasses(ds);
+            rep.ShowDialog();
         }
     }
 }

@@ -57,7 +57,7 @@
             this.groupBox4.Controls.Add(this.label21);
             this.groupBox4.Controls.Add(this.label59);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(32, 167);
+            this.groupBox4.Location = new System.Drawing.Point(40, 118);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(444, 209);
             this.groupBox4.TabIndex = 244;
@@ -72,7 +72,7 @@
             this.txtOSCA.Location = new System.Drawing.Point(27, 83);
             this.txtOSCA.Name = "txtOSCA";
             this.txtOSCA.Size = new System.Drawing.Size(323, 26);
-            this.txtOSCA.TabIndex = 262;
+            this.txtOSCA.TabIndex = 1;
             // 
             // label47
             // 
@@ -166,7 +166,7 @@
             this.label44.BackColor = System.Drawing.Color.Transparent;
             this.label44.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.Color.Black;
-            this.label44.Location = new System.Drawing.Point(12, 394);
+            this.label44.Location = new System.Drawing.Point(12, 356);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(84, 19);
             this.label44.TabIndex = 263;
@@ -180,7 +180,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSave.Location = new System.Drawing.Point(173, 382);
+            this.btnSave.Location = new System.Drawing.Point(176, 344);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(155, 40);
             this.btnSave.TabIndex = 245;
@@ -208,7 +208,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(35, 107);
+            this.label2.Location = new System.Drawing.Point(35, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 25);
             this.label2.TabIndex = 265;
@@ -225,7 +225,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CST.Properties.Resources.cool_white_background_free_download_desktop_white_background_hd1;
-            this.ClientSize = new System.Drawing.Size(516, 433);
+            this.ClientSize = new System.Drawing.Size(506, 400);
             this.Controls.Add(this.label44);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
