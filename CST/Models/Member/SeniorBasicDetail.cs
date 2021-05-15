@@ -26,5 +26,13 @@ namespace CST.Models.Member
         public string imgPath { get; set; }
         public string imgPath2 { get; set; }
         public int payment { get; set; }
+
+        public string fullName
+        {
+            get
+            {
+                return $"{firstname} {middlename} {lastname}";
+            }
+        }
     }
 }

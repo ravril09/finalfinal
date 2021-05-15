@@ -41,6 +41,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pix1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pix1)).BeginInit();
             this.SuspendLayout();
@@ -196,11 +198,35 @@
             this.pix1.TabIndex = 224;
             this.pix1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(672, 381);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 225;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label11.Location = new System.Drawing.Point(39, 55);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(60, 24);
+            this.label11.TabIndex = 226;
+            this.label11.Text = "SNO:";
+            // 
             // Biometric
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 416);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pix1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
@@ -216,6 +242,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Biometric";
             this.Text = "Biometric";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Biometric_FormClosing);
+            this.Load += new System.EventHandler(this.Biometric_Load);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pix1)).EndInit();
             this.ResumeLayout(false);
@@ -238,5 +266,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pix1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label11;
     }
 }

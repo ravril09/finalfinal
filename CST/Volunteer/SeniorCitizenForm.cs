@@ -1,29 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using System.Windows.Forms;
 using System.Threading;
 using CST.Models;
 using CST.Models.Student;
 using CST.Volunteer;
+using System.Drawing;
+using ZKFPEngXControl;
 
 namespace CST
 {
     public partial class StudentForm : Form
     {
+        ZKFPEngX fp = new ZKFPEngX();
         public static string SetValueForText1 = "";
+       
 
+        FpController fpController = new FpController();
         BasicDetailsController basicdetailController = new BasicDetailsController();
         ChildrenDetailsController studFam = new ChildrenDetailsController();
         IDDetailsController studHis = new IDDetailsController();
         AuditTrailControl auditTrail = new AuditTrailControl();
         // StudentEnrolledController studentEnrolledController = new StudentEnrolledController();
+
+
+        string fpTemp = "";
 
         bool inValid2 = false;
         int currentTab = 0;
@@ -57,6 +60,19 @@ namespace CST
 
             SeniorModel.setBd(dateTimePicker1.Value.ToString().Split()[0]);
 
+            int i = fp.InitEngine();
+
+            fp.SensorIndex = 0;
+            fp.OnImageReceived += new IZKFPEngXEvents_OnImageReceivedEventHandler(fp_OnImageReceived);
+        }
+
+        private void fp_OnImageReceived(ref bool AImageValid)
+        {
+            object imgdata = new object();
+            bool b = fp.GetFingerImage(ref imgdata);
+
+            Image x = (Bitmap)((new ImageConverter()).ConvertFrom(imgdata));
+            pictureBox1.Image = x;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -126,7 +142,7 @@ namespace CST
          //   frm.Show();
 
         }
-        private void btnSave_Click(object sender, EventArgs e)
+        private async void btnSave_Click(object sender, EventArgs e)
         {
 
             //Save!!
@@ -134,6 +150,7 @@ namespace CST
             bool isvalid = true;
             isvalid = validationTab1() && isvalid;
             isvalid = validationTab2() && isvalid;
+            isvalid = pictureBox2.Image != null && isvalid;
             if (isvalid)
             {
                 isvalid = inValid && isvalid;
@@ -155,9 +172,10 @@ namespace CST
                                        txtSSS.Text.Trim());
 
 
+                await fpController.save(fpTemp, $"C:\\fp\\{txtStudentID.Text.Trim()}-fp.png", txtStudentID.Text.Trim());
                 auditTrail.addAudit(label44.Text, "Add Senior Data " + txtStudentID.Text.Trim());
+                pictureBox2.Image.Save($"C:\\fp\\{txtStudentID.Text.Trim()}-fp.png");
 
-               
                 this.Hide();
 
 
@@ -760,6 +778,24 @@ namespace CST
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             SeniorModel.setEduAtt(textBox1.Text.Trim());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Image img = pictureBox1.Image;
+
+            pictureBox2.Image = img;
+            fpTemp = fp.GetTemplateAsString();
+        }
+
+        private void StudentForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           fp.EndEngine();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //
         }
     }
 }
