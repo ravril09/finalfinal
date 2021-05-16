@@ -73,6 +73,16 @@ namespace CST.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap biometric_fingerprint_scan_vector_21105659 {
+            get {
+                object obj = ResourceManager.GetObject("biometric-fingerprint-scan-vector-21105659", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cool_white_background_free_download_desktop_white_background_hd {
             get {
                 object obj = ResourceManager.GetObject("cool-white-background-free-download-desktop-white-background-hd", resourceCulture);

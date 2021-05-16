@@ -19,6 +19,7 @@ namespace  CST
         AuditTrailControl auditTrailControl = new AuditTrailControl();
         loginController controller = new loginController();
       
+        string sno = "";
         
         public RegistrarForm()
         {
@@ -63,7 +64,7 @@ namespace  CST
         private void btnEnroll_Click_1(object sender, EventArgs e)
         {
 
-            StudentForm a = new StudentForm();
+            StudentForm a = new StudentForm(sno);
             a.Show();
             this.Hide();
 

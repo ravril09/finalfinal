@@ -58,6 +58,7 @@ namespace CST.Report
             try_Rpt.SetParameterValue("dobParam", seniorBasicDetail.birthdate);
             try_Rpt.SetParameterValue("pob", seniorBasicDetail.pob);
             try_Rpt.SetParameterValue("sex", seniorBasicDetail.gender);
+            try_Rpt.SetParameterValue("EduAttain", seniorBasicDetail.eduAt);
             try_Rpt.SetParameterValue("cvstatus", seniorBasicDetail.civilstatus);
             try_Rpt.SetParameterValue("rel", seniorBasicDetail.religion);
             try_Rpt.SetParameterValue("Add", seniorBasicDetail.address);

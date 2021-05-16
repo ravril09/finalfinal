@@ -34,16 +34,26 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.pix1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.lbnSno = new System.Windows.Forms.Label();
+            this.lbnFullname = new System.Windows.Forms.Label();
+            this.lbnGender = new System.Windows.Forms.Label();
+            this.lbnBD = new System.Windows.Forms.Label();
+            this.lbnCs = new System.Windows.Forms.Label();
+            this.lbnNatio = new System.Windows.Forms.Label();
+            this.lbnAdd = new System.Windows.Forms.Label();
+            this.lbnRel = new System.Windows.Forms.Label();
+            this.lbnPOB = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pix1 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pix1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +93,7 @@
             this.label9.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(48, 79);
+            this.label9.Location = new System.Drawing.Point(48, 97);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(115, 24);
             this.label9.TabIndex = 215;
@@ -95,7 +105,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(75, 115);
+            this.label2.Location = new System.Drawing.Point(75, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 24);
             this.label2.TabIndex = 216;
@@ -108,23 +118,11 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(63, 155);
+            this.label3.Location = new System.Drawing.Point(63, 171);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 24);
             this.label3.TabIndex = 217;
             this.label3.Text = "Birthday :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(105, 194);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 24);
-            this.label4.TabIndex = 218;
-            this.label4.Text = "Age :";
             // 
             // label5
             // 
@@ -132,7 +130,7 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(39, 235);
+            this.label5.Location = new System.Drawing.Point(39, 209);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 24);
             this.label5.TabIndex = 219;
@@ -144,7 +142,7 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(43, 277);
+            this.label6.Location = new System.Drawing.Point(43, 251);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(120, 24);
             this.label6.TabIndex = 220;
@@ -180,11 +178,157 @@
             this.label10.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(70, 322);
+            this.label10.Location = new System.Drawing.Point(70, 292);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(93, 24);
             this.label10.TabIndex = 223;
             this.label10.Text = "Address :";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Firebrick;
+            this.button1.Location = new System.Drawing.Point(476, 302);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 49);
+            this.button1.TabIndex = 225;
+            this.button1.Text = "SCAN";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label11.Location = new System.Drawing.Point(103, 56);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(60, 24);
+            this.label11.TabIndex = 226;
+            this.label11.Text = "SNO:";
+            // 
+            // lbnSno
+            // 
+            this.lbnSno.AutoSize = true;
+            this.lbnSno.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnSno.ForeColor = System.Drawing.Color.Black;
+            this.lbnSno.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbnSno.Location = new System.Drawing.Point(169, 57);
+            this.lbnSno.Name = "lbnSno";
+            this.lbnSno.Size = new System.Drawing.Size(40, 24);
+            this.lbnSno.TabIndex = 227;
+            this.lbnSno.Text = "NA";
+            // 
+            // lbnFullname
+            // 
+            this.lbnFullname.AutoSize = true;
+            this.lbnFullname.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnFullname.ForeColor = System.Drawing.Color.Black;
+            this.lbnFullname.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbnFullname.Location = new System.Drawing.Point(169, 97);
+            this.lbnFullname.Name = "lbnFullname";
+            this.lbnFullname.Size = new System.Drawing.Size(40, 24);
+            this.lbnFullname.TabIndex = 228;
+            this.lbnFullname.Text = "NA";
+            // 
+            // lbnGender
+            // 
+            this.lbnGender.AutoSize = true;
+            this.lbnGender.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnGender.ForeColor = System.Drawing.Color.Black;
+            this.lbnGender.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbnGender.Location = new System.Drawing.Point(169, 135);
+            this.lbnGender.Name = "lbnGender";
+            this.lbnGender.Size = new System.Drawing.Size(40, 24);
+            this.lbnGender.TabIndex = 229;
+            this.lbnGender.Text = "NA";
+            // 
+            // lbnBD
+            // 
+            this.lbnBD.AutoSize = true;
+            this.lbnBD.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnBD.ForeColor = System.Drawing.Color.Black;
+            this.lbnBD.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbnBD.Location = new System.Drawing.Point(169, 171);
+            this.lbnBD.Name = "lbnBD";
+            this.lbnBD.Size = new System.Drawing.Size(40, 24);
+            this.lbnBD.TabIndex = 230;
+            this.lbnBD.Text = "NA";
+            // 
+            // lbnCs
+            // 
+            this.lbnCs.AutoSize = true;
+            this.lbnCs.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnCs.ForeColor = System.Drawing.Color.Black;
+            this.lbnCs.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbnCs.Location = new System.Drawing.Point(169, 209);
+            this.lbnCs.Name = "lbnCs";
+            this.lbnCs.Size = new System.Drawing.Size(40, 24);
+            this.lbnCs.TabIndex = 232;
+            this.lbnCs.Text = "NA";
+            // 
+            // lbnNatio
+            // 
+            this.lbnNatio.AutoSize = true;
+            this.lbnNatio.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnNatio.ForeColor = System.Drawing.Color.Black;
+            this.lbnNatio.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbnNatio.Location = new System.Drawing.Point(169, 251);
+            this.lbnNatio.Name = "lbnNatio";
+            this.lbnNatio.Size = new System.Drawing.Size(40, 24);
+            this.lbnNatio.TabIndex = 233;
+            this.lbnNatio.Text = "NA";
+            // 
+            // lbnAdd
+            // 
+            this.lbnAdd.AutoSize = true;
+            this.lbnAdd.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnAdd.ForeColor = System.Drawing.Color.Black;
+            this.lbnAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbnAdd.Location = new System.Drawing.Point(169, 292);
+            this.lbnAdd.Name = "lbnAdd";
+            this.lbnAdd.Size = new System.Drawing.Size(40, 24);
+            this.lbnAdd.TabIndex = 234;
+            this.lbnAdd.Text = "NA";
+            // 
+            // lbnRel
+            // 
+            this.lbnRel.AutoSize = true;
+            this.lbnRel.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnRel.ForeColor = System.Drawing.Color.Black;
+            this.lbnRel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbnRel.Location = new System.Drawing.Point(397, 194);
+            this.lbnRel.Name = "lbnRel";
+            this.lbnRel.Size = new System.Drawing.Size(40, 24);
+            this.lbnRel.TabIndex = 235;
+            this.lbnRel.Text = "NA";
+            // 
+            // lbnPOB
+            // 
+            this.lbnPOB.AutoSize = true;
+            this.lbnPOB.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnPOB.ForeColor = System.Drawing.Color.Black;
+            this.lbnPOB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbnPOB.Location = new System.Drawing.Point(443, 237);
+            this.lbnPOB.Name = "lbnPOB";
+            this.lbnPOB.Size = new System.Drawing.Size(40, 24);
+            this.lbnPOB.TabIndex = 236;
+            this.lbnPOB.Text = "NA";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CST.Properties.Resources.biometric_fingerprint_scan_vector_21105659;
+            this.pictureBox1.Location = new System.Drawing.Point(607, 251);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(92, 127);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 237;
+            this.pictureBox1.TabStop = false;
             // 
             // pix1
             // 
@@ -198,33 +342,21 @@
             this.pix1.TabIndex = 224;
             this.pix1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(672, 381);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 225;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(39, 55);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 24);
-            this.label11.TabIndex = 226;
-            this.label11.Text = "SNO:";
-            // 
             // Biometric
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 416);
+            this.ClientSize = new System.Drawing.Size(799, 403);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lbnPOB);
+            this.Controls.Add(this.lbnRel);
+            this.Controls.Add(this.lbnAdd);
+            this.Controls.Add(this.lbnNatio);
+            this.Controls.Add(this.lbnCs);
+            this.Controls.Add(this.lbnBD);
+            this.Controls.Add(this.lbnGender);
+            this.Controls.Add(this.lbnFullname);
+            this.Controls.Add(this.lbnSno);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pix1);
@@ -233,7 +365,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label9);
@@ -245,6 +376,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Biometric_FormClosing);
             this.Load += new System.EventHandler(this.Biometric_Load);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pix1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -259,7 +391,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -268,5 +399,15 @@
         private System.Windows.Forms.PictureBox pix1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lbnSno;
+        private System.Windows.Forms.Label lbnFullname;
+        private System.Windows.Forms.Label lbnGender;
+        private System.Windows.Forms.Label lbnBD;
+        private System.Windows.Forms.Label lbnCs;
+        private System.Windows.Forms.Label lbnNatio;
+        private System.Windows.Forms.Label lbnAdd;
+        private System.Windows.Forms.Label lbnRel;
+        private System.Windows.Forms.Label lbnPOB;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

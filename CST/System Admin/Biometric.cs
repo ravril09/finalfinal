@@ -19,6 +19,10 @@ namespace CST.System_Admin
         BasicDetailsController basicDetailsController = new BasicDetailsController();
         ZKFPEngX fp = new ZKFPEngX();
 
+        string fpTemp = "";
+       
+        public static string SetValueForText1 = "";
+
         public Biometric()
         {
             InitializeComponent();
@@ -69,8 +73,16 @@ namespace CST.System_Admin
             if (!string.IsNullOrEmpty(foundsno))
             {
                 SeniorBasicDetail seniorBasicDetail = await basicDetailsController.getModel(foundsno);
-                label11.Text = seniorBasicDetail.sno;
-                    label9.Text = seniorBasicDetail.fullName;
+                lbnSno.Text = seniorBasicDetail.sno;
+                lbnFullname.Text = seniorBasicDetail.fullName;
+                lbnBD.Text = seniorBasicDetail.birthdate;
+                lbnCs.Text = seniorBasicDetail.civilstatus;
+                lbnGender.Text = seniorBasicDetail.gender;
+                lbnNatio.Text = seniorBasicDetail.nat;
+                lbnAdd.Text = seniorBasicDetail.address;
+                lbnRel.Text = seniorBasicDetail.religion;
+                lbnPOB.Text = seniorBasicDetail.pob;
+                pix1.ImageLocation = seniorBasicDetail.imgPath;
             }
 
 
@@ -84,8 +96,28 @@ namespace CST.System_Admin
             //SeniorBasicDetail seniorBasicDetail = await fpController.getData(strtemp);
 
             //label11.Text = seniorBasicDetail.sno;
+         
             //    label9.Text = seniorBasicDetail.fullName;
 
+
+
+            Image img = pictureBox1.Image;
+            
+
+            pictureBox1.Image = img;
+            fpTemp = fp.GetTemplateAsString();
+
+
         }
+
+        private void fp_OnImageReceived(ref bool AImageValid)
+        {
+            object imgdata = new object();
+            bool b = fp.GetFingerImage(ref imgdata);
+
+            Image x = (Bitmap)((new ImageConverter()).ConvertFrom(imgdata));
+            pictureBox1.Image = x;
+        }
+
     }
 }

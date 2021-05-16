@@ -9,6 +9,9 @@ using CST.Models.Student;
 using CST.Volunteer;
 using System.Drawing;
 using ZKFPEngXControl;
+using AForge.Video.DirectShow;
+using AForge.Video;
+using System.Drawing.Imaging;
 
 namespace CST
 {
@@ -16,7 +19,9 @@ namespace CST
     {
         ZKFPEngX fp = new ZKFPEngX();
         public static string SetValueForText1 = "";
-       
+
+        private FilterInfoCollection CaptureDevice;
+        private VideoCaptureDevice videoSource;
 
         FpController fpController = new FpController();
         BasicDetailsController basicdetailController = new BasicDetailsController();
@@ -33,19 +38,22 @@ namespace CST
         bool inValid = false;
         string gender = "";
         string civil = "";
-        public StudentForm()
+        private string sno;
+
+        public StudentForm(string sno)
         {
             InitializeComponent();
             dateTimePicker1.MaxDate = DateTime.Now;
 
-
         }
+
+ 
 
         private void StudentForm_Load(object sender, EventArgs e)
         {
             label44.Hide();
             SetValueForText1 = txtStudentID.Text;
-           
+
             txtStudentID.Text = generateSNO();
             txtStudentID.Enabled = false;
             SeniorModel.setSno(generateSNO());
@@ -73,13 +81,6 @@ namespace CST
 
             Image x = (Bitmap)((new ImageConverter()).ConvertFrom(imgdata));
             pictureBox1.Image = x;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-
-
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -139,7 +140,7 @@ namespace CST
             Payment form = new Payment(txtStudentID.Text.Trim(), txtFirstname.Text.Trim() + " " + txtLastname.Text.Trim());
             form.ShowDialog();
             //Membership_Fee frm = new Membership_Fee(txtStudentID.Text.Trim(), txtFirstname.Text.Trim() + " " + txtLastname.Text.Trim());
-         //   frm.Show();
+            //   frm.Show();
 
         }
         private async void btnSave_Click(object sender, EventArgs e)
@@ -155,7 +156,7 @@ namespace CST
             {
                 isvalid = inValid && isvalid;
                 isvalid = inValid2 && isvalid;
-                
+
 
                 backgroundWorker1.RunWorkerAsync();
                 progressBar1.Show();
@@ -278,7 +279,7 @@ namespace CST
             isValid = !(SeniorModel.getAddress() == "") && isValid;
 
 
-       
+
 
 
             return isValid;
@@ -354,7 +355,7 @@ namespace CST
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             SeniorModel.setBd(dateTimePicker1.Value.ToString("MM/dd/yyyy"));
-            
+
             int yrNow = DateTime.Now.Year;
             int bdate = dateTimePicker1.Value.Year;
             int age = yrNow - bdate;
@@ -394,7 +395,7 @@ namespace CST
         private void txtAddress_TextChanged(object sender, EventArgs e)
         {
             SeniorModel.setAddress(txtAddress.Text.Trim());
-        } 
+        }
 
         private void radioButton12_CheckedChanged(object sender, EventArgs e)
         {
@@ -405,35 +406,35 @@ namespace CST
             }
             else
             {
-               gender = "Female";
+                gender = "Female";
             }
         }
 
-        private void errorHandlingIsEmpty(ref TextBox tb,string message)
+        private void errorHandlingIsEmpty(ref TextBox tb, string message)
         {
-            if(tb.Text == string.Empty)
+            if (tb.Text == string.Empty)
             {
                 errorProvider1.SetError(tb, message);
             }
-          
+
         }
 
         private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
         {
-        
+
             if (currentTab == 0)
             {
 
-              
+
                 int changedPage = tabControl1.SelectedIndex;
                 bool isValidToNextPage = validationTab1();
                 if (isValidToNextPage)
                 {
-                    
+
                     currentTab = changedPage;
                     tabControl1.SelectedIndex = changedPage;
                     errorProvider1.Clear();
-            
+
                 }
                 else
                 {
@@ -449,19 +450,20 @@ namespace CST
                     errorHandlingIsEmpty(ref txtNationality, "Enter Nationality");
                     errorHandlingIsEmpty(ref txtReligion, "Enter Religion");
                     errorHandlingIsEmpty(ref txtPOB, "Enter Place of birth");
-            
+
 
 
                 }
-            }else if(currentTab == 1)
+            }
+            else if (currentTab == 1)
             {
-            
+
                 int changedPage = tabControl1.SelectedIndex;
-           
+
                 bool isValidToNextPage = validationTab2();
                 if (isValidToNextPage)
                 {
-               
+
                     currentTab = changedPage;
                     tabControl1.SelectedIndex = changedPage;
                     errorProvider1.Clear();
@@ -473,19 +475,19 @@ namespace CST
                     errorHandlingIsEmpty(ref txtEAddress, "Enter Contact Address");
                     errorHandlingIsEmpty(ref txtERelation, "Enter Contact Relation");
                     errorHandlingIsEmpty(ref txtEContactNo, "Enter Contact Number");
-                 
+
                     MessageBox.Show("Please Complete Information for the Children Details", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else if(currentTab == 2)
+            else if (currentTab == 2)
             {
-            
-               
+
+
                 int changedPage = tabControl1.SelectedIndex;
 
                 currentTab = changedPage;
                 tabControl1.SelectedIndex = changedPage;
-             
+
 
             }
 
@@ -523,7 +525,7 @@ namespace CST
             SeniorModel.setChildren2_name(txtC2Fullname.Text.Trim());
         }
 
-       
+
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
             SeniorModel.setChildren2_no(txtC2Mobile.Text.Trim());
@@ -549,7 +551,7 @@ namespace CST
         private void textBox16_TextChanged(object sender, EventArgs e)
         {
             SeniorModel.setEmer_rel(txtERelation.Text.Trim());
-    
+
         }
 
         private void textBox15_TextChanged(object sender, EventArgs e)
@@ -557,7 +559,7 @@ namespace CST
             SeniorModel.setEmer_no(txtEContactNo.Text.Trim());
         }
 
-      
+
         private void txtFMobile_KeyPress(object sender, KeyPressEventArgs e)
         {
             string validKeys = "0123456789";
@@ -603,7 +605,7 @@ namespace CST
             }
         }
 
-       
+
 
         private void groupBox3_Enter(object sender, EventArgs e)
         {
@@ -615,7 +617,7 @@ namespace CST
 
         }
 
-       
+
         private void txtStudentID_TextChanged(object sender, EventArgs e)
         {
 
@@ -738,7 +740,7 @@ namespace CST
             SeniorModel.setSSS(txtSSS.Text.Trim());
         }
 
-      
+
 
         private void label44_Click(object sender, EventArgs e)
         {
@@ -790,12 +792,28 @@ namespace CST
 
         private void StudentForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-           fp.EndEngine();
+            fp.EndEngine();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             //
+        }
+
+        private void BtnStart_Click(object sender, EventArgs e)
+        {
+           
+        }
+       
+        private void button4_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+      
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -697,6 +697,7 @@
     <None Include="Resources\download-removebg-preview.png" />
     <None Include="Resources\download1.png" />
     <None Include="Resources\download2.png" />
+    <None Include="Resources\biometric-fingerprint-scan-vector-21105659.jpg" />
     <Content Include="Resources\icon-backup.png" />
     <Content Include="Resources\icon-database-connected.png" />
     <Content Include="Resources\icon-database-disconnected.png" />

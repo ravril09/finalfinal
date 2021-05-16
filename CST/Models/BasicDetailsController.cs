@@ -101,6 +101,7 @@ namespace CST.Models
                 seniorBasicDetail.age = int.Parse(reader["age"].ToString());
                 seniorBasicDetail.gender = reader["gender"].ToString();
                 seniorBasicDetail.birthdate = reader["birthdate"].ToString();
+                seniorBasicDetail.eduAt = reader["Education_Attainment"].ToString();
                 seniorBasicDetail.pob = reader["pob"].ToString();
                 seniorBasicDetail.cno = reader["contact_no"].ToString();
                 seniorBasicDetail.nat = reader["nationality"].ToString();
