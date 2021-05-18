@@ -47,7 +47,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.BackColor = System.Drawing.Color.Gold;
             this.groupBox4.Controls.Add(this.txtOSCA);
             this.groupBox4.Controls.Add(this.label47);
             this.groupBox4.Controls.Add(this.txtGSIS);
@@ -56,13 +56,14 @@
             this.groupBox4.Controls.Add(this.label23);
             this.groupBox4.Controls.Add(this.label21);
             this.groupBox4.Controls.Add(this.label59);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(40, 118);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(444, 209);
             this.groupBox4.TabIndex = 244;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "PAYMENT";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // txtOSCA
             // 
@@ -77,14 +78,15 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.ForeColor = System.Drawing.Color.Black;
             this.label47.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label47.Location = new System.Drawing.Point(14, 122);
+            this.label47.Location = new System.Drawing.Point(27, 135);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(174, 25);
+            this.label47.Size = new System.Drawing.Size(162, 24);
             this.label47.TabIndex = 256;
             this.label47.Text = "MONTHLY FEE";
+            this.label47.Click += new System.EventHandler(this.label47_Click);
             // 
             // txtGSIS
             // 
@@ -100,12 +102,12 @@
             // 
             this.label48.AutoSize = true;
             this.label48.BackColor = System.Drawing.Color.Transparent;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.ForeColor = System.Drawing.Color.IndianRed;
             this.label48.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label48.Location = new System.Drawing.Point(185, 124);
+            this.label48.Location = new System.Drawing.Point(187, 133);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(24, 29);
+            this.label48.Size = new System.Drawing.Size(21, 24);
             this.label48.TabIndex = 258;
             this.label48.Text = "*";
             // 
@@ -137,12 +139,12 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label21.Location = new System.Drawing.Point(14, 42);
+            this.label21.Location = new System.Drawing.Point(27, 55);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(214, 25);
+            this.label21.Size = new System.Drawing.Size(201, 24);
             this.label21.TabIndex = 144;
             this.label21.Text = "MEMBERSHIP FEE";
             this.label21.Click += new System.EventHandler(this.label21_Click);
@@ -151,12 +153,12 @@
             // 
             this.label59.AutoSize = true;
             this.label59.BackColor = System.Drawing.Color.Transparent;
-            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label59.ForeColor = System.Drawing.Color.IndianRed;
             this.label59.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label59.Location = new System.Drawing.Point(230, 43);
+            this.label59.Location = new System.Drawing.Point(224, 53);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(24, 29);
+            this.label59.Size = new System.Drawing.Size(21, 24);
             this.label59.TabIndex = 251;
             this.label59.Text = "*";
             // 
@@ -165,7 +167,7 @@
             this.label44.AutoSize = true;
             this.label44.BackColor = System.Drawing.Color.Transparent;
             this.label44.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.Black;
+            this.label44.ForeColor = System.Drawing.Color.Firebrick;
             this.label44.Location = new System.Drawing.Point(12, 356);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(84, 19);
@@ -174,13 +176,13 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.BackColor = System.Drawing.Color.Gold;
             this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSave.Location = new System.Drawing.Point(176, 344);
+            this.btnSave.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnSave.Location = new System.Drawing.Point(177, 336);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(155, 40);
             this.btnSave.TabIndex = 245;
@@ -192,27 +194,29 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(7, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 25);
+            this.label1.Size = new System.Drawing.Size(111, 24);
             this.label1.TabIndex = 264;
             this.label1.Text = "ORG. ID :  ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Firebrick;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label2.Location = new System.Drawing.Point(35, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 25);
+            this.label2.Size = new System.Drawing.Size(90, 24);
             this.label2.TabIndex = 265;
             this.label2.Text = "NAME : ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // backgroundWorker1
             // 

@@ -68,12 +68,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(14, 19);
+            this.label1.Location = new System.Drawing.Point(15, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 19);
+            this.label1.Size = new System.Drawing.Size(104, 24);
             this.label1.TabIndex = 208;
             this.label1.Text = "Audit Trail";
             // 
@@ -96,7 +96,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(162, 23);
+            this.label7.Location = new System.Drawing.Point(162, 21);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 15);
             this.label7.TabIndex = 253;
@@ -116,7 +116,7 @@
             "Date",
             "user_type",
             "username"});
-            this.comboBox1.Location = new System.Drawing.Point(78, 58);
+            this.comboBox1.Location = new System.Drawing.Point(97, 55);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(174, 23);
             this.comboBox1.TabIndex = 257;
@@ -124,7 +124,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(260, 59);
+            this.textBox1.Location = new System.Drawing.Point(278, 56);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(241, 21);
             this.textBox1.TabIndex = 254;
@@ -134,12 +134,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Firebrick;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(11, 60);
+            this.label4.Location = new System.Drawing.Point(17, 53);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 19);
+            this.label4.Size = new System.Drawing.Size(79, 24);
             this.label4.TabIndex = 255;
             this.label4.Text = "Search:";
             // 
@@ -197,18 +197,18 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Firebrick;
-            this.button4.Location = new System.Drawing.Point(507, 53);
+            this.button4.Location = new System.Drawing.Point(525, 53);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(31, 28);
             this.button4.TabIndex = 256;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // AuditTrail
+            // AuditTrailController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Gold;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(799, 416);
             this.Controls.Add(this.label8);
@@ -224,7 +224,7 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AuditTrail";
+            this.Name = "AuditTrailController";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AuditTrail";
             this.Load += new System.EventHandler(this.AuditTrail_Load);

@@ -48,8 +48,6 @@
             this.button7 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -142,7 +140,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Firebrick;
-            this.button2.Location = new System.Drawing.Point(47, 428);
+            this.button2.Location = new System.Drawing.Point(47, 420);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(152, 42);
             this.button2.TabIndex = 232;
@@ -156,7 +154,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(60, 518);
+            this.label1.Location = new System.Drawing.Point(63, 521);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 19);
             this.label1.TabIndex = 228;
@@ -175,10 +173,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = global::CST.Properties.Resources.download_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(34, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(238, 137);
+            this.pictureBox1.Size = new System.Drawing.Size(184, 142);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 237;
             this.pictureBox1.TabStop = false;
@@ -201,14 +200,12 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.Gold;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.groupBox1);
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel6);
             this.panel3.Location = new System.Drawing.Point(257, 12);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(664, 576);
@@ -216,13 +213,13 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.BackColor = System.Drawing.Color.White;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Firebrick;
-            this.button6.Location = new System.Drawing.Point(496, 530);
+            this.button6.Location = new System.Drawing.Point(489, 526);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(156, 37);
             this.button6.TabIndex = 306;
@@ -239,7 +236,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 113);
+            this.dataGridView1.Location = new System.Drawing.Point(7, 113);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -250,15 +247,15 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Firebrick;
-            this.button1.Location = new System.Drawing.Point(5, 525);
+            this.button1.Location = new System.Drawing.Point(23, 526);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 42);
+            this.button1.Size = new System.Drawing.Size(143, 38);
             this.button1.TabIndex = 209;
             this.button1.Text = "Edit";
             this.button1.UseVisualStyleBackColor = false;
@@ -266,12 +263,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.BackColor = System.Drawing.Color.Gold;
             this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Firebrick;
             this.groupBox1.Location = new System.Drawing.Point(6, 11);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(655, 88);
@@ -285,9 +282,9 @@
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Firebrick;
-            this.button7.Location = new System.Drawing.Point(356, 41);
+            this.button7.Location = new System.Drawing.Point(432, 33);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(119, 32);
             this.button7.TabIndex = 310;
@@ -299,7 +296,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(117, 45);
+            this.textBox1.Location = new System.Drawing.Point(197, 37);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(234, 26);
             this.textBox1.TabIndex = 309;
@@ -308,32 +305,14 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Firebrick;
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(56, 24);
+            this.label10.Location = new System.Drawing.Point(77, 38);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(87, 19);
+            this.label10.Size = new System.Drawing.Size(114, 24);
             this.label10.TabIndex = 201;
             this.label10.Text = "Search By :";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Firebrick;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(2, 523);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(149, 47);
-            this.panel5.TabIndex = 307;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Firebrick;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Location = new System.Drawing.Point(494, 526);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(161, 44);
-            this.panel6.TabIndex = 308;
             // 
             // ApplicationRecord
             // 
@@ -382,7 +361,5 @@
         public System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
     }
 }

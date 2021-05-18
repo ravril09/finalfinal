@@ -52,11 +52,11 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Enabled = false;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Firebrick;
             this.label8.Location = new System.Drawing.Point(399, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 25);
+            this.label8.Size = new System.Drawing.Size(98, 24);
             this.label8.TabIndex = 263;
             this.label8.Text = "User Type";
             this.label8.Visible = false;
@@ -67,11 +67,11 @@
             this.txtUT.AutoSize = true;
             this.txtUT.BackColor = System.Drawing.Color.Transparent;
             this.txtUT.Enabled = false;
-            this.txtUT.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUT.ForeColor = System.Drawing.Color.Black;
+            this.txtUT.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUT.ForeColor = System.Drawing.Color.Firebrick;
             this.txtUT.Location = new System.Drawing.Point(525, 9);
             this.txtUT.Name = "txtUT";
-            this.txtUT.Size = new System.Drawing.Size(120, 25);
+            this.txtUT.Size = new System.Drawing.Size(98, 24);
             this.txtUT.TabIndex = 262;
             this.txtUT.Text = "User Type";
             this.txtUT.Visible = false;
@@ -83,11 +83,11 @@
             this.txtUN.AutoSize = true;
             this.txtUN.BackColor = System.Drawing.Color.Transparent;
             this.txtUN.Enabled = false;
-            this.txtUN.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUN.ForeColor = System.Drawing.Color.Black;
+            this.txtUN.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUN.ForeColor = System.Drawing.Color.Firebrick;
             this.txtUN.Location = new System.Drawing.Point(651, 9);
             this.txtUN.Name = "txtUN";
-            this.txtUN.Size = new System.Drawing.Size(118, 25);
+            this.txtUN.Size = new System.Drawing.Size(100, 24);
             this.txtUN.TabIndex = 261;
             this.txtUN.Text = "Username";
             this.txtUN.Visible = false;
@@ -113,11 +113,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(147, 17);
+            this.label7.Location = new System.Drawing.Point(196, 19);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 15);
+            this.label7.Size = new System.Drawing.Size(64, 15);
             this.label7.TabIndex = 265;
             this.label7.Text = "Date & Time";
             // 
@@ -126,7 +126,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Firebrick;
-            this.label3.Location = new System.Drawing.Point(16, 84);
+            this.label3.Location = new System.Drawing.Point(17, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(161, 24);
             this.label3.TabIndex = 268;
@@ -162,13 +162,13 @@
             // 
             // btnSend
             // 
-            this.btnSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.btnSend.BackColor = System.Drawing.Color.Gold;
             this.btnSend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSend.FlatAppearance.BorderSize = 0;
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSend.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSend.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnSend.Location = new System.Drawing.Point(615, 368);
+            this.btnSend.Location = new System.Drawing.Point(620, 344);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(143, 36);
             this.btnSend.TabIndex = 274;
@@ -184,12 +184,12 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label5.Location = new System.Drawing.Point(12, 16);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 19);
+            this.label5.Size = new System.Drawing.Size(163, 24);
             this.label5.TabIndex = 276;
             this.label5.Text = "SMS Notification";
             // 
@@ -197,7 +197,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(612, 365);
+            this.panel2.Location = new System.Drawing.Point(617, 341);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(149, 42);
             this.panel2.TabIndex = 277;
@@ -206,7 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Gold;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(799, 416);
             this.Controls.Add(this.btnSend);

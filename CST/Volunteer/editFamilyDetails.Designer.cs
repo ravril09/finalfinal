@@ -83,7 +83,7 @@
             this.txtf5Income.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtf5Income.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtf5Income.ForeColor = System.Drawing.Color.Black;
-            this.txtf5Income.Location = new System.Drawing.Point(880, 342);
+            this.txtf5Income.Location = new System.Drawing.Point(880, 330);
             this.txtf5Income.Name = "txtf5Income";
             this.txtf5Income.Size = new System.Drawing.Size(136, 26);
             this.txtf5Income.TabIndex = 321;
@@ -93,7 +93,7 @@
             this.txtf5Occ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtf5Occ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtf5Occ.ForeColor = System.Drawing.Color.Black;
-            this.txtf5Occ.Location = new System.Drawing.Point(648, 342);
+            this.txtf5Occ.Location = new System.Drawing.Point(648, 330);
             this.txtf5Occ.Name = "txtf5Occ";
             this.txtf5Occ.Size = new System.Drawing.Size(213, 26);
             this.txtf5Occ.TabIndex = 320;
@@ -103,7 +103,7 @@
             this.txtf5Age.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtf5Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtf5Age.ForeColor = System.Drawing.Color.Black;
-            this.txtf5Age.Location = new System.Drawing.Point(499, 342);
+            this.txtf5Age.Location = new System.Drawing.Point(499, 330);
             this.txtf5Age.Name = "txtf5Age";
             this.txtf5Age.Size = new System.Drawing.Size(125, 26);
             this.txtf5Age.TabIndex = 319;
@@ -113,7 +113,7 @@
             this.txtf5rel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtf5rel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtf5rel.ForeColor = System.Drawing.Color.Black;
-            this.txtf5rel.Location = new System.Drawing.Point(267, 342);
+            this.txtf5rel.Location = new System.Drawing.Point(267, 330);
             this.txtf5rel.Name = "txtf5rel";
             this.txtf5rel.Size = new System.Drawing.Size(212, 26);
             this.txtf5rel.TabIndex = 318;
@@ -123,7 +123,7 @@
             this.txtf5name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtf5name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtf5name.ForeColor = System.Drawing.Color.Black;
-            this.txtf5name.Location = new System.Drawing.Point(30, 342);
+            this.txtf5name.Location = new System.Drawing.Point(30, 330);
             this.txtf5name.Name = "txtf5name";
             this.txtf5name.Size = new System.Drawing.Size(219, 26);
             this.txtf5name.TabIndex = 317;
@@ -291,14 +291,14 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Black;
             this.label26.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label26.Location = new System.Drawing.Point(911, 99);
+            this.label26.Location = new System.Drawing.Point(907, 81);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(58, 16);
+            this.label26.Size = new System.Drawing.Size(83, 24);
             this.label26.TabIndex = 300;
-            this.label26.Text = "Income";
+            this.label26.Text = "Income:";
             // 
             // txtf1Occ
             // 
@@ -313,14 +313,14 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Black;
             this.label23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label23.Location = new System.Drawing.Point(704, 99);
+            this.label23.Location = new System.Drawing.Point(699, 82);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(86, 16);
+            this.label23.Size = new System.Drawing.Size(120, 24);
             this.label23.TabIndex = 298;
-            this.label23.Text = "Occupation";
+            this.label23.Text = "Occupation:";
             // 
             // txtf1Age
             // 
@@ -335,14 +335,14 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Black;
             this.label22.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label22.Location = new System.Drawing.Point(536, 99);
+            this.label22.Location = new System.Drawing.Point(536, 81);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(36, 16);
+            this.label22.Size = new System.Drawing.Size(53, 24);
             this.label22.TabIndex = 296;
-            this.label22.Text = "Age";
+            this.label22.Text = "Age:";
             // 
             // txtf1rel
             // 
@@ -357,14 +357,14 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label21.Location = new System.Drawing.Point(329, 99);
+            this.label21.Location = new System.Drawing.Point(313, 81);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(95, 16);
+            this.label21.Size = new System.Drawing.Size(127, 24);
             this.label21.TabIndex = 294;
-            this.label21.Text = "Relationship";
+            this.label21.Text = "Relationship:";
             // 
             // txtf1name
             // 
@@ -379,26 +379,26 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.ForeColor = System.Drawing.Color.Black;
             this.label47.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label47.Location = new System.Drawing.Point(99, 99);
+            this.label47.Location = new System.Drawing.Point(78, 80);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(78, 16);
+            this.label47.Size = new System.Drawing.Size(110, 24);
             this.label47.TabIndex = 292;
-            this.label47.Text = "Full Name";
+            this.label47.Text = "Full Name:";
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Firebrick;
-            this.button1.Location = new System.Drawing.Point(586, 415);
+            this.button1.Location = new System.Drawing.Point(824, 378);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(426, 42);
+            this.button1.Size = new System.Drawing.Size(190, 42);
             this.button1.TabIndex = 322;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
@@ -408,6 +408,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1036, 497);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtf5Income);

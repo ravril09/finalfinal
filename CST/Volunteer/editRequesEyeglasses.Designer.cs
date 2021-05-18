@@ -53,11 +53,11 @@
             // 
             this.label44.AutoSize = true;
             this.label44.BackColor = System.Drawing.Color.Transparent;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.Color.Black;
-            this.label44.Location = new System.Drawing.Point(22, 29);
+            this.label44.Location = new System.Drawing.Point(36, 34);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(77, 15);
+            this.label44.Size = new System.Drawing.Size(108, 24);
             this.label44.TabIndex = 230;
             this.label44.Text = "Date & Time";
             // 
@@ -77,14 +77,14 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
+            this.btnSubmit.BackColor = System.Drawing.Color.White;
             this.btnSubmit.FlatAppearance.BorderSize = 0;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSubmit.Location = new System.Drawing.Point(490, 354);
+            this.btnSubmit.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnSubmit.Location = new System.Drawing.Point(502, 354);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(174, 34);
+            this.btnSubmit.Size = new System.Drawing.Size(162, 34);
             this.btnSubmit.TabIndex = 12;
             this.btnSubmit.Text = "Update";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -101,13 +101,13 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(233, 238);
+            this.label8.Location = new System.Drawing.Point(234, 254);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 18);
+            this.label8.Size = new System.Drawing.Size(112, 24);
             this.label8.TabIndex = 248;
-            this.label8.Text = "Eye Grade";
+            this.label8.Text = "Eye Grade:";
             // 
             // txtRemarks
             // 
@@ -121,13 +121,13 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(405, 238);
+            this.label2.Location = new System.Drawing.Point(406, 254);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 18);
+            this.label2.Size = new System.Drawing.Size(97, 24);
             this.label2.TabIndex = 252;
-            this.label2.Text = "Remarks";
+            this.label2.Text = "Remarks:";
             // 
             // txtAge
             // 
@@ -140,13 +140,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(32, 238);
+            this.label1.Location = new System.Drawing.Point(33, 254);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 18);
+            this.label1.Size = new System.Drawing.Size(53, 24);
             this.label1.TabIndex = 250;
-            this.label1.Text = "Age";
+            this.label1.Text = "Age:";
             // 
             // txtAddress
             // 
@@ -167,13 +167,13 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(33, 154);
+            this.label7.Location = new System.Drawing.Point(33, 164);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 18);
+            this.label7.Size = new System.Drawing.Size(88, 24);
             this.label7.TabIndex = 246;
-            this.label7.Text = "Address";
+            this.label7.Text = "Address:";
             // 
             // txtFullname
             // 
@@ -186,28 +186,28 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(344, 80);
+            this.label6.Location = new System.Drawing.Point(342, 85);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 18);
+            this.label6.Size = new System.Drawing.Size(118, 24);
             this.label6.TabIndex = 245;
             this.label6.Text = "Contact No.";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(33, 80);
+            this.label3.Location = new System.Drawing.Point(33, 85);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 18);
+            this.label3.Size = new System.Drawing.Size(110, 24);
             this.label3.TabIndex = 243;
-            this.label3.Text = "Full Name";
+            this.label3.Text = "Full Name:";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackColor = System.Drawing.Color.Gold;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtFullname);

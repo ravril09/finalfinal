@@ -51,6 +51,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnEnroll = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,6 +62,7 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -68,7 +71,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(415, 96);
+            this.label1.Location = new System.Drawing.Point(404, 103);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(150, 36);
             this.label1.TabIndex = 214;
@@ -80,7 +83,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
-            this.label5.Location = new System.Drawing.Point(94, 96);
+            this.label5.Location = new System.Drawing.Point(40, 104);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(153, 36);
             this.label5.TabIndex = 211;
@@ -97,7 +100,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Firebrick;
-            this.label7.Location = new System.Drawing.Point(641, 381);
+            this.label7.Location = new System.Drawing.Point(627, 390);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(124, 26);
             this.label7.TabIndex = 216;
@@ -107,13 +110,15 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(930, 166);
             this.panel1.TabIndex = 225;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel3
             // 
@@ -122,16 +127,16 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(248, 166);
+            this.panel3.Size = new System.Drawing.Size(214, 166);
             this.panel3.TabIndex = 222;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::CST.Properties.Resources.download_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 14);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(231, 157);
+            this.pictureBox1.Size = new System.Drawing.Size(205, 144);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -139,25 +144,26 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Controls.Add(this.label2);
             this.panel7.Controls.Add(this.label3);
             this.panel7.Controls.Add(this.label5);
             this.panel7.Controls.Add(this.label1);
-            this.panel7.Location = new System.Drawing.Point(251, 5);
+            this.panel7.Location = new System.Drawing.Point(189, 5);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(667, 156);
+            this.panel7.Size = new System.Drawing.Size(575, 156);
             this.panel7.TabIndex = 223;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Firebrick;
-            this.label3.Location = new System.Drawing.Point(44, 21);
+            this.label3.Location = new System.Drawing.Point(47, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(605, 55);
+            this.label3.Size = new System.Drawing.Size(478, 42);
             this.label3.TabIndex = 227;
-            this.label3.Text = "Senior Citizens of Molino VI";
+            this.label3.Text = "Senior Citizens Organization ";
             // 
             // panel2
             // 
@@ -187,7 +193,7 @@
             this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLogout.IconSize = 30;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(29, 375);
+            this.btnLogout.Location = new System.Drawing.Point(42, 383);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnLogout.Rotation = 0D;
@@ -201,7 +207,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.BackColor = System.Drawing.Color.Gold;
             this.panel9.Controls.Add(this.panel5);
             this.panel9.Controls.Add(this.panel6);
             this.panel9.Controls.Add(this.panel4);
@@ -223,7 +229,6 @@
             // 
             // btnNationalD
             // 
-            this.btnNationalD.BackColor = System.Drawing.Color.Transparent;
             this.btnNationalD.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNationalD.FlatAppearance.BorderSize = 0;
             this.btnNationalD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -249,7 +254,6 @@
             // 
             // btnNationalIdRecord
             // 
-            this.btnNationalIdRecord.BackColor = System.Drawing.Color.Transparent;
             this.btnNationalIdRecord.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnNationalIdRecord.FlatAppearance.BorderSize = 0;
             this.btnNationalIdRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -261,11 +265,11 @@
             this.btnNationalIdRecord.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNationalIdRecord.IconSize = 30;
             this.btnNationalIdRecord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNationalIdRecord.Location = new System.Drawing.Point(0, 62);
+            this.btnNationalIdRecord.Location = new System.Drawing.Point(0, 55);
             this.btnNationalIdRecord.Name = "btnNationalIdRecord";
             this.btnNationalIdRecord.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnNationalIdRecord.Rotation = 0D;
-            this.btnNationalIdRecord.Size = new System.Drawing.Size(310, 53);
+            this.btnNationalIdRecord.Size = new System.Drawing.Size(310, 60);
             this.btnNationalIdRecord.TabIndex = 230;
             this.btnNationalIdRecord.Text = "National ID Record";
             this.btnNationalIdRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -420,6 +424,29 @@
             this.iconButton2.UseVisualStyleBackColor = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::CST.Properties.Resources.mislogo1;
+            this.pictureBox2.Location = new System.Drawing.Point(773, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(127, 144);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Firebrick;
+            this.label2.Location = new System.Drawing.Point(172, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(230, 42);
+            this.label2.TabIndex = 228;
+            this.label2.Text = "Of Molino VI";
+            // 
             // RegistrarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,6 +472,7 @@
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -472,5 +500,7 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label2;
     }
 }

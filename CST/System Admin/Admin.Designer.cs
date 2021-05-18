@@ -46,11 +46,13 @@
             this.btnUsercontrol = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.mySqlTransactionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mySqlTransactionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -59,7 +61,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Firebrick;
-            this.label7.Location = new System.Drawing.Point(14, 297);
+            this.label7.Location = new System.Drawing.Point(8, 297);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(108, 24);
             this.label7.TabIndex = 173;
@@ -73,6 +75,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.panel2);
@@ -89,7 +92,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Firebrick;
-            this.label2.Location = new System.Drawing.Point(751, 82);
+            this.label2.Location = new System.Drawing.Point(608, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 26);
             this.label2.TabIndex = 216;
@@ -101,7 +104,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Firebrick;
-            this.label4.Location = new System.Drawing.Point(436, 82);
+            this.label4.Location = new System.Drawing.Point(267, 90);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 26);
             this.label4.TabIndex = 215;
@@ -122,9 +125,9 @@
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
             this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHome.Image = global::CST.Properties.Resources.download_removebg_preview;
-            this.btnHome.Location = new System.Drawing.Point(11, 6);
+            this.btnHome.Location = new System.Drawing.Point(70, 3);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(227, 121);
+            this.btnHome.Size = new System.Drawing.Size(156, 127);
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 184;
             this.btnHome.TabStop = false;
@@ -134,13 +137,13 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Firebrick;
-            this.label3.Location = new System.Drawing.Point(466, 22);
+            this.label3.Location = new System.Drawing.Point(270, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(361, 32);
+            this.label3.Size = new System.Drawing.Size(478, 84);
             this.label3.TabIndex = 182;
-            this.label3.Text = "Senior Citizens of Molino VI";
+            this.label3.Text = "Senior Citizens Organization \r\n            Of Molino VI";
             // 
             // panelMenu
             // 
@@ -331,6 +334,18 @@
             // 
             this.mySqlTransactionBindingSource.DataSource = typeof(MySql.Data.MySqlClient.MySqlTransaction);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::CST.Properties.Resources.mislogo1;
+            this.pictureBox1.Location = new System.Drawing.Point(775, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(121, 127);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 185;
+            this.pictureBox1.TabStop = false;
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -354,6 +369,7 @@
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mySqlTransactionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -376,5 +392,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox btnHome;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

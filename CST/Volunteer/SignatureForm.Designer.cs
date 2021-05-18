@@ -43,7 +43,7 @@
             this.pix1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pix1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pix1.Image = global::CST.Properties.Resources.download9;
-            this.pix1.Location = new System.Drawing.Point(68, 66);
+            this.pix1.Location = new System.Drawing.Point(68, 83);
             this.pix1.Name = "pix1";
             this.pix1.Size = new System.Drawing.Size(284, 93);
             this.pix1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -53,17 +53,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(124, 12);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.Location = new System.Drawing.Point(106, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 42);
+            this.label1.Size = new System.Drawing.Size(220, 40);
             this.label1.TabIndex = 251;
             this.label1.Text = "SIGNATURE";
             // 
             // btnupload
             // 
-            this.btnupload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupload.Location = new System.Drawing.Point(380, 80);
+            this.btnupload.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupload.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnupload.Location = new System.Drawing.Point(380, 97);
             this.btnupload.Name = "btnupload";
             this.btnupload.Size = new System.Drawing.Size(74, 59);
             this.btnupload.TabIndex = 252;
@@ -73,8 +75,11 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(150, 171);
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Firebrick;
+            this.button1.Location = new System.Drawing.Point(150, 188);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 40);
             this.button1.TabIndex = 253;
@@ -100,6 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(477, 248);
             this.Controls.Add(this.pbClose);
             this.Controls.Add(this.button1);
