@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CST.Volunteer;
 using MySql.Data.MySqlClient;
 
 namespace CST.Models
@@ -12,6 +13,17 @@ namespace CST.Models
     class PaymentController
     {
         crudFile cs = new crudFile();
+
+        public void addPayment(string sno,
+                                float memship
+                                )
+        {
+            string sql = String.Format(@"INSERT INTO `payments`(`sno`, `membershipfee`) VALUES ('{0}','{1}')",
+                                        sno, memship);
+
+            cs.ExecuteQuery(sql);
+
+        }
 
         public void addPayment(string sno,
                                 int memship,
@@ -102,6 +114,9 @@ namespace CST.Models
 
             cs.FillDataGrid(sql, ref dg);
         }
+
+       
+        
 
     }
 }

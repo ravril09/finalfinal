@@ -15,7 +15,7 @@ namespace CST.Models
 
         public async Task<DataSet> getMedicalRecord()
         {
-            DataSet ds = await cs.GetDataSetAsync(@"SELECT * FROM requesteyeglasss",
+            DataSet ds = await cs.GetDataSetAsync(@"SELECT * FROM requestmedical",
                 null);
 
             return ds;

@@ -16,7 +16,6 @@ namespace CST.Volunteer
     {
 
         RequestEyeglassController requesteyecontroller = new RequestEyeglassController();
-        RequestMedicalController requestMedicalController = new RequestMedicalController();
         RequestMedicalController requestmedicalcontroller = new RequestMedicalController();
         AuditTrailControl auditTrail = new AuditTrailControl();
         string clickedBut = "";
@@ -94,7 +93,7 @@ namespace CST.Volunteer
             if (form1 == DialogResult.Yes)
             {
                 requestmedicalcontroller.deleteRequestmedical(int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString()));
-                auditTrail.addAudit(label7.Text, "Delete a Medical Request");
+                auditTrail.addAudit(label1.Text, "Delete a Medical Request");
                 MessageBox.Show("Succesfully Remove Data");
                 requestmedicalcontroller.fillRequetMedical(ref dataGridView1);
 
@@ -133,7 +132,7 @@ namespace CST.Volunteer
         private async void button9_Click(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
-            //DataTable dt = new DataTable();
+            DataTable dt = new DataTable();
 
             ds = await requesteyecontroller.getRequestEyeglasses();
 
@@ -141,7 +140,8 @@ namespace CST.Volunteer
             //dataGridView1.DataSource = null;
             //dataGridView1.DataSource = ds.Tables[0];
             //dataGridView1.AutoResizeColumns();
-            //ds.WriteXmlSchema("C:\\xmlrep PrintMedicalRecord.xml");
+            //ds.WriteXmlSchema("C:\\xmlrep\\PrintMedicalRecord.xml");
+
             RecordRequestEyeglasses rep = new RecordRequestEyeglasses(ds);
             rep.ShowDialog();
 
@@ -149,18 +149,26 @@ namespace CST.Volunteer
 
         private async void button10_ClickAsync(object sender, EventArgs e)
         {
-            DataSet ds = new DataSet();
             DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
 
-            //ds = await requestMedicalController.getMedicalRecord();
+            ds = await requestmedicalcontroller.getMedicalRecord();
 
-            ds.Tables.Add(dt);
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = ds.Tables[0];
-            dataGridView1.AutoResizeColumns();
-            ds.WriteXmlSchema("C:\\xmlrep PrintEyeglasslRecord.xml");
-            RecordRequestEyeglasses rep = new RecordRequestEyeglasses(ds);
+            //ds.Tables.Add(dt);
+            //dataGridView1.DataSource = null;
+            //dataGridView1.DataSource = ds.Tables[0];
+            //dataGridView1.AutoResizeColumns();
+            //ds.WriteXmlSchema("C:\\xmlrep\\RecordMedical.xml");
+
+
+
+            RecordRequestMedical rep = new RecordRequestMedical(ds);
             rep.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

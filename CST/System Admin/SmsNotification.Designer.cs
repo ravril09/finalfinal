@@ -115,7 +115,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(196, 19);
+            this.label7.Location = new System.Drawing.Point(241, 19);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 15);
             this.label7.TabIndex = 265;
@@ -124,29 +124,29 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Firebrick;
-            this.label3.Location = new System.Drawing.Point(17, 89);
+            this.label3.Location = new System.Drawing.Point(114, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 24);
+            this.label3.Size = new System.Drawing.Size(213, 31);
             this.label3.TabIndex = 268;
             this.label3.Text = "Phone Number : ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Firebrick;
-            this.label4.Location = new System.Drawing.Point(73, 149);
+            this.label4.Location = new System.Drawing.Point(190, 193);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 24);
+            this.label4.Size = new System.Drawing.Size(135, 31);
             this.label4.TabIndex = 269;
             this.label4.Text = "Message : ";
             // 
             // txtPhoneNumber
             // 
             this.txtPhoneNumber.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhoneNumber.Location = new System.Drawing.Point(183, 85);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(329, 105);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(271, 32);
             this.txtPhoneNumber.TabIndex = 272;
@@ -154,10 +154,10 @@
             // txtMessage
             // 
             this.txtMessage.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMessage.Location = new System.Drawing.Point(183, 149);
+            this.txtMessage.Location = new System.Drawing.Point(329, 192);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(592, 180);
+            this.txtMessage.Size = new System.Drawing.Size(592, 223);
             this.txtMessage.TabIndex = 273;
             // 
             // btnSend
@@ -168,7 +168,7 @@
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSend.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSend.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnSend.Location = new System.Drawing.Point(620, 344);
+            this.btnSend.Location = new System.Drawing.Point(778, 431);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(143, 36);
             this.btnSend.TabIndex = 274;
@@ -184,12 +184,12 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(12, 16);
+            this.label5.Location = new System.Drawing.Point(12, 8);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 24);
+            this.label5.Size = new System.Drawing.Size(216, 31);
             this.label5.TabIndex = 276;
             this.label5.Text = "SMS Notification";
             // 
@@ -197,7 +197,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(617, 341);
+            this.panel2.Location = new System.Drawing.Point(775, 428);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(149, 42);
             this.panel2.TabIndex = 277;
@@ -208,7 +208,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(799, 416);
+            this.ClientSize = new System.Drawing.Size(1093, 501);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtMessage);

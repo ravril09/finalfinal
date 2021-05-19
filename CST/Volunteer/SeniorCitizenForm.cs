@@ -32,7 +32,7 @@ namespace CST
 
 
         string fpTemp = "";
-
+       
         bool inValid2 = false;
         int currentTab = 0;
         bool inValid = false;
@@ -136,9 +136,9 @@ namespace CST
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            MessageBox.Show("Succesfully Added Senior Citizen Details");
-            Payment form = new Payment(txtStudentID.Text.Trim(), txtFirstname.Text.Trim() + " " + txtLastname.Text.Trim());
-            form.ShowDialog();
+            //MessageBox.Show("Succesfully Added Senior Citizen Details");
+            //Payment form = new Payment(txtStudentID.Text.Trim(), txtFirstname.Text.Trim() + " " + txtLastname.Text.Trim());
+            //form.ShowDialog();
             //Membership_Fee frm = new Membership_Fee(txtStudentID.Text.Trim(), txtFirstname.Text.Trim() + " " + txtLastname.Text.Trim());
             //   frm.Show();
 
@@ -176,6 +176,10 @@ namespace CST
                 await fpController.save(fpTemp, $"C:\\fp\\{txtStudentID.Text.Trim()}-fp.png", txtStudentID.Text.Trim());
                 auditTrail.addAudit(label44.Text, "Add Senior Data " + txtStudentID.Text.Trim());
                 pictureBox2.Image.Save($"C:\\fp\\{txtStudentID.Text.Trim()}-fp.png");
+
+                MessageBox.Show("Succesfully Added Senior Citizen Details");
+                Payment form = new Payment(txtStudentID.Text.Trim(), txtFirstname.Text.Trim() + " " + txtLastname.Text.Trim());
+                form.ShowDialog();
 
                 this.Hide();
 
@@ -784,10 +788,10 @@ namespace CST
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Image img = pictureBox1.Image;
-
-            pictureBox2.Image = img;
-            fpTemp = fp.GetTemplateAsString();
+                Image img = pictureBox1.Image;
+                pictureBox2.Image = img;
+                fpTemp = fp.GetTemplateAsString();
+            
         }
 
         private void StudentForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -812,6 +816,11 @@ namespace CST
 
       
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label55_Click(object sender, EventArgs e)
         {
 
         }

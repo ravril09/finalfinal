@@ -17,9 +17,9 @@ namespace CST.Models
 
         public async Task<DataSet> getDs()
         {
-            DataSet ds = await cs.GetDataSetAsync(@"SELECT senior_basic_detail.senior_id, CONCAT(lastname,',',firstname) AS 'Name' ,
-                                                    address,birthdate,gender,age, senior_id_details.membershipfee,senior_id_details.monthlyfee 
-                                                    FROM `senior_basic_detail` INNER JOIN senior_id_details ON senior_id_details.sno = senior_basic_detail.sno",
+            DataSet ds = await cs.GetDataSetAsync(@"SELECT senior_basic_detail.sno, CONCAT(lastname,',',firstname) AS 'Name' ,
+                                                    address,birthdate,gender,age FROM `senior_basic_detail` INNER JOIN 
+                                                        senior_id_details ON senior_id_details.sno = senior_basic_detail.sno",
                 null);
 
             return ds;

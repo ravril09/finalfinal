@@ -213,12 +213,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Report\RequestMedicalReport.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RequestMedicalReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Report\memberReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -249,6 +243,12 @@
     <Compile Include="Report\RecordRequestEyeglasses.Designer.cs">
       <DependentUpon>RecordRequestEyeglasses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\RecordRequestMedical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RecordRequestMedical.Designer.cs">
+      <DependentUpon>RecordRequestMedical.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report\RecordsRep.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +259,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RequestEyeglassReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RequestMedicalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RequestMedicalReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report\try.cs">
@@ -472,10 +478,6 @@
     <EmbeddedResource Include="IPConfigFormcs.resx">
       <DependentUpon>IPConfigFormcs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\RequestMedicalReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RequestMedicalReport.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Report\memberReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>memberReport.cs</LastGenOutput>
@@ -493,12 +495,19 @@
     <EmbeddedResource Include="Report\RecordRequestEyeglasses.resx">
       <DependentUpon>RecordRequestEyeglasses.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\RecordRequestMedical.resx">
+      <DependentUpon>RecordRequestMedical.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\RecordsRep.resx">
       <DependentUpon>RecordsRep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\RequestEyeglassReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RequestEyeglassReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RequestMedicalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RequestMedicalReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\try.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

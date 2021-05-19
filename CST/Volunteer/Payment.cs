@@ -33,6 +33,7 @@ namespace CST.Volunteer
             label2.Text = label2.Text + " \t" + name;
             label1.Text = label1.Text + " \t" + sno;
             this.sno = sno;
+            this.name = name;
         }
 
         private void label21_Click(object sender, EventArgs e)
@@ -49,16 +50,18 @@ namespace CST.Volunteer
 
         private async void btnSave_Click(object sender, EventArgs e)
         {
+            DataSet ds = new DataSet();
+
             paymentController.addPayment(sno, int.Parse(txtOSCA.Text.Trim()), int.Parse(txtGSIS.Text.Trim()));
 
-            float payment = float.Parse(txtGSIS.Text.Trim());
+            float payment = float.Parse(txtOSCA.Text.Trim());
 
             MessageBox.Show("Successfully Added Payment fee");
 
-            membershipfeeController.addMembershipfee(sno, payment);
+            paymentController.addPayment(sno, payment);
 
             Receipt rec = new Receipt();
-
+ 
             rec.SetParameterValue("payername", name);
             rec.SetParameterValue("totalAmt", payment);
             int no = await membershipfeeController.getLatestNo();

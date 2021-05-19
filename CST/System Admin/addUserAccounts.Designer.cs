@@ -54,7 +54,7 @@
             // 
             // gbUserForm
             // 
-            this.gbUserForm.BackColor = System.Drawing.Color.Transparent;
+            this.gbUserForm.BackColor = System.Drawing.Color.Gold;
             this.gbUserForm.Controls.Add(this.label8);
             this.gbUserForm.Controls.Add(this.label5);
             this.gbUserForm.Controls.Add(this.label4);
@@ -75,7 +75,7 @@
             this.gbUserForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbUserForm.Location = new System.Drawing.Point(12, 12);
             this.gbUserForm.Name = "gbUserForm";
-            this.gbUserForm.Size = new System.Drawing.Size(501, 251);
+            this.gbUserForm.Size = new System.Drawing.Size(501, 261);
             this.gbUserForm.TabIndex = 197;
             this.gbUserForm.TabStop = false;
             this.gbUserForm.Text = "User Form";

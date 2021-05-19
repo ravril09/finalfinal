@@ -37,6 +37,7 @@ namespace CST.Volunteer
 
         private async void button1_Click(object sender, EventArgs e)
         {
+            DataSet ds = new DataSet();
             bool isValidNumber = float.TryParse(textBox1.Text.Trim(), out _);
 
 
