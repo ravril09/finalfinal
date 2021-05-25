@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,14 @@ namespace CST.Models
     class PersonalDetailsController
     {
         crudFile cs = new crudFile();
+
+        public async Task<DataSet> getDs()
+        {
+            DataSet ds = await cs.GetDataSetAsync(@"SELECT * FROM nationalid_basic_detail",
+                null);
+
+            return ds;
+        }
 
         public void addPersonalDetail(string sno,
                                       string surname,

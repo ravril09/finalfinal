@@ -180,6 +180,7 @@
     <Compile Include="Models\Member\SeniorBasicDetail.cs" />
     <Compile Include="Models\Member\SeniorChildrenDetails.cs" />
     <Compile Include="Models\Member\SeniorIdDetails.cs" />
+    <Compile Include="Models\Member\SeniorPayment.cs" />
     <Compile Include="Models\OrController.cs" />
     <Compile Include="Models\OtherDetailsController.cs" />
     <Compile Include="Models\PaymentController.cs" />
@@ -224,6 +225,24 @@
     </Compile>
     <Compile Include="Report\MembershipReportDiag.Designer.cs">
       <DependentUpon>MembershipReportDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PaymentSumReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\PaymentSumReport.Designer.cs">
+      <DependentUpon>PaymentSumReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PrintNational.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintNational.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PrintSum.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintSum.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report\Receipt.cs">
       <AutoGen>True</AutoGen>
@@ -484,6 +503,17 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report\MembershipReportDiag.resx">
       <DependentUpon>MembershipReportDiag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PaymentSumReport.resx">
+      <DependentUpon>PaymentSumReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PrintNational.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintNational.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PrintSum.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintSum.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Receipt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

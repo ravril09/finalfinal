@@ -63,6 +63,9 @@ namespace CST.Volunteer
 
             Receipt rec = new Receipt();
 
+            //ReceiptReport rep = new ReceiptReport(sno);
+            //rep.ShowDialog();
+
             rec.SetParameterValue("payername", name);
             rec.SetParameterValue("totalAmt", payment);
             int no = await membershipfeeController.getLatestNo();

@@ -162,5 +162,9 @@ namespace CST
             cn.Close();
         }
 
+        internal Task<DataSet> GetDataSetAsync(string v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

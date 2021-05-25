@@ -17,10 +17,12 @@ namespace CST.System_Admin
     {
         FpController fpController = new FpController();
         BasicDetailsController basicDetailsController = new BasicDetailsController();
+        MembershipfeeController membershipfeeController = new MembershipfeeController();
+        PaymentController paymentController = new PaymentController();
         ZKFPEngX fp = new ZKFPEngX();
 
         string fpTemp = "";
-       
+        
         public static string SetValueForText1 = "";
 
         public Biometric()
@@ -73,9 +75,12 @@ namespace CST.System_Admin
             if (!string.IsNullOrEmpty(foundsno))
             {
                 SeniorBasicDetail seniorBasicDetail = await basicDetailsController.getModel(foundsno);
+                MembershipFeeModel membershipFeeModel = await paymentController.getModel(foundsno);
+
                 lbnSno.Text = seniorBasicDetail.sno;
                 lbnFullname.Text = seniorBasicDetail.fullName;
                 lbnBD.Text = seniorBasicDetail.birthdate;
+                label12.Text = membershipFeeModel.TotalCont.ToString();
                 lbnCs.Text = seniorBasicDetail.civilstatus;
                 lbnGender.Text = seniorBasicDetail.gender;
                 lbnNatio.Text = seniorBasicDetail.nat;
@@ -83,6 +88,9 @@ namespace CST.System_Admin
                 lbnRel.Text = seniorBasicDetail.religion;
                 lbnPOB.Text = seniorBasicDetail.pob;
                 pix1.ImageLocation = seniorBasicDetail.imgPath;
+
+
+                //label12.Text = seniorPayment.Payment.ToString();
             }
 
 

@@ -63,7 +63,12 @@ namespace CST.Volunteer
 
         private void pbClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+        }
+
+        private void pix1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -230,7 +230,7 @@ namespace CST {
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            DialogResult form1 = MessageBox.Show("Do you really want to Logout",
+            DialogResult form1 = MessageBox.Show("Do you really want to Log-out?",
                               "Exit", MessageBoxButtons.YesNo);
 
 

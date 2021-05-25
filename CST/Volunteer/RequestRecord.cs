@@ -103,7 +103,6 @@ namespace CST.Volunteer
 
         private void button7_Click(object sender, EventArgs e)
         {
-         
                 requesteyecontroller.deleteRequestEyeglasses(int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString()));
                 auditTrail.addAudit(label1.Text, "Delete a Eyeglasses Request");
                 MessageBox.Show("Succesfully Remove Data");

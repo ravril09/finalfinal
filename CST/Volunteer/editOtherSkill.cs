@@ -75,5 +75,15 @@ namespace CST.Volunteer
         {
             this.Hide();
         }
+
+        private void txtOther_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAnn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

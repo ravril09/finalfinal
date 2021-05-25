@@ -76,11 +76,25 @@ namespace CST.Volunteer
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            requestMedical.addRequestMedical(textBox1.Text.Trim(),txtFullname.Text.Trim(), txtContactNumber.Text.Trim(), txtAddress.Text.Trim(), txtRemarks.Text.Trim());
+            bool valid = checkValidation();
+            if (valid)
+            {
 
-            MessageBox.Show("Successfully Added");
 
-            auditTrail.addAudit(label44.Text.Trim(), " Request Medical Added " + textBox1.Text.Trim());
+                DialogResult form2 = MessageBox.Show("Do you really want to Save ?",
+                      "Add", MessageBoxButtons.YesNo);
+
+                if (form2 == DialogResult.Yes)
+                {
+
+                    requestMedical.addRequestMedical(textBox1.Text.Trim(), txtFullname.Text.Trim(), txtContactNumber.Text.Trim(), txtAddress.Text.Trim(), txtRemarks.Text.Trim());
+
+
+                    MessageBox.Show("Successfully Added");
+                    auditTrail.addAudit(label44.Text.Trim(), " Request Medical Added " + textBox1.Text.Trim());
+                    
+                }
+            }
 
         }
 
@@ -121,6 +135,26 @@ namespace CST.Volunteer
         private void txtAddress_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private bool checkValidation()
+        {
+            bool isValid = true;
+
+            isValid = !(textBox1.Text.Trim() == "") && isValid;
+
+            isValid = !(txtRemarks.Text.Trim() == "") && isValid;
+
+
+            if (!isValid)
+            {
+                MessageBox.Show("Please Complete required Data", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+
+
+            return isValid;
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CST.Models;
+using CST.Report;
 using CST.Volunteer.Dialog;
 using System;
 using System.Collections.Generic;
@@ -68,6 +69,23 @@ namespace CST.Volunteer
         private void PaymentRecord_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private async void button1_Click_1(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+            //DataTable dt = new DataTable();
+
+            ds = await paymentController.getPaymentSum();
+
+            //ds.Tables.Add(dt);
+            //dataGridView1.DataSource = null;
+            //dataGridView1.DataSource = ds.Tables[0];
+            //dataGridView1.AutoResizeColumns();
+            //ds.WriteXmlSchema("C:\\xmlrep\\PrintContribution.xml");
+
+            PaymentSumReport rep = new PaymentSumReport(ds);
+            rep.ShowDialog();
         }
     }
 }

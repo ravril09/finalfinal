@@ -22,7 +22,6 @@ namespace CST.Report
         SeniorBasicDetail seniorBasicDetail = new SeniorBasicDetail();
         SeniorIdDetails seniorIdDetails = new SeniorIdDetails();
         SeniorChildrenDetails seniorChildrenDetails = new SeniorChildrenDetails();
-        PaymentController payment = new PaymentController();
         private string sno = "";
         public MembershipReportDiag(string sno)
         {
@@ -83,9 +82,6 @@ namespace CST.Report
             try_Rpt.SetParameterValue("emName", seniorChildrenDetails.emeName);
             try_Rpt.SetParameterValue("emAdd", seniorChildrenDetails.emeAdd);
             try_Rpt.SetParameterValue("emCN", seniorChildrenDetails.emeCon);
-
-            ////try_Rpt.SetParameterValue("MemberFee", payment.);
-            //try_Rpt.SetParameterValue("?MonthlyFee", seniorChildrenDetails.emeCon);
            
             crystalReportViewer1.ReportSource = try_Rpt;
         }

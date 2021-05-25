@@ -73,7 +73,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.Gold;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.panel7.Controls.Add(this.label5);
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
@@ -87,7 +87,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
-            this.label5.Location = new System.Drawing.Point(444, 29);
+            this.label5.Location = new System.Drawing.Point(455, 31);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(451, 42);
             this.label5.TabIndex = 227;
@@ -133,7 +133,7 @@
             this.label9.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Firebrick;
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(421, 120);
+            this.label9.Location = new System.Drawing.Point(429, 120);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(214, 31);
             this.label9.TabIndex = 219;
@@ -147,7 +147,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(896, 124);
+            this.button4.Location = new System.Drawing.Point(904, 124);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(31, 28);
             this.button4.TabIndex = 218;
@@ -157,14 +157,14 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(641, 125);
+            this.textBox1.Location = new System.Drawing.Point(649, 125);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(241, 26);
             this.textBox1.TabIndex = 216;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gold;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel2.Controls.Add(this.txtEyegrade);
             this.panel2.Controls.Add(this.label3);

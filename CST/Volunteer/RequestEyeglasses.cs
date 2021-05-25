@@ -59,9 +59,22 @@ namespace CST.Volunteer
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            requestEyeglass.addRequestEyeglass(textBox1.Text.Trim(), txtFullname.Text.Trim(), txtContactNumber.Text.Trim(), 
-                                                txtAddress.Text.Trim(),txtAge.Text.Trim(),txtEyegrade.Text.Trim(),txtRemarks.Text.Trim());
-            MessageBox.Show("Successfully Added");
+            bool valid = checkValidation();
+            if (valid)
+            {
+
+
+                DialogResult form2 = MessageBox.Show("Do you really want to Save ?",
+                      "Add", MessageBoxButtons.YesNo);
+
+                if (form2 == DialogResult.Yes)
+                {
+
+                    requestEyeglass.addRequestEyeglass(textBox1.Text.Trim(), txtFullname.Text.Trim(), txtContactNumber.Text.Trim(),
+                                                txtAddress.Text.Trim(), txtAge.Text.Trim(), txtEyegrade.Text.Trim(), txtRemarks.Text.Trim());
+                    MessageBox.Show("Successfully Added");
+                }
+            }
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -82,6 +95,28 @@ namespace CST.Volunteer
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private bool checkValidation()
+        {
+            bool isValid = true;
+
+            isValid = !(textBox1.Text.Trim() == "") && isValid;
+
+            isValid = !(txtEyegrade.Text.Trim() == "") && isValid;
+
+            isValid = !(txtEyegrade.Text.Trim() == "") && isValid;
+
+
+            if (!isValid)
+            {
+                MessageBox.Show("Please Complete required Data", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+
+
+            return isValid;
         }
     }
 }

@@ -49,6 +49,7 @@
             this.mySqlTransactionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mySqlTransactionBindingSource)).BeginInit();
@@ -74,7 +75,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
-            this.panel1.Controls.Add(this.btnHome);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
@@ -91,9 +91,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::CST.Properties.Resources.mislogo1;
-            this.pictureBox1.Location = new System.Drawing.Point(996, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(1098, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(204, 192);
+            this.pictureBox1.Size = new System.Drawing.Size(259, 192);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 185;
             this.pictureBox1.TabStop = false;
@@ -102,11 +102,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Firebrick;
-            this.label2.Location = new System.Drawing.Point(873, 153);
+            this.label2.Location = new System.Drawing.Point(893, 142);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 26);
+            this.label2.Size = new System.Drawing.Size(167, 40);
             this.label2.TabIndex = 216;
             this.label2.Text = "User Type";
             // 
@@ -114,21 +114,22 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Firebrick;
-            this.label4.Location = new System.Drawing.Point(378, 153);
+            this.label4.Location = new System.Drawing.Point(375, 142);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 26);
+            this.label4.Size = new System.Drawing.Size(168, 40);
             this.label4.TabIndex = 215;
             this.label4.Text = "Username";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.btnHome);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(244, 204);
+            this.panel2.Size = new System.Drawing.Size(290, 204);
             this.panel2.TabIndex = 184;
             // 
             // btnHome
@@ -136,9 +137,9 @@
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
             this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHome.Image = global::CST.Properties.Resources.download_removebg_preview;
-            this.btnHome.Location = new System.Drawing.Point(156, 4);
+            this.btnHome.Location = new System.Drawing.Point(7, 3);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(214, 195);
+            this.btnHome.Size = new System.Drawing.Size(280, 195);
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 184;
             this.btnHome.TabStop = false;
@@ -150,7 +151,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Firebrick;
-            this.label3.Location = new System.Drawing.Point(377, 25);
+            this.label3.Location = new System.Drawing.Point(414, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(624, 110);
             this.label3.TabIndex = 182;
@@ -170,7 +171,7 @@
             this.panelMenu.ForeColor = System.Drawing.Color.White;
             this.panelMenu.Location = new System.Drawing.Point(0, 204);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(261, 568);
+            this.panelMenu.Size = new System.Drawing.Size(290, 568);
             this.panelMenu.TabIndex = 186;
             // 
             // iconButton1
@@ -191,7 +192,7 @@
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.iconButton1.Rotation = 0D;
-            this.iconButton1.Size = new System.Drawing.Size(261, 40);
+            this.iconButton1.Size = new System.Drawing.Size(290, 40);
             this.iconButton1.TabIndex = 174;
             this.iconButton1.Text = "Log Out";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -217,7 +218,7 @@
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnLogout.Rotation = 0D;
-            this.btnLogout.Size = new System.Drawing.Size(261, 40);
+            this.btnLogout.Size = new System.Drawing.Size(290, 40);
             this.btnLogout.TabIndex = 7;
             this.btnLogout.Text = "SMS Notification";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -243,7 +244,7 @@
             this.btnReport.Name = "btnReport";
             this.btnReport.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnReport.Rotation = 0D;
-            this.btnReport.Size = new System.Drawing.Size(261, 40);
+            this.btnReport.Size = new System.Drawing.Size(290, 40);
             this.btnReport.TabIndex = 6;
             this.btnReport.Text = "Reports";
             this.btnReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -269,7 +270,7 @@
             this.btnBio.Name = "btnBio";
             this.btnBio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnBio.Rotation = 0D;
-            this.btnBio.Size = new System.Drawing.Size(261, 40);
+            this.btnBio.Size = new System.Drawing.Size(290, 40);
             this.btnBio.TabIndex = 5;
             this.btnBio.Text = "Biometric";
             this.btnBio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -295,7 +296,7 @@
             this.BtnAudit.Name = "BtnAudit";
             this.BtnAudit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.BtnAudit.Rotation = 0D;
-            this.BtnAudit.Size = new System.Drawing.Size(261, 40);
+            this.BtnAudit.Size = new System.Drawing.Size(290, 40);
             this.BtnAudit.TabIndex = 3;
             this.BtnAudit.Text = "Audit Trail";
             this.BtnAudit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -322,7 +323,7 @@
             this.btnUsercontrol.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnUsercontrol.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnUsercontrol.Rotation = 0D;
-            this.btnUsercontrol.Size = new System.Drawing.Size(261, 40);
+            this.btnUsercontrol.Size = new System.Drawing.Size(290, 40);
             this.btnUsercontrol.TabIndex = 1;
             this.btnUsercontrol.Text = "Usercontrol";
             this.btnUsercontrol.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -335,9 +336,9 @@
             this.panelDesktop.BackColor = System.Drawing.Color.White;
             this.panelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(261, 204);
+            this.panelDesktop.Location = new System.Drawing.Point(290, 204);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1108, 568);
+            this.panelDesktop.Size = new System.Drawing.Size(1079, 568);
             this.panelDesktop.TabIndex = 187;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
@@ -365,6 +366,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();

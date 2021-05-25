@@ -96,9 +96,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(3, 43);
+            this.panel4.Location = new System.Drawing.Point(1, 50);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(793, 5);
+            this.panel4.Size = new System.Drawing.Size(1092, 10);
             this.panel4.TabIndex = 264;
             // 
             // panel5
@@ -162,15 +162,15 @@
             // 
             // btnSend
             // 
-            this.btnSend.BackColor = System.Drawing.Color.Gold;
+            this.btnSend.BackColor = System.Drawing.Color.White;
             this.btnSend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSend.FlatAppearance.BorderSize = 0;
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSend.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSend.ForeColor = System.Drawing.Color.Firebrick;
             this.btnSend.Location = new System.Drawing.Point(778, 431);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(143, 36);
+            this.btnSend.Size = new System.Drawing.Size(143, 44);
             this.btnSend.TabIndex = 274;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = false;
@@ -199,14 +199,14 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Location = new System.Drawing.Point(775, 428);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(149, 42);
+            this.panel2.Size = new System.Drawing.Size(149, 50);
             this.panel2.TabIndex = 277;
             // 
             // SmsNotification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gold;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1093, 501);
             this.Controls.Add(this.btnSend);

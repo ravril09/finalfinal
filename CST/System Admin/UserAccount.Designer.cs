@@ -32,8 +32,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserAccount));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgUserAccounts = new System.Windows.Forms.DataGridView();
-            this.btnResetPass = new System.Windows.Forms.Button();
+            this.gbUserForm = new System.Windows.Forms.GroupBox();
+            this.cbUsertype = new System.Windows.Forms.ComboBox();
+            this.txtMiddlename = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtFirstname = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtLastname = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.btnResetPass = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -43,17 +54,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.txtuname = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.txtLastname = new System.Windows.Forms.TextBox();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtFirstname = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtMiddlename = new System.Windows.Forms.TextBox();
-            this.cbUsertype = new System.Windows.Forms.ComboBox();
-            this.gbUserForm = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.button2 = new System.Windows.Forms.Button();
@@ -71,8 +71,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgUserAccounts)).BeginInit();
-            this.panel4.SuspendLayout();
             this.gbUserForm.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemaColumnBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mySqlConnectionBindingSource)).BeginInit();
@@ -110,21 +110,130 @@
             this.dgUserAccounts.StandardTab = true;
             this.dgUserAccounts.TabIndex = 114;
             // 
-            // btnResetPass
+            // gbUserForm
             // 
-            this.btnResetPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
-            this.btnResetPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnResetPass.FlatAppearance.BorderSize = 0;
-            this.btnResetPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResetPass.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResetPass.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnResetPass.Location = new System.Drawing.Point(517, 431);
-            this.btnResetPass.Name = "btnResetPass";
-            this.btnResetPass.Size = new System.Drawing.Size(167, 42);
-            this.btnResetPass.TabIndex = 202;
-            this.btnResetPass.Text = "Reset Password";
-            this.btnResetPass.UseVisualStyleBackColor = false;
-            this.btnResetPass.Click += new System.EventHandler(this.btnResetPass_Click);
+            this.gbUserForm.BackColor = System.Drawing.Color.Transparent;
+            this.gbUserForm.Controls.Add(this.cbUsertype);
+            this.gbUserForm.Controls.Add(this.txtMiddlename);
+            this.gbUserForm.Controls.Add(this.label21);
+            this.gbUserForm.Controls.Add(this.label3);
+            this.gbUserForm.Controls.Add(this.txtFirstname);
+            this.gbUserForm.Controls.Add(this.label1);
+            this.gbUserForm.Controls.Add(this.txtUsername);
+            this.gbUserForm.Controls.Add(this.txtLastname);
+            this.gbUserForm.Controls.Add(this.btnSave);
+            this.gbUserForm.Controls.Add(this.label23);
+            this.gbUserForm.Controls.Add(this.label15);
+            this.gbUserForm.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbUserForm.Location = new System.Drawing.Point(286, 25);
+            this.gbUserForm.Name = "gbUserForm";
+            this.gbUserForm.Size = new System.Drawing.Size(489, 251);
+            this.gbUserForm.TabIndex = 196;
+            this.gbUserForm.TabStop = false;
+            this.gbUserForm.Text = "User Form";
+            this.gbUserForm.Click += new System.EventHandler(this.gbUserForm_Click);
+            this.gbUserForm.Enter += new System.EventHandler(this.gbUserForm_Enter);
+            // 
+            // cbUsertype
+            // 
+            this.cbUsertype.DropDownHeight = 150;
+            this.cbUsertype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbUsertype.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbUsertype.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cbUsertype.FormattingEnabled = true;
+            this.cbUsertype.IntegralHeight = false;
+            this.cbUsertype.ItemHeight = 20;
+            this.cbUsertype.Items.AddRange(new object[] {
+            "System Admin",
+            "Enrollment Admin",
+            "Registrar",
+            "Cashier",
+            "Teacher"});
+            this.cbUsertype.Location = new System.Drawing.Point(210, 160);
+            this.cbUsertype.Name = "cbUsertype";
+            this.cbUsertype.Size = new System.Drawing.Size(248, 28);
+            this.cbUsertype.TabIndex = 157;
+            this.cbUsertype.SelectedIndexChanged += new System.EventHandler(this.cbUsertype_SelectedIndexChanged);
+            // 
+            // txtMiddlename
+            // 
+            this.txtMiddlename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMiddlename.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMiddlename.ForeColor = System.Drawing.Color.Black;
+            this.txtMiddlename.Location = new System.Drawing.Point(332, 88);
+            this.txtMiddlename.Name = "txtMiddlename";
+            this.txtMiddlename.Size = new System.Drawing.Size(126, 26);
+            this.txtMiddlename.TabIndex = 151;
+            this.txtMiddlename.TextChanged += new System.EventHandler(this.txtMiddlename_TextChanged);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label21.Location = new System.Drawing.Point(207, 141);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(75, 16);
+            this.label21.TabIndex = 154;
+            this.label21.Text = "Usertype:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label3.Location = new System.Drawing.Point(330, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 16);
+            this.label3.TabIndex = 155;
+            this.label3.Text = "Middle Name:";
+            // 
+            // txtFirstname
+            // 
+            this.txtFirstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstname.ForeColor = System.Drawing.Color.Black;
+            this.txtFirstname.Location = new System.Drawing.Point(175, 88);
+            this.txtFirstname.Name = "txtFirstname";
+            this.txtFirstname.Size = new System.Drawing.Size(126, 26);
+            this.txtFirstname.TabIndex = 150;
+            this.txtFirstname.TextChanged += new System.EventHandler(this.txtFirstname_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(186, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 16);
+            this.label1.TabIndex = 151;
+            this.label1.Text = "First Name:";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
+            this.txtUsername.Location = new System.Drawing.Point(5, 162);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(163, 26);
+            this.txtUsername.TabIndex = 152;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
+            // 
+            // txtLastname
+            // 
+            this.txtLastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastname.ForeColor = System.Drawing.Color.Black;
+            this.txtLastname.Location = new System.Drawing.Point(18, 88);
+            this.txtLastname.Name = "txtLastname";
+            this.txtLastname.Size = new System.Drawing.Size(126, 26);
+            this.txtLastname.TabIndex = 149;
+            this.txtLastname.TextChanged += new System.EventHandler(this.txtLastname_TextChanged);
             // 
             // btnSave
             // 
@@ -142,6 +251,46 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label23.Location = new System.Drawing.Point(3, 143);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(83, 16);
+            this.label23.TabIndex = 146;
+            this.label23.Text = "Username:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label15.Location = new System.Drawing.Point(15, 68);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(86, 16);
+            this.label15.TabIndex = 147;
+            this.label15.Text = "Last Name:";
+            // 
+            // btnResetPass
+            // 
+            this.btnResetPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.btnResetPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnResetPass.FlatAppearance.BorderSize = 0;
+            this.btnResetPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResetPass.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResetPass.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnResetPass.Location = new System.Drawing.Point(517, 431);
+            this.btnResetPass.Name = "btnResetPass";
+            this.btnResetPass.Size = new System.Drawing.Size(167, 42);
+            this.btnResetPass.TabIndex = 202;
+            this.btnResetPass.Text = "Reset Password";
+            this.btnResetPass.UseVisualStyleBackColor = false;
+            this.btnResetPass.Click += new System.EventHandler(this.btnResetPass_Click);
             // 
             // label2
             // 
@@ -168,12 +317,13 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(2, 45);
+            this.panel4.Location = new System.Drawing.Point(2, 50);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(795, 10);
+            this.panel4.Size = new System.Drawing.Size(1276, 10);
             this.panel4.TabIndex = 199;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // btnRemove
             // 
@@ -181,7 +331,7 @@
             this.btnRemove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemove.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.Color.Firebrick;
             this.btnRemove.Location = new System.Drawing.Point(705, 431);
             this.btnRemove.Name = "btnRemove";
@@ -255,155 +405,6 @@
             this.txtuname.Text = "user";
             this.txtuname.Visible = false;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label15.Location = new System.Drawing.Point(15, 68);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(86, 16);
-            this.label15.TabIndex = 147;
-            this.label15.Text = "Last Name:";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label23.Location = new System.Drawing.Point(3, 143);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(83, 16);
-            this.label23.TabIndex = 146;
-            this.label23.Text = "Username:";
-            // 
-            // txtLastname
-            // 
-            this.txtLastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastname.ForeColor = System.Drawing.Color.Black;
-            this.txtLastname.Location = new System.Drawing.Point(18, 88);
-            this.txtLastname.Name = "txtLastname";
-            this.txtLastname.Size = new System.Drawing.Size(126, 26);
-            this.txtLastname.TabIndex = 149;
-            this.txtLastname.TextChanged += new System.EventHandler(this.txtLastname_TextChanged);
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.ForeColor = System.Drawing.Color.Black;
-            this.txtUsername.Location = new System.Drawing.Point(5, 162);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(163, 26);
-            this.txtUsername.TabIndex = 152;
-            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(186, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 16);
-            this.label1.TabIndex = 151;
-            this.label1.Text = "First Name:";
-            // 
-            // txtFirstname
-            // 
-            this.txtFirstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstname.ForeColor = System.Drawing.Color.Black;
-            this.txtFirstname.Location = new System.Drawing.Point(175, 88);
-            this.txtFirstname.Name = "txtFirstname";
-            this.txtFirstname.Size = new System.Drawing.Size(126, 26);
-            this.txtFirstname.TabIndex = 150;
-            this.txtFirstname.TextChanged += new System.EventHandler(this.txtFirstname_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(330, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 16);
-            this.label3.TabIndex = 155;
-            this.label3.Text = "Middle Name:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label21.Location = new System.Drawing.Point(207, 141);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(75, 16);
-            this.label21.TabIndex = 154;
-            this.label21.Text = "Usertype:";
-            // 
-            // txtMiddlename
-            // 
-            this.txtMiddlename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMiddlename.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMiddlename.ForeColor = System.Drawing.Color.Black;
-            this.txtMiddlename.Location = new System.Drawing.Point(332, 88);
-            this.txtMiddlename.Name = "txtMiddlename";
-            this.txtMiddlename.Size = new System.Drawing.Size(126, 26);
-            this.txtMiddlename.TabIndex = 151;
-            this.txtMiddlename.TextChanged += new System.EventHandler(this.txtMiddlename_TextChanged);
-            // 
-            // cbUsertype
-            // 
-            this.cbUsertype.DropDownHeight = 150;
-            this.cbUsertype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbUsertype.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cbUsertype.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cbUsertype.FormattingEnabled = true;
-            this.cbUsertype.IntegralHeight = false;
-            this.cbUsertype.ItemHeight = 20;
-            this.cbUsertype.Items.AddRange(new object[] {
-            "System Admin",
-            "Enrollment Admin",
-            "Registrar",
-            "Cashier",
-            "Teacher"});
-            this.cbUsertype.Location = new System.Drawing.Point(210, 160);
-            this.cbUsertype.Name = "cbUsertype";
-            this.cbUsertype.Size = new System.Drawing.Size(248, 28);
-            this.cbUsertype.TabIndex = 157;
-            this.cbUsertype.SelectedIndexChanged += new System.EventHandler(this.cbUsertype_SelectedIndexChanged);
-            // 
-            // gbUserForm
-            // 
-            this.gbUserForm.BackColor = System.Drawing.Color.Transparent;
-            this.gbUserForm.Controls.Add(this.cbUsertype);
-            this.gbUserForm.Controls.Add(this.txtMiddlename);
-            this.gbUserForm.Controls.Add(this.label21);
-            this.gbUserForm.Controls.Add(this.label3);
-            this.gbUserForm.Controls.Add(this.txtFirstname);
-            this.gbUserForm.Controls.Add(this.label1);
-            this.gbUserForm.Controls.Add(this.txtUsername);
-            this.gbUserForm.Controls.Add(this.txtLastname);
-            this.gbUserForm.Controls.Add(this.btnSave);
-            this.gbUserForm.Controls.Add(this.label23);
-            this.gbUserForm.Controls.Add(this.label15);
-            this.gbUserForm.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbUserForm.Location = new System.Drawing.Point(286, 25);
-            this.gbUserForm.Name = "gbUserForm";
-            this.gbUserForm.Size = new System.Drawing.Size(489, 251);
-            this.gbUserForm.TabIndex = 196;
-            this.gbUserForm.TabStop = false;
-            this.gbUserForm.Text = "User Form";
-            this.gbUserForm.Click += new System.EventHandler(this.gbUserForm_Click);
-            this.gbUserForm.Enter += new System.EventHandler(this.gbUserForm_Enter);
-            // 
             // label8
             // 
             this.label8.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -430,7 +431,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Firebrick;
             this.button2.Location = new System.Drawing.Point(353, 430);
             this.button2.Name = "button2";
@@ -447,7 +448,7 @@
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Firebrick;
             this.button3.Location = new System.Drawing.Point(2, 2);
             this.button3.Name = "button3";
@@ -566,9 +567,9 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.Gold;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1277, 535);
+            this.ClientSize = new System.Drawing.Size(1164, 535);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox1);
@@ -595,9 +596,9 @@
             this.Load += new System.EventHandler(this.UserAccount_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgUserAccounts)).EndInit();
-            this.panel4.ResumeLayout(false);
             this.gbUserForm.ResumeLayout(false);
             this.gbUserForm.PerformLayout();
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schemaColumnBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mySqlConnectionBindingSource)).EndInit();

@@ -154,5 +154,24 @@ namespace CST.Volunteer
         {
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private async void button6_Click_1(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
+
+            ds = await personaldetailcontroller.getDs();
+
+            ds.Tables.Add(dt);
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = ds.Tables[0];
+            dataGridView1.AutoResizeColumns();
+            ds.WriteXmlSchema("C:\\xmlrep\\PrintNationalID1.xml");
+        }
     }
 }

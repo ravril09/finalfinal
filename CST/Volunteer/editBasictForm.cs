@@ -16,6 +16,7 @@ namespace CST.Registrar
         BasicDetailsController studentsDetailsController = new BasicDetailsController();
         string gender = "";
         string civilstatus = "";
+        string eduattain = "";
         public editStudentForm(string fn, string ln, string mn, string gen,
                                 int age, string civil, string bd, string pob, string cn, string nat, string rel, string EducAt, string add, string sno )
         {
@@ -29,11 +30,12 @@ namespace CST.Registrar
             txtPOB.Text = pob;
             txtReligion.Text = rel;
             textBox24.Text = cn;
-            txtEdu.Text = EducAt;
             textBox19.Text = age +"";
 
             gender = gen;
             civilstatus = civil;
+            eduattain = EducAt;
+
             if(gen == "Male")
             {
                 radioButton12.Checked = true;
@@ -57,6 +59,23 @@ namespace CST.Registrar
                 radioButton14.Checked = true;
             }
 
+            if (EducAt == "Elementary")
+            {
+                radioButton5.Checked = true;
+            }
+            else if (EducAt == "Highschool")
+            {
+                radioButton4.Checked = true;
+            }
+            else if (EducAt == "Under Graduate")
+            {
+                radioButton3.Checked = true;
+            }
+            else
+            {
+                radioButton6.Checked = true;
+            }
+
            
         }
 
@@ -73,7 +92,7 @@ namespace CST.Registrar
             {
                 studentsDetailsController.updateStudDetails(txtFirstname.Text.Trim(), txtLastname.Text.Trim(), txtMiddlename.Text.Trim(), gender,
                                                             int.Parse(textBox19.Text.Trim()), civilstatus, dateTimePicker1.Value.ToShortDateString(), txtPOB.Text.Trim(),
-                                                            textBox24.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), txtEdu.Text.Trim() ,txtAddress.Text.Trim(), txtStudentID.Text.Trim());
+                                                            textBox24.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), eduattain ,txtAddress.Text.Trim(), txtStudentID.Text.Trim());
                 MessageBox.Show("Succesfully Updated Student Personal Info");
                 this.Hide();
             }
@@ -115,6 +134,16 @@ namespace CST.Registrar
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
         }

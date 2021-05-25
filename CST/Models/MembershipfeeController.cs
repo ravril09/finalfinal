@@ -1,9 +1,13 @@
-﻿using System;
+﻿using CST.Models.Member;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CST.Models
 {
@@ -30,7 +34,7 @@ namespace CST.Models
 
             DbDataReader reader = await cs.RetrieveRecordsAsync(sql, null);
 
-            if( await reader.ReadAsync())
+            if (await reader.ReadAsync())
             {
                 lastno = int.Parse(reader["ID"].ToString());
             }
@@ -41,6 +45,27 @@ namespace CST.Models
 
         }
 
+        public async Task<SeniorPayment> getModel(string sno)
+        {
+            SeniorPayment seniorPayment = new SeniorPayment();
+
+            string sql = @"SELECT * FROM membership_fee WHERE sno = @sno";
+
+            List<MySqlParameter> mySqlParameters = new List<MySqlParameter>()
+            {
+                (new MySqlParameter("@sno",sno))
+            };
+            DbDataReader reader = await cs.RetrieveRecordsAsync(sql, mySqlParameters);
+            if (await reader.ReadAsync())
+            {
+                seniorPayment.monthly = int.Parse(reader["Payment"].ToString());
+                seniorPayment.sno = reader["sno"].ToString();
+                //seniorPayment.payment = int.Parse(reader["noParam"].ToString());
+            }
+            cs.CloseConnection();
+
+            return seniorPayment;
+        }
 
     }
 }

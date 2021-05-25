@@ -32,12 +32,13 @@ namespace CST
 
 
         string fpTemp = "";
-       
+        bool inValid3 = false;
         bool inValid2 = false;
         int currentTab = 0;
         bool inValid = false;
         string gender = "";
         string civil = "";
+        string eduatt = "";
         private string sno;
 
         public StudentForm(string sno)
@@ -60,10 +61,12 @@ namespace CST
             dateTimePicker1.MaxDate = DateTime.Now;
             inValid = true;
             inValid2 = true;
+            inValid3 = true;
 
 
             radioButton1.Checked = true;
             radioButton12.Checked = true;
+            radioButton5.Checked = true;
 
 
             SeniorModel.setBd(dateTimePicker1.Value.ToString().Split()[0]);
@@ -151,12 +154,13 @@ namespace CST
             bool isvalid = true;
             isvalid = validationTab1() && isvalid;
             isvalid = validationTab2() && isvalid;
+            isvalid = validationTab3() && isvalid;
             isvalid = pictureBox2.Image != null && isvalid;
             if (isvalid)
             {
                 isvalid = inValid && isvalid;
                 isvalid = inValid2 && isvalid;
-
+                isvalid = inValid3 && isvalid;
 
                 backgroundWorker1.RunWorkerAsync();
                 progressBar1.Show();
@@ -165,7 +169,7 @@ namespace CST
 
                 basicdetailController.addStudDetails(txtStudentID.Text.Trim(), txtFirstname.Text.Trim(), txtLastname.Text.Trim(), txtMiddlename.Text.Trim(), gender,
                                                             int.Parse(textBox19.Text.Trim()), civil, dateTimePicker1.Value.ToShortDateString(), txtPOB.Text.Trim(),
-                                                            txtContact.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), textBox1.Text.Trim(), txtAddress.Text.Trim());
+                                                            txtContact.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), eduatt, txtAddress.Text.Trim());
                 studFam.addFamDetails(txtStudentID.Text.Trim(), txtC1Fullname.Text.Trim(), txtC1Mobile.Text.Trim(), txtC1Address.Text.Trim(), txtC2Fullname.Text.Trim(),
                                         txtC2Mobile.Text.Trim(), txtC2Address.Text.Trim(), txtC3Fullname.Text.Trim(), txtC3Mobile.Text.Trim(), txtC3Address.Text.Trim(), txtEfullName.Text.Trim(),
                                          txtEAddress.Text.Trim(), txtERelation.Text.Trim(), txtEContactNo.Text.Trim());
@@ -251,7 +255,14 @@ namespace CST
 
             return isValid;
         }
+        private bool validationTab3()
+        {
+            bool isValid = true;
 
+            isValid = !(SeniorModel.getOSCA() == "") && isValid;
+         
+            return isValid;
+        }
 
 
         private bool validationTab1()
@@ -439,6 +450,7 @@ namespace CST
                     tabControl1.SelectedIndex = changedPage;
                     errorProvider1.Clear();
 
+
                 }
                 else
                 {
@@ -485,15 +497,35 @@ namespace CST
             }
             else if (currentTab == 2)
             {
-
-
                 int changedPage = tabControl1.SelectedIndex;
 
-                currentTab = changedPage;
-                tabControl1.SelectedIndex = changedPage;
+                bool isValidToNextPage = validationTab3();
+                if (isValidToNextPage)
+                {
+                    currentTab = changedPage;
+                    tabControl1.SelectedIndex = changedPage;
+                    errorProvider1.Clear();
+                }
+                else
+                {
+                    e.Cancel = true;
+                    errorHandlingIsEmpty(ref txtOSCA, "Enter OSCA");
 
+                    MessageBox.Show("Please Enter OSCA Number", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
             }
+            //else if (currentTab == 2)
+            //{
+
+
+            //    int changedPage = tabControl1.SelectedIndex;
+
+            //    currentTab = changedPage;
+            //    tabControl1.SelectedIndex = changedPage;
+
+
+            //}
 
         }
 
@@ -783,7 +815,7 @@ namespace CST
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            SeniorModel.setEduAtt(textBox1.Text.Trim());
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -823,6 +855,33 @@ namespace CST
         private void label55_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            SeniorModel.setSSS(radioButton5.Text.Trim());
+            if (radioButton5.Checked)
+            {
+                eduatt = "Elementary";
+            }
+            else if (radioButton4.Checked)
+            {
+                eduatt = "Highschool";
+            }
+            else if (radioButton4.Checked)
+            {
+                eduatt = "Under Grad";
+            }
+            else
+            {
+                eduatt = "College Graduate";
+            }
+
+        }
+
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

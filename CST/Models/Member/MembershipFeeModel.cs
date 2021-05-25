@@ -11,6 +11,8 @@ namespace CST.Models.Member
 
         public int id { get; set; }
         public string sno { get; set; }
+        public int Payment { get; set; }
         public string name { get; set; }
+        public int TotalCont { get; set; }
     }
 }

@@ -182,43 +182,38 @@ namespace CST
 
         }
 
-        private async void button6_Click(object sender, EventArgs e)
+        private async  void button6_Click(object sender, EventArgs e)
         {
-            
-
-            if (dataGridView1.Rows.Count > 0)
-            {
+            //if(dataGridView1.Rows.Count > 0)
+            //{
                 DataSet ds = new DataSet();
-                ds = await studentsDetailsController.getDs();
-                DataTable dt = new DataTable();
+
+           
+            //DataTable dt = new DataTable();
+
+            ds = await studentsDetailsController.getDs();
+
+            // dt.Columns.Add("try", typeof(string));
 
 
-                RecordsRep rep = new RecordsRep(ds);
-                rep.ShowDialog();
+            //   for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            //{
 
+            //   dt.Rows.Add(dataGridView1.Rows[i].Cells[0].Value.ToString());
+            //    }
 
-                dt.Columns.Add("try", typeof(string));
+            //ds.Tables.Add(dt);
+            //dataGridView1.DataSource = null;
+            //dataGridView1.DataSource = ds.Tables[0];
+            //dataGridView1.AutoResizeColumns();
 
-
-                for (int i = 0; i < dataGridView1.Rows.Count; i++)
-                {
-
-                    dt.Rows.Add(dataGridView1.Rows[i].Cells[0].Value.ToString());
-
-
-                    //ds.Tables.Add(dt);
-                    //dataGridView1.DataSource = null;
-                    //dataGridView1.DataSource = ds.Tables[0];
-                    //dataGridView1.AutoResizeColumns();
-
-                    //ds.WriteXmlSchema("C:\\xmlrep\\PrintSummary.xml");
+            //ds.WriteXmlSchema("C:\\xmlrep\\PrintSummaryRecord.xml");
 
 
 
 
-                  
-                }
-            }
+            RecordsRep rep = new RecordsRep(ds);
+            rep.ShowDialog();
 
         }
 
@@ -286,6 +281,11 @@ namespace CST
         }
 
         private void button12_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }

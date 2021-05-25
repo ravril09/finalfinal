@@ -117,15 +117,15 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.Gold;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnLogin.Enabled = false;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnLogin.Location = new System.Drawing.Point(354, 226);
+            this.btnLogin.Location = new System.Drawing.Point(351, 226);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(185, 44);
             this.btnLogin.TabIndex = 142;
@@ -187,7 +187,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Gold;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.label7.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Firebrick;
             this.label7.Location = new System.Drawing.Point(181, 300);
@@ -214,9 +214,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Gold;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.label3.Font = new System.Drawing.Font("Times New Roman", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Firebrick;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.label3.Location = new System.Drawing.Point(108, 6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(431, 74);
@@ -230,7 +230,7 @@
             this.txtUN.BackColor = System.Drawing.Color.Transparent;
             this.txtUN.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUN.ForeColor = System.Drawing.Color.Firebrick;
-            this.txtUN.Location = new System.Drawing.Point(137, 301);
+            this.txtUN.Location = new System.Drawing.Point(33, 298);
             this.txtUN.Name = "txtUN";
             this.txtUN.Size = new System.Drawing.Size(118, 25);
             this.txtUN.TabIndex = 171;
@@ -244,7 +244,7 @@
             this.txtUT.Enabled = false;
             this.txtUT.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUT.ForeColor = System.Drawing.Color.Firebrick;
-            this.txtUT.Location = new System.Drawing.Point(390, 300);
+            this.txtUT.Location = new System.Drawing.Point(346, 298);
             this.txtUT.Name = "txtUT";
             this.txtUT.Size = new System.Drawing.Size(120, 25);
             this.txtUT.TabIndex = 180;
@@ -254,9 +254,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = global::CST.Properties.Resources.mislogo1;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(180, 160);
+            this.pictureBox3.Size = new System.Drawing.Size(184, 166);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 188;
             this.pictureBox3.TabStop = false;
@@ -297,7 +297,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel6.Controls.Add(this.panel3);
             this.panel6.Controls.Add(this.panel1);
@@ -356,7 +356,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Gold;
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(640, 85);
@@ -365,7 +365,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Gold;
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.pictureBox5.Location = new System.Drawing.Point(0, 284);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(640, 52);

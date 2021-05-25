@@ -43,7 +43,7 @@
             // 
             // gbResetPass
             // 
-            this.gbResetPass.BackColor = System.Drawing.Color.Transparent;
+            this.gbResetPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.gbResetPass.Controls.Add(this.label3);
             this.gbResetPass.Controls.Add(this.label2);
             this.gbResetPass.Controls.Add(this.label1);
@@ -54,7 +54,7 @@
             this.gbResetPass.Controls.Add(this.txtPassword);
             this.gbResetPass.Controls.Add(this.label4);
             this.gbResetPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbResetPass.Location = new System.Drawing.Point(12, 12);
+            this.gbResetPass.Location = new System.Drawing.Point(12, 32);
             this.gbResetPass.Name = "gbResetPass";
             this.gbResetPass.Size = new System.Drawing.Size(485, 239);
             this.gbResetPass.TabIndex = 199;

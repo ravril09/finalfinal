@@ -110,7 +110,7 @@ namespace CST
 
                 if (role == "")
                 {
-                    MessageBox.Show("incorrect username or password","Validation",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Incorrect Username or Password!","Validation",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     return;
                 }
                 else
@@ -170,7 +170,7 @@ namespace CST
 
             if (string.IsNullOrWhiteSpace(txtUsername.Text))
             {
-                errorProvider1.SetError(txtUsername, "Please enter your Username");
+                errorProvider1.SetError(txtUsername, "Please enter your Username!");
 
                 btnLogin.Enabled = false;
 
@@ -204,7 +204,7 @@ namespace CST
             // text null symbol only  prompt side 
             if (string.IsNullOrWhiteSpace(txtPassword.Text))
             {
-                 errorProvider1.SetError(txtPassword, "please enter your password");
+                 errorProvider1.SetError(txtPassword, "Please enter your password!");
          
                  btnLogin.Enabled = false;
                                         

@@ -51,9 +51,9 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(2, 42);
+            this.panel4.Location = new System.Drawing.Point(2, 49);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(793, 5);
+            this.panel4.Size = new System.Drawing.Size(1064, 10);
             this.panel4.TabIndex = 209;
             // 
             // panel5
@@ -208,9 +208,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gold;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1063, 473);
+            this.ClientSize = new System.Drawing.Size(1063, 517);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtUT);
             this.Controls.Add(this.txtUN);

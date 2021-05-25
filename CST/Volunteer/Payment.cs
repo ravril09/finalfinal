@@ -48,7 +48,7 @@ namespace CST.Volunteer
            
         }
 
-        private async void btnSave_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
 
@@ -60,17 +60,20 @@ namespace CST.Volunteer
 
             paymentController.addPayment(sno, payment);
 
-            Receipt rec = new Receipt();
- 
-            rec.SetParameterValue("payername", name);
-            rec.SetParameterValue("totalAmt", payment);
-            int no = await membershipfeeController.getLatestNo();
-            rec.SetParameterValue("noParam", no);
+            //Receipt rec = new Receipt();
+            ReceiptReport rep = new ReceiptReport(sno);
 
+            //rec.SetParameterValue("payername", name);
+            //rec.SetParameterValue("totalAmt", payment);
+            //int no = await membershipfeeController.getLatestNo();
+            //rec.SetParameterValue("noParam", sno);
 
-            rec.PrintToPrinter(1, false, 0, 0);
+            
+            rep.ShowDialog();
 
-            this.Hide();
+            //rec.PrintToPrinter(1, false, 0, 0);
+
+            //this.Hide();
 
 
             RegistrarRecord registrarRecord = new RegistrarRecord();
