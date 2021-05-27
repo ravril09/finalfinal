@@ -99,7 +99,7 @@ namespace CST
                                                                   dataGridView1.SelectedRows[0].Cells[0].Value.ToString()
                                                                   );
                         frm.ShowDialog();
-                        StudHistDetailsController.fillDataHist(ref dataGridView1);
+                     studentsDetailsController.fillDataGridDetails(ref dataGridView1);
 
                     }
                     else if (clickedBut == "Children")
@@ -288,6 +288,81 @@ namespace CST
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Right)
+            {
+                int currentMouseOverRow = dataGridView1.HitTest(e.X, e.Y).RowIndex;
+
+                if(currentMouseOverRow >= 0)
+                {
+                   
+
+                    if (clickedBut == "Personal")
+                    {
+
+                        editStudentForm frm = new editStudentForm(dataGridView1.SelectedRows[0].Cells[1].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[2].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[3].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[4].Value.ToString(),
+                                                                    int.Parse(dataGridView1.SelectedRows[0].Cells[5].Value.ToString()),
+                                                                    dataGridView1.SelectedRows[0].Cells[6].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[7].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[8].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[9].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[10].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[11].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[12].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[13].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[0].Value.ToString()
+                                                                    );
+                        frm.ShowDialog();
+                        studentsDetailsController.fillDataGridDetails(ref dataGridView1);
+
+                    }
+                    else if (clickedBut == "Children")
+                    {
+                        editStudFam frm = new editStudFam(dataGridView1.SelectedRows[0].Cells[1].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[2].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[3].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[4].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[5].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[6].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[7].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[8].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[9].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[10].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[11].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[12].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[13].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[0].Value.ToString()
+
+                            );
+
+                        frm.ShowDialog();
+                        studFamDetailsController.filldataGridFam(ref dataGridView1);
+
+
+                    }
+                    else if (clickedBut == "ID")
+                    {
+                        editStudHist frm = new editStudHist(dataGridView1.SelectedRows[0].Cells[1].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[2].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[3].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[4].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[5].Value.ToString(),
+                                                            dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                        frm.ShowDialog();
+
+                        StudHistDetailsController.fillDataHist(ref dataGridView1);
+                    }
+
+
+                   
+                }
+            }
         }
     }
 }

@@ -65,6 +65,9 @@ namespace CST.Volunteer
 
             //ReceiptReport rep = new ReceiptReport(sno);
             //rep.ShowDialog();
+            //RegistrarRecord registrarRecord = new RegistrarRecord();
+            //registrarRecord.Show();
+            //this.Hide();
 
             rec.SetParameterValue("payername", name);
             rec.SetParameterValue("totalAmt", payment);

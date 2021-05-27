@@ -176,6 +176,7 @@
     <Compile Include="Models\FpController.cs" />
     <Compile Include="Models\MembershipfeeController.cs" />
     <Compile Include="Models\Member\ApplicationNationalIDModel.cs" />
+    <Compile Include="Models\Member\FpModels.cs" />
     <Compile Include="Models\Member\MembershipFeeModel.cs" />
     <Compile Include="Models\Member\SeniorBasicDetail.cs" />
     <Compile Include="Models\Member\SeniorChildrenDetails.cs" />
@@ -737,6 +738,9 @@
     <None Include="Resources\download1.png" />
     <None Include="Resources\download2.png" />
     <None Include="Resources\biometric-fingerprint-scan-vector-21105659.jpg" />
+    <None Include="Resources\fingerprint.gif" />
+    <None Include="Resources\5d0643f35b89165111c1db9d_fp-animation.gif" />
+    <None Include="Resources\ezgif.com-video-to-gif.gif" />
     <Content Include="Resources\icon-backup.png" />
     <Content Include="Resources\icon-database-connected.png" />
     <Content Include="Resources\icon-database-disconnected.png" />

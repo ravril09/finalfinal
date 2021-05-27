@@ -30,8 +30,9 @@ namespace CST
         AuditTrailControl auditTrail = new AuditTrailControl();
         // StudentEnrolledController studentEnrolledController = new StudentEnrolledController();
 
-
-        string fpTemp = "";
+        List<string> fpTemps = new List<string>();
+        int counter = 0;
+       
         bool inValid3 = false;
         bool inValid2 = false;
         int currentTab = 0;
@@ -75,6 +76,19 @@ namespace CST
 
             fp.SensorIndex = 0;
             fp.OnImageReceived += new IZKFPEngXEvents_OnImageReceivedEventHandler(fp_OnImageReceived);
+            fp.OnCapture += X_Capture;
+        }
+
+        private void X_Capture(bool ActionResult, object ATemplate)
+        {
+            if (ActionResult) //if fingerprint is captured successfully
+            {
+              //  errorProvider2.SetError(pictureBox1, "Image Not Clear");
+            }
+            else
+            {
+                
+            }
         }
 
         private void fp_OnImageReceived(ref bool AImageValid)
@@ -161,7 +175,7 @@ namespace CST
                 isvalid = inValid && isvalid;
                 isvalid = inValid2 && isvalid;
                 isvalid = inValid3 && isvalid;
-
+                isvalid = fpTemps.Count > 2 && isvalid;
                 backgroundWorker1.RunWorkerAsync();
                 progressBar1.Show();
                 tabControl1.Enabled = false;
@@ -177,9 +191,11 @@ namespace CST
                                        txtSSS.Text.Trim());
 
 
-                await fpController.save(fpTemp, $"C:\\fp\\{txtStudentID.Text.Trim()}-fp.png", txtStudentID.Text.Trim());
+                await fpController.save(fpTemps, txtStudentID.Text.Trim());
                 auditTrail.addAudit(label44.Text, "Add Senior Data " + txtStudentID.Text.Trim());
-                pictureBox2.Image.Save($"C:\\fp\\{txtStudentID.Text.Trim()}-fp.png");
+                pictureBox2.Image.Save($"C:\\fp\\{txtStudentID.Text.Trim()}-1-fp.png");
+                pictureBox3.Image.Save($"C:\\fp\\{txtStudentID.Text.Trim()}-2-fp.png");
+                pictureBox4.Image.Save($"C:\\fp\\{txtStudentID.Text.Trim()}-3-fp.png");
 
                 MessageBox.Show("Succesfully Added Senior Citizen Details");
                 Payment form = new Payment(txtStudentID.Text.Trim(), txtFirstname.Text.Trim() + " " + txtLastname.Text.Trim());
@@ -820,10 +836,27 @@ namespace CST
 
         private void button2_Click(object sender, EventArgs e)
         {
-                Image img = pictureBox1.Image;
-                pictureBox2.Image = img;
-                fpTemp = fp.GetTemplateAsString();
+            counter++;
+            Image img = pictureBox1.Image;
+            switch (counter)
+            {
+                case 1:
+                    pictureBox2.Image = img;
+                    fpTemps.Add(fp.GetTemplateAsString());
+                    break;
+                case 2:
+                    pictureBox3.Image = img;
+                    fpTemps.Add(fp.GetTemplateAsString());
+                    break;
+                case 3:
+                    pictureBox4.Image = img;
+                    fpTemps.Add(fp.GetTemplateAsString());
+                    break;
+            }
+
             
+
+
         }
 
         private void StudentForm_FormClosing(object sender, FormClosingEventArgs e)

@@ -12,24 +12,34 @@ namespace CST.Models
     {
         crudFile crud = new crudFile();
 
-        public async Task save(string temp,string imgpath,string sno)
+        public async Task save(List<string> temp,string sno)
         {
-            string sql = @"INSERT INTO `senior_fp`(`fp_template`, `fp_imgPath`, `sno`) 
-                        VALUES (@temp,@imgpath,@sno)";
+            string sql = @"INSERT INTO `senior_fp`(`fp_tp_1`, `fp_tp_2`, `fp_tp_3`, 
+                                `fp_imgPath_1`, `fp_imgPath_2`, `fp_imgPath_3`, `sno`) 
+                    VALUES (@temp1,@temp2,@temp3,@imgpath1,@imgpath2,@imgpath3,@sno)";
+
+            string path1 = $"C:\\fp\\{sno}-1-fp.png";
+            string path2 = $"C:\\fp\\{sno}-2-fp.png";
+            string path3 = $"C:\\fp\\{sno}-3-fp.png";
 
             List<MySqlParameter> mySqlParameters = new List<MySqlParameter>()
             {
-                (new MySqlParameter("@temp",temp)),
-                (new MySqlParameter("@imgpath",imgpath)),
+                (new MySqlParameter("@temp1",temp[0])),
+                (new MySqlParameter("@temp2",temp[1])),
+                (new MySqlParameter("@temp3",temp[2])),
+                (new MySqlParameter("@imgpath1",path1)),
+                (new MySqlParameter("@imgpath2",path2)),
+                (new MySqlParameter("@imgpath3",path3)),
                 (new MySqlParameter("@sno",sno))
             };
 
            await crud.ExecuteAsync(sql, mySqlParameters);
         }
 
-        public async Task<Dictionary<string,string>> getDataTempStr()
+        public async Task<List<FpModels>> getDataTempStr()
         {
-            Dictionary<string, string> data = new Dictionary<string, string>();
+
+            List<FpModels> listFPModels = new List<FpModels>();
 
             string sql = @"SELECT * FROM senior_fp";
 
@@ -38,11 +48,22 @@ namespace CST.Models
 
             while(await reader.ReadAsync())
             {
-                data.Add(reader["sno"].ToString(), reader["fp_template"].ToString());
+                FpModels fpModels = new FpModels();
+                fpModels.id = int.Parse(reader["fp_id"].ToString());
+                fpModels.fp1 = reader["fp_tp_1"].ToString();
+                fpModels.fp2 = reader["fp_tp_2"].ToString();
+                fpModels.fp3 = reader["fp_tp_3"].ToString();
+
+                fpModels.fpPath1 = reader["fp_imgPath_1"].ToString();
+                fpModels.fpPath2 = reader["fp_imgPath_2"].ToString();
+                fpModels.fpPath3 = reader["fp_imgPath_3"].ToString();
+
+                fpModels.sno = reader["sno"].ToString();
+                listFPModels.Add(fpModels);
             }
             crud.CloseConnection();
 
-            return data;
+            return listFPModels;
         }
 
         public async Task<SeniorBasicDetail> getData(string temp)

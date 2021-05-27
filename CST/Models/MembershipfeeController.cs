@@ -45,26 +45,30 @@ namespace CST.Models
 
         }
 
-        public async Task<SeniorPayment> getModel(string sno)
+        public async Task<float> getTotalPayment(string sno)
         {
-            SeniorPayment seniorPayment = new SeniorPayment();
+            float totalPayment = 0;
+           // SeniorPayment seniorPayment = new SeniorPayment();
 
-            string sql = @"SELECT * FROM membership_fee WHERE sno = @sno";
+            string sql = @"SELECT SUM(Payment) as 'total' FROM membership_fee WHERE sno = @sno";
 
             List<MySqlParameter> mySqlParameters = new List<MySqlParameter>()
             {
                 (new MySqlParameter("@sno",sno))
             };
+
             DbDataReader reader = await cs.RetrieveRecordsAsync(sql, mySqlParameters);
             if (await reader.ReadAsync())
             {
-                seniorPayment.monthly = int.Parse(reader["Payment"].ToString());
-                seniorPayment.sno = reader["sno"].ToString();
-                //seniorPayment.payment = int.Parse(reader["noParam"].ToString());
+                totalPayment = string.IsNullOrEmpty(reader["total"].ToString()) ? 0 :
+                      float.Parse(reader["total"].ToString());
+                //seniorPayment.sno = reader["total"].ToString();
+             
             }
+
             cs.CloseConnection();
 
-            return seniorPayment;
+            return totalPayment;
         }
 
     }

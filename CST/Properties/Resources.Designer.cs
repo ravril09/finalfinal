@@ -63,6 +63,16 @@ namespace CST.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5d0643f35b89165111c1db9d_fp_animation {
+            get {
+                object obj = ResourceManager.GetObject("5d0643f35b89165111c1db9d_fp-animation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap b {
             get {
                 object obj = ResourceManager.GetObject("b", resourceCulture);
@@ -216,6 +226,26 @@ namespace CST.Properties {
         internal static System.Drawing.Bitmap download9 {
             get {
                 object obj = ResourceManager.GetObject("download9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ezgif_com_video_to_gif {
+            get {
+                object obj = ResourceManager.GetObject("ezgif.com-video-to-gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fingerprint {
+            get {
+                object obj = ResourceManager.GetObject("fingerprint", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

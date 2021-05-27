@@ -57,30 +57,36 @@ namespace CST.System_Admin
            
            
             string strtemp =  fp.GetTemplateAsString();
-           
 
-            Dictionary<string, string> data = await fpController.getDataTempStr();
 
-            foreach(KeyValuePair<string,string> kp in data)
+            List<FpModels> listFpmodels = await fpController.getDataTempStr();
+
+            foreach(FpModels fps in listFpmodels)
             {
-                bool result = fp.VerFingerFromStr(kp.Value, strtemp, false, ARegFeatureChanged);
+                bool result = fp.VerFingerFromStr(fps.fp1, strtemp, false, ARegFeatureChanged);
+                bool result2 = fp.VerFingerFromStr(fps.fp2, strtemp, false, ARegFeatureChanged);
+                bool result3 = fp.VerFingerFromStr(fps.fp3, strtemp, false, ARegFeatureChanged);
 
-                if (result)
+
+                if(result || result2 || result3)
                 {
-                    foundsno = kp.Key;
+                    foundsno = fps.sno;
                     break;
                 }
             }
 
+
+
             if (!string.IsNullOrEmpty(foundsno))
             {
                 SeniorBasicDetail seniorBasicDetail = await basicDetailsController.getModel(foundsno);
-                MembershipFeeModel membershipFeeModel = await paymentController.getModel(foundsno);
+                float totalPayment = await membershipfeeController.getTotalPayment(foundsno);
+              //  MembershipFeeModel membershipFeeModel = await paymentController.getModel(foundsno);
 
                 lbnSno.Text = seniorBasicDetail.sno;
                 lbnFullname.Text = seniorBasicDetail.fullName;
                 lbnBD.Text = seniorBasicDetail.birthdate;
-                label12.Text = membershipFeeModel.TotalCont.ToString();
+                label12.Text = totalPayment.ToString();
                 lbnCs.Text = seniorBasicDetail.civilstatus;
                 lbnGender.Text = seniorBasicDetail.gender;
                 lbnNatio.Text = seniorBasicDetail.nat;
@@ -109,11 +115,11 @@ namespace CST.System_Admin
 
 
 
-            Image img = pictureBox1.Image;
+            //Image img = pictureBox1.Image;
             
 
-            pictureBox1.Image = img;
-            fpTemp = fp.GetTemplateAsString();
+            //pictureBox1.Image = img;
+            //fpTemp = fp.GetTemplateAsString();
 
 
         }

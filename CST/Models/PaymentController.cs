@@ -16,20 +16,10 @@ namespace CST.Models
     {
         crudFile cs = new crudFile();
 
+        
         public void addPayment(string sno,
-                                float memship
-                                )
-        {
-            string sql = String.Format(@"INSERT INTO `payments`(`sno`, `membershipfee`) VALUES ('{0}','{1}')",
-                                        sno, memship);
-
-            cs.ExecuteQuery(sql);
-
-        }
-
-        public void addPayment(string sno,
-                                int memship,
-                                int monthly
+                                float memship,
+                                float monthly
                                 )
         {
             string sql = String.Format(@"INSERT INTO `payments`(`sno`, `membershipfee`, `monthlyfee`) VALUES ('{0}',{1},{2})",
@@ -140,13 +130,13 @@ namespace CST.Models
         {
             MembershipFeeModel membershipFeeModel = new MembershipFeeModel();           
 
-            string sql = @"SELECT * FROM payments WHERE sno = @sno";
+            string sql = @"SELECT ID, sno, membershipfee, SUM(Payment) FROM payments WHERE sno = @sno";
 
             List<MySqlParameter> mySqlParameters = new List<MySqlParameter>()
             {
                 (new MySqlParameter("@sno",sno))
             };
-
+            
             DbDataReader reader = await cs.RetrieveRecordsAsync(sql, mySqlParameters);
 
             while (await reader.ReadAsync())
@@ -155,7 +145,7 @@ namespace CST.Models
                 //membershipFeeModel.id = int.Parse(reader["ID"].ToString());
                 membershipFeeModel.sno = reader["sno"].ToString();
                 membershipFeeModel.Payment = int.Parse(reader["membershipfee"].ToString());
-                //membershipFeeModel.TotalCont = int.Parse(reader["Payment"].ToString());
+                membershipFeeModel.TotalCont = int.Parse(reader["Payment"].ToString());
 
             }
 

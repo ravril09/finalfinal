@@ -74,7 +74,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
@@ -91,9 +91,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::CST.Properties.Resources.mislogo1;
-            this.pictureBox1.Location = new System.Drawing.Point(1098, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(1070, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(259, 192);
+            this.pictureBox1.Size = new System.Drawing.Size(291, 192);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 185;
             this.pictureBox1.TabStop = false;
@@ -139,7 +139,7 @@
             this.btnHome.Image = global::CST.Properties.Resources.download_removebg_preview;
             this.btnHome.Location = new System.Drawing.Point(7, 3);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(280, 195);
+            this.btnHome.Size = new System.Drawing.Size(280, 201);
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 184;
             this.btnHome.TabStop = false;
@@ -159,7 +159,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.White;
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.panelMenu.Controls.Add(this.iconButton1);
             this.panelMenu.Controls.Add(this.btnLogout);
             this.panelMenu.Controls.Add(this.label7);
@@ -176,7 +176,7 @@
             // 
             // iconButton1
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -202,7 +202,7 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -228,7 +228,7 @@
             // 
             // btnReport
             // 
-            this.btnReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.btnReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.btnReport.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnReport.FlatAppearance.BorderSize = 0;
             this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -254,7 +254,7 @@
             // 
             // btnBio
             // 
-            this.btnBio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.btnBio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.btnBio.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBio.FlatAppearance.BorderSize = 0;
             this.btnBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -280,7 +280,7 @@
             // 
             // BtnAudit
             // 
-            this.BtnAudit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.BtnAudit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.BtnAudit.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnAudit.FlatAppearance.BorderSize = 0;
             this.BtnAudit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -306,7 +306,7 @@
             // 
             // btnUsercontrol
             // 
-            this.btnUsercontrol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.btnUsercontrol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
             this.btnUsercontrol.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUsercontrol.FlatAppearance.BorderSize = 0;
             this.btnUsercontrol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

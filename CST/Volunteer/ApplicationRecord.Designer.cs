@@ -210,11 +210,11 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Firebrick;
-            this.button6.Location = new System.Drawing.Point(803, 580);
+            this.button6.Location = new System.Drawing.Point(770, 561);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(165, 46);
+            this.button6.Size = new System.Drawing.Size(198, 46);
             this.button6.TabIndex = 311;
-            this.button6.Text = "Edit";
+            this.button6.Text = "Print Record";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 

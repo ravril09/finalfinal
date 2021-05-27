@@ -142,12 +142,20 @@
             this.label50 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
             this.pbClose = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -163,6 +171,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // label43
@@ -1598,33 +1609,40 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
-            this.tabPage5.Controls.Add(this.button1);
+            this.tabPage5.Controls.Add(this.label60);
+            this.tabPage5.Controls.Add(this.label57);
+            this.tabPage5.Controls.Add(this.label48);
+            this.tabPage5.Controls.Add(this.pictureBox4);
+            this.tabPage5.Controls.Add(this.label46);
+            this.tabPage5.Controls.Add(this.pictureBox3);
+            this.tabPage5.Controls.Add(this.label31);
+            this.tabPage5.Controls.Add(this.label26);
+            this.tabPage5.Controls.Add(this.button2);
             this.tabPage5.Controls.Add(this.pictureBox2);
             this.tabPage5.Controls.Add(this.pictureBox1);
-            this.tabPage5.Controls.Add(this.button2);
             this.tabPage5.Location = new System.Drawing.Point(4, 35);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(1372, 522);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Finger Print";
             // 
-            // button1
+            // button2
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Firebrick;
-            this.button1.Location = new System.Drawing.Point(405, 357);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 41);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Open FingerPrint";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Firebrick;
+            this.button2.Location = new System.Drawing.Point(27, 192);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(170, 43);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Capture";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(801, 132);
+            this.pictureBox2.Location = new System.Drawing.Point(508, 90);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(226, 181);
+            this.pictureBox2.Size = new System.Drawing.Size(161, 121);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
@@ -1632,25 +1650,13 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(380, 137);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 37);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(218, 181);
+            this.pictureBox1.Size = new System.Drawing.Size(132, 113);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Firebrick;
-            this.button2.Location = new System.Drawing.Point(833, 357);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 41);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Capture";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pbClose
             // 
@@ -1665,6 +1671,83 @@
             this.pbClose.TabIndex = 251;
             this.pbClose.TabStop = false;
             this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(503, 21);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(50, 26);
+            this.label26.TabIndex = 11;
+            this.label26.Text = "fp 1";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(503, 238);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(50, 26);
+            this.label31.TabIndex = 12;
+            this.label31.Text = "fp 2";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(503, 295);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(161, 121);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(742, 11);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(50, 26);
+            this.label46.TabIndex = 14;
+            this.label46.Text = "fp 3";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(747, 76);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(194, 121);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 15;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(503, 61);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(95, 26);
+            this.label48.TabIndex = 16;
+            this.label48.Text = "Status : ";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(503, 264);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(95, 26);
+            this.label57.TabIndex = 17;
+            this.label57.Text = "Status : ";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(742, 47);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(95, 26);
+            this.label60.TabIndex = 18;
+            this.label60.Text = "Status : ";
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            this.errorProvider2.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider2.Icon")));
             // 
             // StudentForm
             // 
@@ -1709,9 +1792,13 @@
             this.groupBox2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1829,12 +1916,20 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.PictureBox pbClose;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }

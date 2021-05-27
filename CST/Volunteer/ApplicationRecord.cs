@@ -171,7 +171,7 @@ namespace CST.Volunteer
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = ds.Tables[0];
             dataGridView1.AutoResizeColumns();
-            ds.WriteXmlSchema("C:\\xmlrep\\PrintNationalID1.xml");
+            ds.WriteXmlSchema("C:\\xmlrep\\PrintNationalID2.xml");
         }
     }
 }

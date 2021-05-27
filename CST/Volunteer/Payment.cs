@@ -52,13 +52,12 @@ namespace CST.Volunteer
         {
             DataSet ds = new DataSet();
 
-            paymentController.addPayment(sno, int.Parse(txtOSCA.Text.Trim()), int.Parse(txtGSIS.Text.Trim()));
+            paymentController.addPayment(sno, float.Parse(txtOSCA.Text.Trim()), float.Parse(txtGSIS.Text.Trim()));
 
-            float payment = float.Parse(txtOSCA.Text.Trim());
-
+            
             MessageBox.Show("Successfully Added Payment fee");
 
-            paymentController.addPayment(sno, payment);
+
 
             //Receipt rec = new Receipt();
             ReceiptReport rep = new ReceiptReport(sno);
@@ -68,7 +67,7 @@ namespace CST.Volunteer
             //int no = await membershipfeeController.getLatestNo();
             //rec.SetParameterValue("noParam", sno);
 
-            
+
             rep.ShowDialog();
 
             //rec.PrintToPrinter(1, false, 0, 0);

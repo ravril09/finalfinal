@@ -14,7 +14,9 @@ namespace CST.Models
 
         public async Task<DataSet> getDs()
         {
-            DataSet ds = await cs.GetDataSetAsync(@"SELECT * FROM nationalid_basic_detail",
+            DataSet ds = await cs.GetDataSetAsync(@"SELECT nationalid_basic_detail.sno, CONCAT(Surname,',',Firstname) AS 'NAME', 
+                                                        Middlename,DataofBirth,Birthplace,Age,Sex,CivilStatus, Nationality,Religion,
+                                                        Address,ContactNo FROM `nationalid_basic_detail`",
                 null);
 
             return ds;
