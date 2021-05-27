@@ -118,6 +118,21 @@ namespace CST.Models
         }
 
 
+        public async Task<List<ComboBoxItem>> getComboDatas()
+        {
+            List<ComboBoxItem> cbItems = new List<ComboBoxItem>();
+            string sql = @"SELECT sno,CONCAT(firstname,' ',lastname) as 'fullname' FROM `senior_basic_detail`";
+
+            DbDataReader reader = await cs.RetrieveRecordsAsync(sql, null);
+            while (await reader.ReadAsync())
+            {
+                cbItems.Add(new ComboBoxItem(reader["fullname"].ToString(),
+                    reader["sno"].ToString()));
+            }
+            cs.CloseConnection();
+            return cbItems;
+        }
+
         public async Task updateImgPath(string path,string sno)
         {
             string sql = @"UPDATE senior_basic_detail SET imgPath = @img WHERE sno  = @sno";

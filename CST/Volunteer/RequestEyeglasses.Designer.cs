@@ -36,7 +36,6 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtEyegrade = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
+            this.cbox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -58,12 +58,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.cbox1);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -153,14 +153,6 @@
             this.button4.TabIndex = 218;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(649, 125);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 26);
-            this.textBox1.TabIndex = 216;
             // 
             // panel2
             // 
@@ -306,6 +298,17 @@
             this.txtAddress.Size = new System.Drawing.Size(619, 32);
             this.txtAddress.TabIndex = 20;
             // 
+            // cbox1
+            // 
+            this.cbox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbox1.FormattingEnabled = true;
+            this.cbox1.Location = new System.Drawing.Point(686, 124);
+            this.cbox1.Name = "cbox1";
+            this.cbox1.Size = new System.Drawing.Size(207, 21);
+            this.cbox1.TabIndex = 242;
+            this.cbox1.SelectedIndexChanged += new System.EventHandler(this.cbox1_SelectedIndexChanged);
+            // 
             // RequestEyeglasses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,7 +336,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtEyegrade;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtAddress;
@@ -351,5 +353,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cbox1;
     }
 }

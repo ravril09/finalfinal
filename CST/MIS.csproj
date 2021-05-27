@@ -159,6 +159,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComboBoxItem.cs" />
     <Compile Include="crudFile.cs" />
     <Compile Include="csBackupAndRestore.cs" />
     <Compile Include="DbSettings\dbConfigFile.cs" />

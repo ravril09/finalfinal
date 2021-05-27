@@ -1,4 +1,5 @@
 ﻿using CST.Models;
+using CST.Models.Member;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,36 +17,39 @@ namespace CST.Volunteer
         BasicDetailsController basicDetailsController = new BasicDetailsController();
         RequestEyeglassController requestEyeglass = new RequestEyeglassController();
         bool isValid = false;
+        string snoValue = "";
         string sno = "";
         public RequestEyeglasses()
         {
             InitializeComponent();
         }
 
-        private void RequestEyeglasses_Load(object sender, EventArgs e)
+        private async void RequestEyeglasses_Load(object sender, EventArgs e)
         {
+            List<ComboBoxItem> datas = await basicDetailsController.getComboDatas();
+            cbox1.Items.AddRange(datas.ToArray());
             txtFullname.Enabled = false;
             txtContactNumber.Enabled = false;
             txtAddress.Enabled = false;
             txtAge.Enabled = false;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private async void button4_Click(object sender, EventArgs e)
         {
-            string[] details = basicDetailsController.searchAllDetails(textBox1.Text.Trim());
+            SeniorBasicDetail seniorBasicDetail = await basicDetailsController.getModel(snoValue);
 
-            if (details[0] == "" || details[0] == null)
+            if (seniorBasicDetail.sno == "")
             {
                 MessageBox.Show("No SCO Exits");
                 sno = "";
             }
             else
             {
-                txtFullname.Text = details[0] + " " + details[2] + " " + details[1];
-                txtContactNumber.Text = details[8];
-                txtAddress.Text = details[11];
-                txtAge.Text = details[4];
-                sno = "SCO-" + textBox1.Text.Trim();
+                txtFullname.Text = seniorBasicDetail.fullName;
+                //txtContactNumber.Text = details[8];
+                //txtAddress.Text = details[11];
+                //txtAge.Text = details[4];
+                //sno = "SCO-" + textBox1.Text.Trim();
                 isValid = true;
             }
         }
@@ -70,7 +74,7 @@ namespace CST.Volunteer
                 if (form2 == DialogResult.Yes)
                 {
 
-                    requestEyeglass.addRequestEyeglass(textBox1.Text.Trim(), txtFullname.Text.Trim(), txtContactNumber.Text.Trim(),
+                    requestEyeglass.addRequestEyeglass(snoValue, txtFullname.Text.Trim(), txtContactNumber.Text.Trim(),
                                                 txtAddress.Text.Trim(), txtAge.Text.Trim(), txtEyegrade.Text.Trim(), txtRemarks.Text.Trim());
                     MessageBox.Show("Successfully Added");
                 }
@@ -101,7 +105,7 @@ namespace CST.Volunteer
         {
             bool isValid = true;
 
-            isValid = !(textBox1.Text.Trim() == "") && isValid;
+            isValid = !(snoValue == "") && isValid;
 
             isValid = !(txtEyegrade.Text.Trim() == "") && isValid;
 
@@ -117,6 +121,11 @@ namespace CST.Volunteer
 
 
             return isValid;
+        }
+
+        private void cbox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            snoValue = (cbox1.SelectedItem as ComboBoxItem).Value.ToString();
         }
     }
 }
