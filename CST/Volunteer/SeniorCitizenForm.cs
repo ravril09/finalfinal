@@ -83,11 +83,11 @@ namespace CST
         {
             if (ActionResult) //if fingerprint is captured successfully
             {
-              //  errorProvider2.SetError(pictureBox1, "Image Not Clear");
+                //errorProvider2.SetError(pictureBox1, "Image Not Clear");
             }
             else
             {
-                
+                errorProvider1.SetError(pictureBox1, "");
             }
         }
 
@@ -295,7 +295,7 @@ namespace CST
 
             isValid = !(SeniorModel.getCn() == "") && isValid;
 
-            isValid = !(SeniorModel.getAge() == 0) && isValid;
+            //isValid = !(SeniorModel.getAge() == 0) && isValid;
 
             isValid = !(SeniorModel.getCivil() == "") && isValid;
 

@@ -60,7 +60,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Firebrick;
+            this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label7.Location = new System.Drawing.Point(3, 310);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(108, 24);
@@ -74,7 +74,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
@@ -88,12 +88,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::CST.Properties.Resources.mislogo1;
-            this.pictureBox1.Location = new System.Drawing.Point(1070, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(1075, -3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(291, 192);
+            this.pictureBox1.Size = new System.Drawing.Size(291, 207);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 185;
             this.pictureBox1.TabStop = false;
@@ -103,7 +103,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Firebrick;
+            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.Location = new System.Drawing.Point(893, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 40);
@@ -115,7 +115,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Firebrick;
+            this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.Location = new System.Drawing.Point(375, 142);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(168, 40);
@@ -134,12 +134,12 @@
             // 
             // btnHome
             // 
-            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHome.Image = global::CST.Properties.Resources.download_removebg_preview;
-            this.btnHome.Location = new System.Drawing.Point(7, 3);
+            this.btnHome.Location = new System.Drawing.Point(0, 0);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(280, 201);
+            this.btnHome.Size = new System.Drawing.Size(290, 204);
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 184;
             this.btnHome.TabStop = false;
@@ -148,18 +148,19 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
             this.label3.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Firebrick;
-            this.label3.Location = new System.Drawing.Point(414, 25);
+            this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label3.Location = new System.Drawing.Point(391, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(624, 110);
             this.label3.TabIndex = 182;
             this.label3.Text = "Senior Citizens Organization \r\n            Of Molino VI";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.panelMenu.Controls.Add(this.iconButton1);
             this.panelMenu.Controls.Add(this.btnLogout);
             this.panelMenu.Controls.Add(this.label7);
@@ -176,15 +177,15 @@
             // 
             // iconButton1
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.iconButton1.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.Firebrick;
+            this.iconButton1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
-            this.iconButton1.IconColor = System.Drawing.Color.Firebrick;
+            this.iconButton1.IconColor = System.Drawing.SystemColors.Desktop;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 30;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,15 +203,15 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnLogout.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnLogout.IconChar = FontAwesome.Sharp.IconChar.CommentDots;
-            this.btnLogout.IconColor = System.Drawing.Color.Firebrick;
+            this.btnLogout.IconColor = System.Drawing.SystemColors.Desktop;
             this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLogout.IconSize = 30;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -228,15 +229,15 @@
             // 
             // btnReport
             // 
-            this.btnReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.btnReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.btnReport.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnReport.FlatAppearance.BorderSize = 0;
             this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReport.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnReport.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnReport.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnReport.IconChar = FontAwesome.Sharp.IconChar.Tasks;
-            this.btnReport.IconColor = System.Drawing.Color.Firebrick;
+            this.btnReport.IconColor = System.Drawing.SystemColors.Desktop;
             this.btnReport.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnReport.IconSize = 30;
             this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -254,15 +255,15 @@
             // 
             // btnBio
             // 
-            this.btnBio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.btnBio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.btnBio.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBio.FlatAppearance.BorderSize = 0;
             this.btnBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBio.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnBio.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBio.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnBio.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnBio.IconChar = FontAwesome.Sharp.IconChar.CalendarAlt;
-            this.btnBio.IconColor = System.Drawing.Color.Firebrick;
+            this.btnBio.IconColor = System.Drawing.SystemColors.Desktop;
             this.btnBio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBio.IconSize = 30;
             this.btnBio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -280,15 +281,15 @@
             // 
             // BtnAudit
             // 
-            this.BtnAudit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.BtnAudit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.BtnAudit.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnAudit.FlatAppearance.BorderSize = 0;
             this.BtnAudit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAudit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.BtnAudit.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAudit.ForeColor = System.Drawing.Color.Firebrick;
+            this.BtnAudit.ForeColor = System.Drawing.SystemColors.Desktop;
             this.BtnAudit.IconChar = FontAwesome.Sharp.IconChar.Perbyte;
-            this.BtnAudit.IconColor = System.Drawing.Color.Firebrick;
+            this.BtnAudit.IconColor = System.Drawing.SystemColors.Desktop;
             this.BtnAudit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnAudit.IconSize = 30;
             this.BtnAudit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -306,15 +307,15 @@
             // 
             // btnUsercontrol
             // 
-            this.btnUsercontrol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.btnUsercontrol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.btnUsercontrol.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUsercontrol.FlatAppearance.BorderSize = 0;
             this.btnUsercontrol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsercontrol.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnUsercontrol.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsercontrol.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnUsercontrol.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnUsercontrol.IconChar = FontAwesome.Sharp.IconChar.LaptopHouse;
-            this.btnUsercontrol.IconColor = System.Drawing.Color.Firebrick;
+            this.btnUsercontrol.IconColor = System.Drawing.SystemColors.Desktop;
             this.btnUsercontrol.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUsercontrol.IconSize = 30;
             this.btnUsercontrol.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -333,7 +334,7 @@
             // 
             // panelDesktop
             // 
-            this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.panelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(290, 204);

@@ -48,7 +48,7 @@ namespace CST.Volunteer
            
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private async void btnSave_Click(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
 
@@ -57,22 +57,22 @@ namespace CST.Volunteer
             
             MessageBox.Show("Successfully Added Payment fee");
 
+            float payment = float.Parse(txtOSCA.Text.Trim());
+
+            Receipt rec = new Receipt();
+            //ReceiptReport rep = new ReceiptReport(sno);
+
+            rec.SetParameterValue("payername", name);
+            rec.SetParameterValue("totalAmt", payment);
+            int no = await membershipfeeController.getLatestNo();
+            rec.SetParameterValue("noParam", sno);
 
 
-            //Receipt rec = new Receipt();
-            ReceiptReport rep = new ReceiptReport(sno);
+            //rep.ShowDialog();
 
-            //rec.SetParameterValue("payername", name);
-            //rec.SetParameterValue("totalAmt", payment);
-            //int no = await membershipfeeController.getLatestNo();
-            //rec.SetParameterValue("noParam", sno);
+            rec.PrintToPrinter(1, false, 0, 0);
 
-
-            rep.ShowDialog();
-
-            //rec.PrintToPrinter(1, false, 0, 0);
-
-            //this.Hide();
+            this.Hide();
 
 
             RegistrarRecord registrarRecord = new RegistrarRecord();

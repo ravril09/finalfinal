@@ -42,7 +42,6 @@
             this.btnSend = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label5 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,7 +124,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Firebrick;
+            this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.Location = new System.Drawing.Point(114, 104);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(213, 31);
@@ -136,7 +135,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Firebrick;
+            this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.Location = new System.Drawing.Point(190, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 31);
@@ -162,13 +161,13 @@
             // 
             // btnSend
             // 
-            this.btnSend.BackColor = System.Drawing.Color.White;
+            this.btnSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
             this.btnSend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSend.FlatAppearance.BorderSize = 0;
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSend.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSend.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnSend.Location = new System.Drawing.Point(778, 431);
+            this.btnSend.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnSend.Location = new System.Drawing.Point(778, 436);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(143, 44);
             this.btnSend.TabIndex = 274;
@@ -185,7 +184,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Firebrick;
+            this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label5.Location = new System.Drawing.Point(12, 8);
             this.label5.Name = "label5";
@@ -193,20 +192,11 @@
             this.label5.TabIndex = 276;
             this.label5.Text = "SMS Notification";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Firebrick;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(775, 428);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(149, 50);
-            this.panel2.TabIndex = 277;
-            // 
             // SmsNotification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1093, 501);
             this.Controls.Add(this.btnSend);
@@ -220,7 +210,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtUT);
             this.Controls.Add(this.txtUN);
-            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SmsNotification";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -247,6 +236,5 @@
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel2;
     }
 }

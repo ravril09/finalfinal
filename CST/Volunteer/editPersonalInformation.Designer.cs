@@ -81,7 +81,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label65);
             this.groupBox1.Controls.Add(this.groupBox10);
@@ -158,7 +158,7 @@
             this.groupBox10.Controls.Add(this.radioButton2);
             this.groupBox10.Controls.Add(this.radioButton1);
             this.groupBox10.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.Location = new System.Drawing.Point(856, 298);
+            this.groupBox10.Location = new System.Drawing.Point(854, 275);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(371, 84);
             this.groupBox10.TabIndex = 251;
@@ -205,7 +205,7 @@
             this.label12.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.IndianRed;
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(379, 305);
+            this.label12.Location = new System.Drawing.Point(377, 282);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(28, 31);
             this.label12.TabIndex = 250;
@@ -242,7 +242,7 @@
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(384, 349);
+            this.dateTimePicker1.Location = new System.Drawing.Point(382, 326);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(235, 32);
             this.dateTimePicker1.TabIndex = 164;
@@ -253,7 +253,7 @@
             this.textBox19.Enabled = false;
             this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox19.ForeColor = System.Drawing.Color.Black;
-            this.textBox19.Location = new System.Drawing.Point(698, 356);
+            this.textBox19.Location = new System.Drawing.Point(696, 333);
             this.textBox19.MaxLength = 2;
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(122, 26);
@@ -265,7 +265,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(694, 309);
+            this.label1.Location = new System.Drawing.Point(692, 286);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 31);
             this.label1.TabIndex = 162;
@@ -299,7 +299,7 @@
             this.groupBox2.Controls.Add(this.radioButton13);
             this.groupBox2.Controls.Add(this.radioButton12);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(105, 310);
+            this.groupBox2.Location = new System.Drawing.Point(103, 287);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(226, 72);
             this.groupBox2.TabIndex = 146;
@@ -367,7 +367,7 @@
             this.txtMiddlename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMiddlename.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMiddlename.ForeColor = System.Drawing.Color.Black;
-            this.txtMiddlename.Location = new System.Drawing.Point(928, 213);
+            this.txtMiddlename.Location = new System.Drawing.Point(926, 200);
             this.txtMiddlename.Name = "txtMiddlename";
             this.txtMiddlename.Size = new System.Drawing.Size(291, 26);
             this.txtMiddlename.TabIndex = 3;
@@ -390,7 +390,7 @@
             this.label11.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(95, 524);
+            this.label11.Location = new System.Drawing.Point(97, 522);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(118, 31);
             this.label11.TabIndex = 143;
@@ -436,7 +436,7 @@
             this.txtLastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastname.ForeColor = System.Drawing.Color.Black;
-            this.txtLastname.Location = new System.Drawing.Point(78, 213);
+            this.txtLastname.Location = new System.Drawing.Point(78, 200);
             this.txtLastname.Name = "txtLastname";
             this.txtLastname.Size = new System.Drawing.Size(291, 26);
             this.txtLastname.TabIndex = 1;
@@ -480,7 +480,7 @@
             this.txtFirstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstname.ForeColor = System.Drawing.Color.Black;
-            this.txtFirstname.Location = new System.Drawing.Point(493, 213);
+            this.txtFirstname.Location = new System.Drawing.Point(493, 200);
             this.txtFirstname.Name = "txtFirstname";
             this.txtFirstname.Size = new System.Drawing.Size(291, 26);
             this.txtFirstname.TabIndex = 2;
@@ -511,7 +511,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(400, 307);
+            this.label2.Location = new System.Drawing.Point(398, 284);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 31);
             this.label2.TabIndex = 136;
@@ -537,7 +537,7 @@
             this.label20.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.IndianRed;
             this.label20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label20.Location = new System.Drawing.Point(674, 309);
+            this.label20.Location = new System.Drawing.Point(672, 286);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(28, 31);
             this.label20.TabIndex = 243;
@@ -550,7 +550,7 @@
             this.label24.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.IndianRed;
             this.label24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label24.Location = new System.Drawing.Point(238, 349);
+            this.label24.Location = new System.Drawing.Point(236, 326);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(28, 31);
             this.label24.TabIndex = 244;
@@ -610,12 +610,12 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Gold;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Firebrick;
+            this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button1.Location = new System.Drawing.Point(1171, 718);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 42);

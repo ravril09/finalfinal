@@ -20,8 +20,11 @@ namespace CST.Volunteer
         RequestMedicalController requestMedical = new RequestMedicalController();
         AuditTrailControl auditTrail = new AuditTrailControl();
 
+        SeniorBasicDetail seniorBasicDetail = new SeniorBasicDetail();
+
         bool isValid = false;
         string sno = "";
+        string snoValue = "";
         public RequestMedical()
         {
             InitializeComponent();
@@ -33,8 +36,10 @@ namespace CST.Volunteer
 
         }
 
-        private void RequestMedical_Load(object sender, EventArgs e)
+        private async void RequestMedical_Load(object sender, EventArgs e)
         {
+            List<ComboBoxItem> datas = await basicDetailsController.getComboDatas();
+            cbox1.Items.AddRange(datas.ToArray());
             label44.Hide();
 
             txtFullname.Enabled = false;
@@ -42,21 +47,21 @@ namespace CST.Volunteer
             txtAddress.Enabled = false;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private async void button4_Click(object sender, EventArgs e)
         {
-            string[] details = basicDetailsController.searchAllDetails(textBox1.Text.Trim());
+            SeniorBasicDetail seniorBasicDetail = await basicDetailsController.getModel(snoValue);
 
-            if (details[0] == "" || details[0] == null)
+            if (seniorBasicDetail.sno == "")
             {
                 MessageBox.Show("No SCO Exits");
                 sno = "";
             }
             else
             {
-                txtFullname.Text = details[0] + " " + details[2] + " " + details[1];
-                txtContactNumber.Text = details[8];
-                txtAddress.Text = details[11];
-                sno = "SCO-" + textBox1.Text.Trim();
+                txtFullname.Text = seniorBasicDetail.fullName;
+                txtContactNumber.Text = seniorBasicDetail.cno;
+                txtAddress.Text = seniorBasicDetail.address;
+                sno = "SCO-" + snoValue;
                 isValid = true;
             }
 
@@ -87,11 +92,11 @@ namespace CST.Volunteer
                 if (form2 == DialogResult.Yes)
                 {
 
-                    requestMedical.addRequestMedical(textBox1.Text.Trim(), txtFullname.Text.Trim(), txtContactNumber.Text.Trim(), txtAddress.Text.Trim(), txtRemarks.Text.Trim());
+                    requestMedical.addRequestMedical(snoValue, txtFullname.Text.Trim(), txtContactNumber.Text.Trim(), txtAddress.Text.Trim(), txtRemarks.Text.Trim());
 
 
                     MessageBox.Show("Successfully Added");
-                    auditTrail.addAudit(label44.Text.Trim(), " Request Medical Added " + textBox1.Text.Trim());
+                    auditTrail.addAudit(label44.Text.Trim(), " Request Medical Added " + snoValue);
                     
                 }
             }
@@ -141,7 +146,7 @@ namespace CST.Volunteer
         {
             bool isValid = true;
 
-            isValid = !(textBox1.Text.Trim() == "") && isValid;
+            isValid = !(snoValue == "") && isValid;
 
             isValid = !(txtRemarks.Text.Trim() == "") && isValid;
 
@@ -155,6 +160,11 @@ namespace CST.Volunteer
 
 
             return isValid;
+        }
+
+        private void cbox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            snoValue = (cbox1.SelectedItem as ComboBoxItem).Value.ToString();
         }
     }
 }

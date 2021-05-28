@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(editOtherSkill));
-            this.pbClose = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label28 = new System.Windows.Forms.Label();
@@ -53,27 +52,14 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.txtC1Fullname = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
+            this.pbClose = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbClose
-            // 
-            this.pbClose.BackColor = System.Drawing.Color.Transparent;
-            this.pbClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbClose.BackgroundImage")));
-            this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbClose.Location = new System.Drawing.Point(1285, 4);
-            this.pbClose.Name = "pbClose";
-            this.pbClose.Size = new System.Drawing.Size(52, 35);
-            this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbClose.TabIndex = 242;
-            this.pbClose.TabStop = false;
-            this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.label28);
             this.groupBox3.Controls.Add(this.label27);
@@ -105,13 +91,13 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Firebrick;
-            this.button1.Location = new System.Drawing.Point(1109, 629);
+            this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button1.Location = new System.Drawing.Point(1046, 630);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 42);
             this.button1.TabIndex = 244;
@@ -165,7 +151,7 @@
             this.txtDialect.ForeColor = System.Drawing.Color.Black;
             this.txtDialect.Location = new System.Drawing.Point(833, 369);
             this.txtDialect.Name = "txtDialect";
-            this.txtDialect.Size = new System.Drawing.Size(326, 26);
+            this.txtDialect.Size = new System.Drawing.Size(370, 26);
             this.txtDialect.TabIndex = 271;
             // 
             // label55
@@ -225,7 +211,7 @@
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail.Location = new System.Drawing.Point(736, 508);
+            this.txtEmail.Location = new System.Drawing.Point(726, 508);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(476, 26);
             this.txtEmail.TabIndex = 259;
@@ -283,7 +269,7 @@
             this.txtOther.ForeColor = System.Drawing.Color.Black;
             this.txtOther.Location = new System.Drawing.Point(427, 369);
             this.txtOther.Name = "txtOther";
-            this.txtOther.Size = new System.Drawing.Size(318, 26);
+            this.txtOther.Size = new System.Drawing.Size(315, 26);
             this.txtOther.TabIndex = 165;
             this.txtOther.TextChanged += new System.EventHandler(this.txtOther_TextChanged);
             // 
@@ -367,6 +353,20 @@
             this.txtC1Fullname.Size = new System.Drawing.Size(426, 26);
             this.txtC1Fullname.TabIndex = 144;
             // 
+            // pbClose
+            // 
+            this.pbClose.BackColor = System.Drawing.Color.Transparent;
+            this.pbClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbClose.BackgroundImage")));
+            this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbClose.Location = new System.Drawing.Point(1285, 4);
+            this.pbClose.Name = "pbClose";
+            this.pbClose.Size = new System.Drawing.Size(52, 35);
+            this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbClose.TabIndex = 242;
+            this.pbClose.TabStop = false;
+            this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
+            // 
             // editOtherSkill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -378,9 +378,9 @@
             this.Name = "editOtherSkill";
             this.Text = "editOtherSkill";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             this.ResumeLayout(false);
 
         }

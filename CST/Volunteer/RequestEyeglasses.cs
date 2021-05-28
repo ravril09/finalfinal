@@ -39,17 +39,17 @@ namespace CST.Volunteer
             SeniorBasicDetail seniorBasicDetail = await basicDetailsController.getModel(snoValue);
 
             if (seniorBasicDetail.sno == "")
-            {
+             {
                 MessageBox.Show("No SCO Exits");
                 sno = "";
             }
             else
             {
                 txtFullname.Text = seniorBasicDetail.fullName;
-                //txtContactNumber.Text = details[8];
-                //txtAddress.Text = details[11];
-                //txtAge.Text = details[4];
-                //sno = "SCO-" + textBox1.Text.Trim();
+                txtContactNumber.Text = seniorBasicDetail.cno;
+                txtAddress.Text = seniorBasicDetail.address;
+                txtAge.Text = seniorBasicDetail.age.ToString();
+                sno = "SCO-" + snoValue;
                 isValid = true;
             }
         }

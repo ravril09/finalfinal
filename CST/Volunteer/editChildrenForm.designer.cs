@@ -72,15 +72,15 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Gold;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Firebrick;
-            this.button1.Location = new System.Drawing.Point(1197, 695);
+            this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button1.Location = new System.Drawing.Point(1149, 706);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 65);
+            this.button1.Size = new System.Drawing.Size(163, 54);
             this.button1.TabIndex = 240;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
@@ -92,7 +92,7 @@
             this.pbClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbClose.BackgroundImage")));
             this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbClose.Location = new System.Drawing.Point(1310, 12);
+            this.pbClose.Location = new System.Drawing.Point(1312, 8);
             this.pbClose.Name = "pbClose";
             this.pbClose.Size = new System.Drawing.Size(48, 37);
             this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -102,7 +102,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.groupBox3.Controls.Add(this.label55);
             this.groupBox3.Controls.Add(this.label54);
             this.groupBox3.Controls.Add(this.label34);
@@ -202,7 +202,7 @@
             this.txtC3Mobile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtC3Mobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtC3Mobile.ForeColor = System.Drawing.Color.Black;
-            this.txtC3Mobile.Location = new System.Drawing.Point(500, 374);
+            this.txtC3Mobile.Location = new System.Drawing.Point(495, 374);
             this.txtC3Mobile.MaxLength = 11;
             this.txtC3Mobile.Name = "txtC3Mobile";
             this.txtC3Mobile.Size = new System.Drawing.Size(264, 40);
@@ -213,7 +213,7 @@
             this.txtC3Address.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtC3Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtC3Address.ForeColor = System.Drawing.Color.Black;
-            this.txtC3Address.Location = new System.Drawing.Point(837, 374);
+            this.txtC3Address.Location = new System.Drawing.Point(827, 374);
             this.txtC3Address.Name = "txtC3Address";
             this.txtC3Address.Size = new System.Drawing.Size(476, 40);
             this.txtC3Address.TabIndex = 259;
@@ -224,7 +224,7 @@
             this.label16.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label16.Location = new System.Drawing.Point(501, 326);
+            this.label16.Location = new System.Drawing.Point(494, 327);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(144, 31);
             this.label16.TabIndex = 263;
@@ -260,7 +260,7 @@
             this.label18.Font = new System.Drawing.Font("Times New Roman", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label18.Location = new System.Drawing.Point(831, 326);
+            this.label18.Location = new System.Drawing.Point(833, 326);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(123, 32);
             this.label18.TabIndex = 262;
@@ -558,7 +558,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CST.Properties.Resources.cool_white_background_free_download_desktop_white_background_hd;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1370, 772);
             this.Controls.Add(this.groupBox3);

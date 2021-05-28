@@ -47,7 +47,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.groupBox4.Controls.Add(this.txtOSCA);
             this.groupBox4.Controls.Add(this.label47);
             this.groupBox4.Controls.Add(this.txtGSIS);
@@ -56,13 +56,13 @@
             this.groupBox4.Controls.Add(this.label23);
             this.groupBox4.Controls.Add(this.label21);
             this.groupBox4.Controls.Add(this.label59);
-            this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(40, 120);
+            this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(43, 123);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(602, 242);
+            this.groupBox4.Size = new System.Drawing.Size(622, 242);
             this.groupBox4.TabIndex = 244;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "PAYMENT";
+            this.groupBox4.Text = "    PAYMENT";
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // txtOSCA
@@ -70,7 +70,7 @@
             this.txtOSCA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOSCA.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOSCA.ForeColor = System.Drawing.Color.Black;
-            this.txtOSCA.Location = new System.Drawing.Point(139, 97);
+            this.txtOSCA.Location = new System.Drawing.Point(178, 92);
             this.txtOSCA.Name = "txtOSCA";
             this.txtOSCA.Size = new System.Drawing.Size(323, 38);
             this.txtOSCA.TabIndex = 1;
@@ -79,13 +79,13 @@
             // 
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.Black;
+            this.label47.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label47.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label47.Location = new System.Drawing.Point(27, 145);
+            this.label47.Location = new System.Drawing.Point(90, 145);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(214, 31);
+            this.label47.Size = new System.Drawing.Size(161, 31);
             this.label47.TabIndex = 256;
-            this.label47.Text = "MONTHLY FEE";
+            this.label47.Text = "Monthly Fee";
             this.label47.Click += new System.EventHandler(this.label47_Click);
             // 
             // txtGSIS
@@ -93,7 +93,7 @@
             this.txtGSIS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGSIS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGSIS.ForeColor = System.Drawing.Color.Black;
-            this.txtGSIS.Location = new System.Drawing.Point(139, 188);
+            this.txtGSIS.Location = new System.Drawing.Point(178, 190);
             this.txtGSIS.Name = "txtGSIS";
             this.txtGSIS.Size = new System.Drawing.Size(323, 38);
             this.txtGSIS.TabIndex = 257;
@@ -105,7 +105,7 @@
             this.label48.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.ForeColor = System.Drawing.Color.IndianRed;
             this.label48.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label48.Location = new System.Drawing.Point(234, 145);
+            this.label48.Location = new System.Drawing.Point(257, 145);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(28, 31);
             this.label48.TabIndex = 258;
@@ -140,13 +140,13 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label21.Location = new System.Drawing.Point(27, 45);
+            this.label21.Location = new System.Drawing.Point(90, 45);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(260, 31);
+            this.label21.Size = new System.Drawing.Size(209, 31);
             this.label21.TabIndex = 144;
-            this.label21.Text = "MEMBERSHIP FEE";
+            this.label21.Text = "Membership Fee";
             this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // label59
@@ -156,7 +156,7 @@
             this.label59.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label59.ForeColor = System.Drawing.Color.IndianRed;
             this.label59.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label59.Location = new System.Drawing.Point(280, 44);
+            this.label59.Location = new System.Drawing.Point(305, 45);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(28, 31);
             this.label59.TabIndex = 251;
@@ -168,7 +168,7 @@
             this.label44.BackColor = System.Drawing.Color.Transparent;
             this.label44.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.ForeColor = System.Drawing.Color.Firebrick;
-            this.label44.Location = new System.Drawing.Point(257, 419);
+            this.label44.Location = new System.Drawing.Point(549, 421);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(148, 32);
             this.label44.TabIndex = 263;
@@ -176,15 +176,15 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnSave.Location = new System.Drawing.Point(250, 368);
+            this.btnSave.Font = new System.Drawing.Font("Times New Roman", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnSave.Location = new System.Drawing.Point(270, 384);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(155, 40);
+            this.btnSave.Size = new System.Drawing.Size(164, 47);
             this.btnSave.TabIndex = 245;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -195,9 +195,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(7, 25);
+            this.label1.Location = new System.Drawing.Point(90, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(150, 31);
             this.label1.TabIndex = 264;
@@ -209,9 +209,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Firebrick;
+            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(35, 69);
+            this.label2.Location = new System.Drawing.Point(90, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 31);
             this.label2.TabIndex = 265;
@@ -228,7 +228,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CST.Properties.Resources.cool_white_background_free_download_desktop_white_background_hd1;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
             this.ClientSize = new System.Drawing.Size(709, 478);
             this.Controls.Add(this.label44);
             this.Controls.Add(this.label2);

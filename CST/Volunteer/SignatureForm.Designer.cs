@@ -58,8 +58,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(174, 26);
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label1.Location = new System.Drawing.Point(181, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(220, 40);
             this.label1.TabIndex = 251;
@@ -68,7 +68,7 @@
             // btnupload
             // 
             this.btnupload.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupload.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnupload.ForeColor = System.Drawing.SystemColors.Desktop;
             this.btnupload.Location = new System.Drawing.Point(432, 137);
             this.btnupload.Name = "btnupload";
             this.btnupload.Size = new System.Drawing.Size(115, 79);
@@ -82,8 +82,8 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Firebrick;
-            this.button1.Location = new System.Drawing.Point(199, 269);
+            this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button1.Location = new System.Drawing.Point(216, 267);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 57);
             this.button1.TabIndex = 253;
@@ -97,9 +97,9 @@
             this.pbClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbClose.BackgroundImage")));
             this.pbClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbClose.Location = new System.Drawing.Point(541, 3);
+            this.pbClose.Location = new System.Drawing.Point(534, 5);
             this.pbClose.Name = "pbClose";
-            this.pbClose.Size = new System.Drawing.Size(36, 33);
+            this.pbClose.Size = new System.Drawing.Size(48, 36);
             this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbClose.TabIndex = 254;
             this.pbClose.TabStop = false;
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(589, 350);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pbClose);

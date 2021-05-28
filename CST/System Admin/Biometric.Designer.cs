@@ -81,9 +81,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(238, 20);
+            this.label1.Location = new System.Drawing.Point(152, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(720, 40);
             this.label1.TabIndex = 210;
@@ -93,9 +93,9 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Firebrick;
+            this.label9.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(30, 143);
+            this.label9.Location = new System.Drawing.Point(27, 181);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(192, 40);
             this.label9.TabIndex = 215;
@@ -105,9 +105,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Firebrick;
+            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(72, 197);
+            this.label2.Location = new System.Drawing.Point(69, 235);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(150, 40);
             this.label2.TabIndex = 216;
@@ -118,9 +118,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Firebrick;
+            this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(52, 248);
+            this.label3.Location = new System.Drawing.Point(49, 286);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(172, 40);
             this.label3.TabIndex = 217;
@@ -130,9 +130,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Firebrick;
+            this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(12, 298);
+            this.label5.Location = new System.Drawing.Point(9, 336);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(210, 40);
             this.label5.TabIndex = 219;
@@ -142,9 +142,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Firebrick;
+            this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(20, 351);
+            this.label6.Location = new System.Drawing.Point(17, 389);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(204, 40);
             this.label6.TabIndex = 220;
@@ -154,9 +154,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Firebrick;
+            this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(567, 143);
+            this.label7.Location = new System.Drawing.Point(628, 197);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(161, 40);
             this.label7.TabIndex = 221;
@@ -166,9 +166,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Firebrick;
+            this.label8.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(491, 197);
+            this.label8.Location = new System.Drawing.Point(552, 251);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(237, 40);
             this.label8.TabIndex = 222;
@@ -178,9 +178,9 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Firebrick;
+            this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(64, 407);
+            this.label10.Location = new System.Drawing.Point(61, 445);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(160, 40);
             this.label10.TabIndex = 223;
@@ -194,8 +194,8 @@
             this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Firebrick;
-            this.button1.Location = new System.Drawing.Point(915, 458);
+            this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button1.Location = new System.Drawing.Point(917, 459);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 49);
             this.button1.TabIndex = 225;
@@ -207,9 +207,9 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Firebrick;
+            this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(122, 90);
+            this.label11.Location = new System.Drawing.Point(119, 128);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(100, 40);
             this.label11.TabIndex = 226;
@@ -219,9 +219,9 @@
             // 
             this.lbnSno.AutoSize = true;
             this.lbnSno.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnSno.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbnSno.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbnSno.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbnSno.Location = new System.Drawing.Point(238, 90);
+            this.lbnSno.Location = new System.Drawing.Point(235, 128);
             this.lbnSno.Name = "lbnSno";
             this.lbnSno.Size = new System.Drawing.Size(77, 40);
             this.lbnSno.TabIndex = 227;
@@ -231,9 +231,9 @@
             // 
             this.lbnFullname.AutoSize = true;
             this.lbnFullname.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnFullname.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbnFullname.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbnFullname.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbnFullname.Location = new System.Drawing.Point(238, 143);
+            this.lbnFullname.Location = new System.Drawing.Point(235, 181);
             this.lbnFullname.Name = "lbnFullname";
             this.lbnFullname.Size = new System.Drawing.Size(77, 40);
             this.lbnFullname.TabIndex = 228;
@@ -243,9 +243,9 @@
             // 
             this.lbnGender.AutoSize = true;
             this.lbnGender.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnGender.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbnGender.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbnGender.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbnGender.Location = new System.Drawing.Point(238, 197);
+            this.lbnGender.Location = new System.Drawing.Point(235, 235);
             this.lbnGender.Name = "lbnGender";
             this.lbnGender.Size = new System.Drawing.Size(77, 40);
             this.lbnGender.TabIndex = 229;
@@ -255,9 +255,9 @@
             // 
             this.lbnBD.AutoSize = true;
             this.lbnBD.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnBD.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbnBD.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbnBD.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbnBD.Location = new System.Drawing.Point(238, 248);
+            this.lbnBD.Location = new System.Drawing.Point(235, 286);
             this.lbnBD.Name = "lbnBD";
             this.lbnBD.Size = new System.Drawing.Size(77, 40);
             this.lbnBD.TabIndex = 230;
@@ -267,9 +267,9 @@
             // 
             this.lbnCs.AutoSize = true;
             this.lbnCs.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnCs.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbnCs.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbnCs.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbnCs.Location = new System.Drawing.Point(238, 298);
+            this.lbnCs.Location = new System.Drawing.Point(235, 336);
             this.lbnCs.Name = "lbnCs";
             this.lbnCs.Size = new System.Drawing.Size(77, 40);
             this.lbnCs.TabIndex = 232;
@@ -279,9 +279,9 @@
             // 
             this.lbnNatio.AutoSize = true;
             this.lbnNatio.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnNatio.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbnNatio.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbnNatio.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbnNatio.Location = new System.Drawing.Point(238, 351);
+            this.lbnNatio.Location = new System.Drawing.Point(235, 389);
             this.lbnNatio.Name = "lbnNatio";
             this.lbnNatio.Size = new System.Drawing.Size(77, 40);
             this.lbnNatio.TabIndex = 233;
@@ -291,9 +291,9 @@
             // 
             this.lbnAdd.AutoSize = true;
             this.lbnAdd.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnAdd.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbnAdd.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbnAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbnAdd.Location = new System.Drawing.Point(238, 407);
+            this.lbnAdd.Location = new System.Drawing.Point(235, 445);
             this.lbnAdd.Name = "lbnAdd";
             this.lbnAdd.Size = new System.Drawing.Size(77, 40);
             this.lbnAdd.TabIndex = 234;
@@ -303,9 +303,9 @@
             // 
             this.lbnRel.AutoSize = true;
             this.lbnRel.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnRel.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbnRel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbnRel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbnRel.Location = new System.Drawing.Point(734, 143);
+            this.lbnRel.Location = new System.Drawing.Point(795, 197);
             this.lbnRel.Name = "lbnRel";
             this.lbnRel.Size = new System.Drawing.Size(77, 40);
             this.lbnRel.TabIndex = 235;
@@ -315,9 +315,9 @@
             // 
             this.lbnPOB.AutoSize = true;
             this.lbnPOB.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnPOB.ForeColor = System.Drawing.Color.Firebrick;
+            this.lbnPOB.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbnPOB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbnPOB.Location = new System.Drawing.Point(734, 197);
+            this.lbnPOB.Location = new System.Drawing.Point(795, 251);
             this.lbnPOB.Name = "lbnPOB";
             this.lbnPOB.Size = new System.Drawing.Size(77, 40);
             this.lbnPOB.TabIndex = 236;
@@ -349,7 +349,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Firebrick;
+            this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label4.Location = new System.Drawing.Point(470, 298);
             this.label4.Name = "label4";
@@ -361,9 +361,9 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Firebrick;
+            this.label12.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(804, 300);
+            this.label12.Location = new System.Drawing.Point(795, 298);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(77, 40);
             this.label12.TabIndex = 239;
@@ -373,7 +373,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1159, 530);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label4);
