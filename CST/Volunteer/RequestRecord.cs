@@ -73,40 +73,52 @@ namespace CST.Volunteer
         {
             requesteyecontroller.fillRequestEyeglass(ref dataGridView1);
             clickedBut = "Eyeglasses";
-         
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             requestmedicalcontroller.fillRequetMedical(ref dataGridView1);
             clickedBut = "Medical";
-          
+
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-
-            DialogResult form1 = MessageBox.Show("Do you really want to Remove?",
-                   "Exit", MessageBoxButtons.YesNo);
-
-
-            if (form1 == DialogResult.Yes)
+            if (dataGridView1.Rows.Count > 0)
             {
-                requestmedicalcontroller.deleteRequestmedical(int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString()));
-                auditTrail.addAudit(label1.Text, "Delete a Medical Request");
-                MessageBox.Show("Succesfully Remove Data");
-                requestmedicalcontroller.fillRequetMedical(ref dataGridView1);
+                if (clickedBut == "Medical")
+                {
 
+                    DialogResult form1 = MessageBox.Show("Do you really want to Remove?",
+                       "Exit", MessageBoxButtons.YesNo);
+
+
+                    if (form1 == DialogResult.Yes)
+                    {
+                        requestmedicalcontroller.deleteRequestmedical(int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString()));
+                        auditTrail.addAudit(label1.Text, "Delete a Medical Request");
+                        MessageBox.Show("Succesfully Remove Data");
+                        requestmedicalcontroller.fillRequetMedical(ref dataGridView1);
+                    }
+                }
+                else
+                {
+                    requesteyecontroller.deleteRequestEyeglasses(int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString()));
+                    auditTrail.addAudit(label1.Text, "Delete a Eyeglasses Request");
+                    MessageBox.Show("Succesfully Remove Data");
+                    requesteyecontroller.fillRequestEyeglass(ref dataGridView1);
+                }
 
             }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-                requesteyecontroller.deleteRequestEyeglasses(int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString()));
-                auditTrail.addAudit(label1.Text, "Delete a Eyeglasses Request");
-                MessageBox.Show("Succesfully Remove Data");
-                requesteyecontroller.fillRequestEyeglass(ref dataGridView1);
+            //requesteyecontroller.deleteRequestEyeglasses(int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString()));
+            //auditTrail.addAudit(label1.Text, "Delete a Eyeglasses Request");
+            //MessageBox.Show("Succesfully Remove Data");
+            //requesteyecontroller.fillRequestEyeglass(ref dataGridView1);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -123,7 +135,7 @@ namespace CST.Volunteer
             timer1.Enabled = true;
         }
 
-        private  void label1_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
@@ -169,5 +181,58 @@ namespace CST.Volunteer
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                int currentMouseOverRow = dataGridView1.HitTest(e.X, e.Y).RowIndex;
+
+                if (currentMouseOverRow >= 0)
+                {
+
+                    if (dataGridView1.Rows.Count > 0)
+                    {
+                        if (clickedBut == "Medical")
+                        {
+                            editRequestMedical frm = new editRequestMedical(dataGridView1.SelectedRows[0].Cells[2].Value.ToString(),
+                                                                            dataGridView1.SelectedRows[0].Cells[3].Value.ToString(),
+                                                                            dataGridView1.SelectedRows[0].Cells[4].Value.ToString(),
+                                                                            dataGridView1.SelectedRows[0].Cells[5].Value.ToString(),
+                                                                            dataGridView1.SelectedRows[0].Cells[1].Value.ToString()
+                                                                        );
+                            frm.ShowDialog();
+                            requestmedicalcontroller.fillRequetMedical(ref dataGridView1);
+
+                        }
+                        else
+                        {
+                            editRequesEyeglasses frm = new editRequesEyeglasses(dataGridView1.SelectedRows[0].Cells[2].Value.ToString(),
+                                                                                dataGridView1.SelectedRows[0].Cells[3].Value.ToString(),
+                                                                                dataGridView1.SelectedRows[0].Cells[4].Value.ToString(),
+                                                                                dataGridView1.SelectedRows[0].Cells[5].Value.ToString(),
+                                                                                dataGridView1.SelectedRows[0].Cells[6].Value.ToString(),
+                                                                                dataGridView1.SelectedRows[0].Cells[7].Value.ToString(),
+                                                                                dataGridView1.SelectedRows[0].Cells[1].Value.ToString()
+                                                                                );
+                            frm.ShowDialog();
+                            requesteyecontroller.fillRequestEyeglass(ref dataGridView1);
+                        }
+
+                    }
+                }
+            }
+        }
     }
+
 }

@@ -216,6 +216,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Report\ApplicationforNationalIDReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ApplicationforNationalIDReport.Designer.cs">
+      <DependentUpon>ApplicationforNationalIDReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report\memberReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -448,12 +454,6 @@
     <Compile Include="Volunteer\RegistrarRecord.designer.cs">
       <DependentUpon>RegistrarRecord.cs</DependentUpon>
     </Compile>
-    <Compile Include="Volunteer\reqattachment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Volunteer\reqattachment.Designer.cs">
-      <DependentUpon>reqattachment.cs</DependentUpon>
-    </Compile>
     <Compile Include="Volunteer\RequestEyeglasses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -498,6 +498,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IPConfigFormcs.resx">
       <DependentUpon>IPConfigFormcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ApplicationforNationalIDReport.resx">
+      <DependentUpon>ApplicationforNationalIDReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\memberReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -624,9 +627,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Volunteer\RegistrarRecord.resx">
       <DependentUpon>RegistrarRecord.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Volunteer\reqattachment.resx">
-      <DependentUpon>reqattachment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Volunteer\RequestEyeglasses.resx">
       <DependentUpon>RequestEyeglasses.cs</DependentUpon>

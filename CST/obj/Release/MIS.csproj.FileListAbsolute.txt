@@ -60,7 +60,6 @@ C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.Payme
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.PaymentRecord.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.RegistrarForm.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.RegistrarRecord.resources
-C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Registrar.reqattachment.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.RequestEyeglasses.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.RequestMedical.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.RequestRecord.resources
@@ -75,3 +74,4 @@ C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.pdb
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\MIS.csprojAssemblyReference.cache
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.RecordRequestMedical.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.PaymentSumReport.resources
+C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.ApplicationforNationalIDReport.resources

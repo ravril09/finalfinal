@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CST.Models;
 using CST.Models.Student;
+using CST.Report;
+
 namespace CST.Volunteer
 {
     public partial class ApplicationRecord : Form
@@ -167,11 +169,14 @@ namespace CST.Volunteer
 
             ds = await personaldetailcontroller.getDs();
 
-            ds.Tables.Add(dt);
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = ds.Tables[0];
-            dataGridView1.AutoResizeColumns();
-            ds.WriteXmlSchema("C:\\xmlrep\\PrintNationalID2.xml");
+            //ds.Tables.Add(dt);
+            //dataGridView1.DataSource = null;
+            //dataGridView1.DataSource = ds.Tables[0];
+            //dataGridView1.AutoResizeColumns();
+            //ds.WriteXmlSchema("C:\\xmlrep\\PrintNationalID2.xml");
+
+            ApplicationforNationalIDReport rep = new ApplicationforNationalIDReport(ds);
+            rep.ShowDialog();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CST.Models;
+using CST.Models.Member;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,8 +21,15 @@ namespace CST.System_Admin
         //public string message { get; set; }
         //public string sender { get; set; }
         //public string result;
-       
+
         //AuditTrailControl auditTrail = new AuditTrailControl();
+
+        SeniorBasicDetail seniorBasicDetail = new SeniorBasicDetail();
+        BasicDetailsController basicDetailsController = new BasicDetailsController();
+
+        string sno = "";
+        string snoValue = "";
+
 
         public SmsNotification()
         {
@@ -171,9 +179,14 @@ namespace CST.System_Admin
 
         }
 
-        private void SmsNotification_Load(object sender, EventArgs e)
+        private async void SmsNotification_Load(object sender, EventArgs e)
         {
+            List<ComboBoxItem> datas = await basicDetailsController.getComboDatas();
+            cbox1.Items.AddRange(datas.ToArray());
+
             label7.Hide();
+
+            textBox1.Enabled = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -193,6 +206,31 @@ namespace CST.System_Admin
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private async void pbClose_Click(object sender, EventArgs e)
+        {
+            SeniorBasicDetail seniorBasicDetail = await basicDetailsController.getModel(snoValue);
+
+            if (seniorBasicDetail.sno == "")
+            {
+                MessageBox.Show("No SCO Exits");
+                sno = "";
+            }
+            else
+            {
+                textBox1.Text = seniorBasicDetail.fullName;
+                txtPhoneNumber.Text = seniorBasicDetail.cno;
+                //txtAddress.Text = seniorBasicDetail.address;
+                sno = "SCO-" + snoValue;
+                //isValid = true;
+            }
+
+        }
+
+        private void cbox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            snoValue = (cbox1.SelectedItem as ComboBoxItem).Value.ToString();
         }
     }
 }
