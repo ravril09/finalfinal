@@ -28,8 +28,7 @@ namespace CST
         ChildrenDetailsController studFam = new ChildrenDetailsController();
         IDDetailsController studHis = new IDDetailsController();
         AuditTrailControl auditTrail = new AuditTrailControl();
-        // StudentEnrolledController studentEnrolledController = new StudentEnrolledController();
-
+      
         List<string> fpTemps = new List<string>();
         int counter = 0;
        
@@ -40,7 +39,7 @@ namespace CST
         string gender = "";
         string civil = "";
         string eduatt = "";
-        private string sno;
+        
 
         public StudentForm(string sno)
         {
@@ -152,13 +151,7 @@ namespace CST
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            //MessageBox.Show("Succesfully Added Senior Citizen Details");
-            //Payment form = new Payment(txtStudentID.Text.Trim(), txtFirstname.Text.Trim() + " " + txtLastname.Text.Trim());
-            //form.ShowDialog();
-            //Membership_Fee frm = new Membership_Fee(txtStudentID.Text.Trim(), txtFirstname.Text.Trim() + " " + txtLastname.Text.Trim());
-            //   frm.Show();
-
+        {          
         }
         private async void btnSave_Click(object sender, EventArgs e)
         {
@@ -168,7 +161,7 @@ namespace CST
             bool isvalid = true;
             isvalid = validationTab1() && isvalid;
             isvalid = validationTab2() && isvalid;
-            isvalid = validationTab3() && isvalid;
+            //isvalid = validationTab3() && isvalid;
             isvalid = pictureBox2.Image != null && isvalid;
             if (isvalid)
             {
@@ -217,38 +210,7 @@ namespace CST
 
 
 
-        //private void getAllChildDetails()
-        //{
-        //    famDetails[0] = SeniorModel.getChildren1_name();
-        //    famDetails[1] = SeniorModel.getChildren1_no();
-        //    famDetails[2] = SeniorModel.getChildren1_add();
-
-        //    famDetails[3] = SeniorModel.getChildren2_name();
-        //    famDetails[4] = SeniorModel.getChildren2_no();
-        //    famDetails[5] = SeniorModel.getChildren2_add();
-
-        //    famDetails[6] = SeniorModel.getChildren3_name();
-        //    famDetails[7] = SeniorModel.getChildren3_no();
-        //    famDetails[8] = SeniorModel.getChildren3_add();
-
-        //    famDetails[9] = SeniorModel.getEmer_name();
-        //    famDetails[10] = SeniorModel.getEmer_add();
-        //    famDetails[11] = SeniorModel.getEmer_rel();
-        //    famDetails[12] = SeniorModel.getEmer_no();
-
-        //}
-
-        //private void getAllIdDetail()
-        //{
-        //    IdDetails[0] = SeniorModel.getOSCA();
-        //    IdDetails[1] = SeniorModel.getTin();
-        //    IdDetails[2] = SeniorModel.getPhil();
-        //    IdDetails[3] = SeniorModel.getGSIS();
-        //    IdDetails[4] = SeniorModel.getSSS();
-        //    IdDetails[5] = SeniorModel.getMemship();
-        //    IdDetails[6] = SeniorModel.getMonthly();
-        //}
-
+        
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -322,32 +284,13 @@ namespace CST
         {
             Random random = new Random();
             int values = random.Next(10000);
-            //textBox3.Text = "CST-2013-" + values.ToString();
-
+            
             string sno = "SCO-" + values.ToString();
 
             return sno;
         }
 
-        //private string fixID(int lastid)
-        //{
-        //    string id = "";
-        //    if(lastid < 10)
-        //    {
-        //        id = "000" + lastid;
-        //    }else if(lastid>= 10 && lastid< 100)
-        //    {
-        //        id = "00" + lastid;
-        //    }else if(lastid>100 && lastid< 1000)
-        //    {
-        //        id = "0" + lastid;
-        //    }else if (lastid > 999)
-        //    {
-        //        id = lastid + "";
-        //    }
-        //    return id;
-        //}
-
+       
 
         private void txtLastname_TextChanged(object sender, EventArgs e)
         {
@@ -531,23 +474,12 @@ namespace CST
                 }
 
             }
-            //else if (currentTab == 2)
-            //{
-
-
-            //    int changedPage = tabControl1.SelectedIndex;
-
-            //    currentTab = changedPage;
-            //    tabControl1.SelectedIndex = changedPage;
-
-
-            //}
-
+         
         }
 
         private void txtFLast_TextChanged(object sender, EventArgs e)
         {
-            //father
+            
             SeniorModel.setChildren1_name(txtC1Fullname.Text.Trim());
         }
 
@@ -713,7 +645,7 @@ namespace CST
             }
             else
             {
-                civil = "Divorced";
+                civil = "Separated";
             }
         }
 

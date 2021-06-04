@@ -115,10 +115,7 @@ namespace CST.Volunteer
 
         private void button7_Click(object sender, EventArgs e)
         {
-            //requesteyecontroller.deleteRequestEyeglasses(int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString()));
-            //auditTrail.addAudit(label1.Text, "Delete a Eyeglasses Request");
-            //MessageBox.Show("Succesfully Remove Data");
-            //requesteyecontroller.fillRequestEyeglass(ref dataGridView1);
+           
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -231,6 +228,27 @@ namespace CST.Volunteer
 
                     }
                 }
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text.Trim() == "")
+            {
+                requesteyecontroller.fillRequestEyeglass(ref dataGridView1);
+            }
+            else
+            {
+                string condition = "";
+                if (comboBox1.SelectedItem.ToString() == "ID")
+                {
+                    condition = "sno";
+                }
+                else
+                {
+                    condition = comboBox1.SelectedItem.ToString();
+                }
+                requesteyecontroller.searchGid(condition, txtUsername.Text.Trim(), ref dataGridView1);
             }
         }
     }

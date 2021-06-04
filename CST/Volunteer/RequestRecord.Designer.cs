@@ -47,6 +47,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -201,7 +202,7 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button6.Cursor = System.Windows.Forms.Cursors.PanSW;
             this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
@@ -219,7 +220,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
             this.button3.FlatAppearance.BorderSize = 0;
@@ -257,6 +258,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.button8);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtUsername);
@@ -271,18 +273,19 @@
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button8.Location = new System.Drawing.Point(643, 81);
+            this.button8.Location = new System.Drawing.Point(715, 82);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(114, 51);
             this.button8.TabIndex = 306;
             this.button8.Text = "Search";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label10
             // 
@@ -291,7 +294,7 @@
             this.label10.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(214, 91);
+            this.label10.Location = new System.Drawing.Point(141, 92);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(148, 31);
             this.label10.TabIndex = 201;
@@ -302,7 +305,7 @@
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsername.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
-            this.txtUsername.Location = new System.Drawing.Point(398, 91);
+            this.txtUsername.Location = new System.Drawing.Point(475, 96);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(234, 32);
             this.txtUsername.TabIndex = 203;
@@ -310,6 +313,21 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.DarkGray;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "ID",
+            "Fullname"});
+            this.comboBox1.Location = new System.Drawing.Point(295, 99);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(174, 27);
+            this.comboBox1.TabIndex = 308;
             // 
             // RequestRecord
             // 
@@ -355,5 +373,6 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

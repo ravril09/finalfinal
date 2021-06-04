@@ -18,11 +18,12 @@ namespace CST
 {
     public partial class RegistrarRecord : Form
     {
+        
+        BasicDetailsController basicDetailsController = new BasicDetailsController();
+        ChildrenDetailsController childrenDetailsController = new ChildrenDetailsController();
+        IDDetailsController iDDetailsController = new IDDetailsController();
 
-
-        BasicDetailsController studentsDetailsController = new BasicDetailsController();
-        ChildrenDetailsController studFamDetailsController = new ChildrenDetailsController();
-        IDDetailsController StudHistDetailsController = new IDDetailsController();
+        AuditTrailControl auditTrail = new AuditTrailControl();
 
        
         string clickedBut = "";
@@ -31,6 +32,7 @@ namespace CST
             InitializeComponent();
             timer1.Start();
 
+           
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -40,7 +42,7 @@ namespace CST
 
         private void button3_Click(object sender, EventArgs e)
         {
-            studentsDetailsController.fillDataGridDetails(ref dataGridView1);
+            basicDetailsController.fillDataGridDetails(ref dataGridView1);
             clickedBut = "Personal";
 
         }
@@ -54,7 +56,8 @@ namespace CST
 
         private void RegistrarRecord_Load(object sender, EventArgs e)
         {
-            studentsDetailsController.fillDataGridDetails(ref dataGridView1);
+            
+            basicDetailsController.fillDataGridDetails(ref dataGridView1);
             clickedBut = "Personal";
 
         }
@@ -99,7 +102,7 @@ namespace CST
                                                                   dataGridView1.SelectedRows[0].Cells[0].Value.ToString()
                                                                   );
                         frm.ShowDialog();
-                     studentsDetailsController.fillDataGridDetails(ref dataGridView1);
+                     basicDetailsController.fillDataGridDetails(ref dataGridView1);
 
                     }
                     else if (clickedBut == "Children")
@@ -122,7 +125,7 @@ namespace CST
                             );
 
                         frm.ShowDialog();
-                        studFamDetailsController.filldataGridFam(ref dataGridView1);
+                        childrenDetailsController.filldataGridFam(ref dataGridView1);
 
 
                     }
@@ -154,28 +157,41 @@ namespace CST
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            StudHistDetailsController.fillDataHist(ref dataGridView1);
+            iDDetailsController.fillDataHist(ref dataGridView1);
             clickedBut = "ID";
           
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            studFamDetailsController.filldataGridFam(ref dataGridView1);
+            childrenDetailsController.filldataGridFam(ref dataGridView1);
             clickedBut = "Children";
           
         }
 
-      
 
-     
+
+
         private void button8_Click(object sender, EventArgs e)
         {
-         
-     
+            if (txtUsername.Text.Trim() == "")
+            {
+                basicDetailsController.fillDataGridDetails(ref dataGridView1);
+            }
+             else
+            {
+                string condition = "";
+                if (comboBox1.SelectedItem.ToString() == "ID")
+                {
+                    condition = "sno";
+                }
+                else
+                {
+                    condition = comboBox1.SelectedItem.ToString();
+                }
+                basicDetailsController.searchGid(condition, txtUsername.Text.Trim(),ref dataGridView1);             
+            }
         }
-
-    
 
         private void button12_Click(object sender, EventArgs e)
         {
@@ -191,7 +207,7 @@ namespace CST
            
             //DataTable dt = new DataTable();
 
-            ds = await studentsDetailsController.getDs();
+            ds = await basicDetailsController.getDs();
 
             // dt.Columns.Add("try", typeof(string));
 
@@ -292,13 +308,23 @@ namespace CST
 
         private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
         {
-            if(e.Button == MouseButtons.Left)
+           
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
             {
                 int currentMouseOverRow = dataGridView1.HitTest(e.X, e.Y).RowIndex;
 
-                if(currentMouseOverRow >= 0)
+                if (currentMouseOverRow >= 0)
                 {
-                   
+
 
                     if (clickedBut == "Personal")
                     {
@@ -319,7 +345,7 @@ namespace CST
                                                                     dataGridView1.SelectedRows[0].Cells[0].Value.ToString()
                                                                     );
                         frm.ShowDialog();
-                        studentsDetailsController.fillDataGridDetails(ref dataGridView1);
+                        basicDetailsController.fillDataGridDetails(ref dataGridView1);
 
                     }
                     else if (clickedBut == "Children")
@@ -342,7 +368,7 @@ namespace CST
                             );
 
                         frm.ShowDialog();
-                        studFamDetailsController.filldataGridFam(ref dataGridView1);
+                        childrenDetailsController.filldataGridFam(ref dataGridView1);
 
 
                     }
@@ -356,17 +382,49 @@ namespace CST
                                                             dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
                         frm.ShowDialog();
 
-                        StudHistDetailsController.fillDataHist(ref dataGridView1);
+                        iDDetailsController.fillDataHist(ref dataGridView1);
                     }
 
 
-                   
+
                 }
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button12_Click_2(object sender, EventArgs e)
         {
+            if (dataGridView1.Rows.Count > 0)
+            {
+                if (clickedBut == "Personal")
+                {
+                   
+                    DialogResult form1 = MessageBox.Show("Do you really want to Remove?",
+                       "Exit", MessageBoxButtons.YesNo);
+                   
+                    if (form1 == DialogResult.Yes)
+                    {
+                        basicDetailsController.deleteBasicDetails(int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString()));
+                        auditTrail.addAudit(label7.Text, "Delete a Senior Record");
+                        MessageBox.Show("Succesfully Remove Data");
+                        basicDetailsController.fillDataGridDetails(ref dataGridView1);
+                    }
+                }
+                else if (clickedBut == "Children")
+                {
+                    childrenDetailsController.deleteChildren(int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString()));
+                    auditTrail.addAudit(label7.Text, "Delete a Children Record");
+                    MessageBox.Show("Succesfully Remove Data");
+                    childrenDetailsController.filldataGridFam(ref dataGridView1);
+                }
+                else
+                {
+                    iDDetailsController.deleteIdDetails(int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString()));
+                    auditTrail.addAudit(label7.Text, "Delete a ID Details");
+                    MessageBox.Show("Succesfully Remove Data");
+                    iDDetailsController.fillDataHist(ref dataGridView1);
+                }
+            }
+
 
         }
     }

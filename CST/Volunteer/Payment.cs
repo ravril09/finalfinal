@@ -52,12 +52,15 @@ namespace CST.Volunteer
         {
             DataSet ds = new DataSet();
 
+            float payment = float.Parse(txtGSIS.Text.Trim());
+
             paymentController.addPayment(sno, float.Parse(txtOSCA.Text.Trim()), float.Parse(txtGSIS.Text.Trim()));
 
-            
+            membershipfeeController.addMembershipfee(sno,payment);
+
             MessageBox.Show("Successfully Added Payment fee");
 
-            float payment = float.Parse(txtOSCA.Text.Trim());
+           
 
             Receipt rec = new Receipt();
             //ReceiptReport rep = new ReceiptReport(sno);
@@ -75,8 +78,8 @@ namespace CST.Volunteer
             this.Hide();
 
 
-            RegistrarRecord registrarRecord = new RegistrarRecord();
-            registrarRecord.Show();
+            RegistrarForm registrarForm = new RegistrarForm();
+            registrarForm.Show();
             this.Hide();
 
             //Webcam frm = new Webcam(sno);

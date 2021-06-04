@@ -93,13 +93,20 @@ namespace CST.Models
 
         public void filldataGridFam(ref DataGridView dg)
         {
-            string sql = String.Format(@"SELECT `sno`, `children1_name`, `children1_no`, `children1_address`, `children2_name`, 
+            string sql = String.Format(@"SELECT `senior_children_id`,`sno`, `children1_name`, `children1_no`, `children1_address`, `children2_name`, 
                                             `children2_no`, `children2_address`, `children3_name`, `children3_no`, `children3_address`,
                                                 `emergency_name`, `emergency_address`, `emergency_relation`, `emergency_contact` FROM
                                                 `senior_children_details` WHERE senior_children_id");
 
             cs.FillDataGrid(sql,ref dg);
         }
-      
+
+        public void deleteChildren(int id)
+        {
+            string sql = String.Format(@"DELETE FROM senior_children_details WHERE senior_children_id = {0}", id);
+
+            cs.ExecuteQuery(sql);
+        }
+
     }
 }

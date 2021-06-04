@@ -68,7 +68,7 @@ namespace CST.Volunteer
 
         private void PaymentRecord_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private async void button1_Click_1(object sender, EventArgs e)
@@ -86,6 +86,14 @@ namespace CST.Volunteer
 
             PaymentSumReport rep = new PaymentSumReport(ds);
             rep.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            YearDialog form = new YearDialog();
+            form.ShowDialog();
+            paymentController.fillDataPaidInYear(form.year, ref dataGridView1);
+
         }
     }
 }

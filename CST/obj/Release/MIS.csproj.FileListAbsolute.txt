@@ -75,3 +75,5 @@ C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\MIS.csprojAssemblyR
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.RecordRequestMedical.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.PaymentSumReport.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.ApplicationforNationalIDReport.resources
+C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.Dialog.YearDialog.resources
+C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.PermissionDelete.resources

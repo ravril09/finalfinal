@@ -376,6 +376,12 @@
     <Compile Include="Volunteer\Dialog\MonthDiaglog.Designer.cs">
       <DependentUpon>MonthDiaglog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Volunteer\Dialog\YearDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volunteer\Dialog\YearDialog.Designer.cs">
+      <DependentUpon>YearDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Volunteer\editFamilyDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -424,11 +430,11 @@
     <Compile Include="Volunteer\editRequestMedical.Designer.cs">
       <DependentUpon>editRequestMedical.cs</DependentUpon>
     </Compile>
-    <Compile Include="Volunteer\Membership_Fee.cs">
+    <Compile Include="Volunteer\Monthly_fee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Volunteer\Membership_Fee.Designer.cs">
-      <DependentUpon>Membership_Fee.cs</DependentUpon>
+    <Compile Include="Volunteer\Monthly_fee.Designer.cs">
+      <DependentUpon>Monthly_fee.cs</DependentUpon>
     </Compile>
     <Compile Include="Volunteer\Payment.cs">
       <SubType>Form</SubType>
@@ -441,6 +447,12 @@
     </Compile>
     <Compile Include="Volunteer\PaymentRecord.Designer.cs">
       <DependentUpon>PaymentRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Volunteer\PermissionDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volunteer\PermissionDelete.Designer.cs">
+      <DependentUpon>PermissionDelete.cs</DependentUpon>
     </Compile>
     <Compile Include="Volunteer\RegistrarForm.cs">
       <SubType>Form</SubType>
@@ -589,6 +601,9 @@
     <EmbeddedResource Include="Volunteer\Dialog\MonthDiaglog.resx">
       <DependentUpon>MonthDiaglog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Volunteer\Dialog\YearDialog.resx">
+      <DependentUpon>YearDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Volunteer\editFamilyDetails.resx">
       <DependentUpon>editFamilyDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -613,14 +628,17 @@
     <EmbeddedResource Include="Volunteer\editRequestMedical.resx">
       <DependentUpon>editRequestMedical.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Volunteer\Membership_Fee.resx">
-      <DependentUpon>Membership_Fee.cs</DependentUpon>
+    <EmbeddedResource Include="Volunteer\Monthly_fee.resx">
+      <DependentUpon>Monthly_fee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Volunteer\Payment.resx">
       <DependentUpon>Payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Volunteer\PaymentRecord.resx">
       <DependentUpon>PaymentRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Volunteer\PermissionDelete.resx">
+      <DependentUpon>PermissionDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Volunteer\RegistrarForm.resx">
       <DependentUpon>RegistrarForm.cs</DependentUpon>

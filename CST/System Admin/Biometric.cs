@@ -19,6 +19,8 @@ namespace CST.System_Admin
         BasicDetailsController basicDetailsController = new BasicDetailsController();
         MembershipfeeController membershipfeeController = new MembershipfeeController();
         PaymentController paymentController = new PaymentController();
+        AuditTrailControl auditTrailControl = new AuditTrailControl();
+
         ZKFPEngX fp = new ZKFPEngX();
 
         string fpTemp = "";
@@ -37,10 +39,20 @@ namespace CST.System_Admin
 
         private void Biometric_Load(object sender, EventArgs e)
         {
+            label13.Hide();
+
             int i = fp.InitEngine();
 
             fp.SensorIndex = 0;
-          //  fp.OnImageReceived += new IZKFPEngXEvents_OnImageReceivedEventHandler(fp_OnImageReceived);
+
+            DateTime my = DateTimeOffset.Now.DateTime.ToLocalTime().ToUniversalTime();
+
+
+            DateTime mys = DateTimeOffset.Now.UtcDateTime.ToLocalTime();
+
+
+
+            label13.Text = my.ToString("MM/dd/yyyy  hh:mm:ss tt");
         }
 
 
@@ -51,11 +63,10 @@ namespace CST.System_Admin
 
         private async void button1_Click(object sender, EventArgs e)
         {
-
+            string Fullname = "";
             string foundsno = "";
             bool ARegFeatureChanged = true;
-           
-           
+
             string strtemp =  fp.GetTemplateAsString();
 
 
@@ -71,6 +82,7 @@ namespace CST.System_Admin
                 if(result || result2 || result3)
                 {
                     foundsno = fps.sno;
+                    
                     break;
                 }
             }
@@ -81,8 +93,7 @@ namespace CST.System_Admin
             {
                 SeniorBasicDetail seniorBasicDetail = await basicDetailsController.getModel(foundsno);
                 float totalPayment = await membershipfeeController.getTotalPayment(foundsno);
-              //  MembershipFeeModel membershipFeeModel = await paymentController.getModel(foundsno);
-
+          
                 lbnSno.Text = seniorBasicDetail.sno;
                 lbnFullname.Text = seniorBasicDetail.fullName;
                 lbnBD.Text = seniorBasicDetail.birthdate;
@@ -93,35 +104,10 @@ namespace CST.System_Admin
                 lbnAdd.Text = seniorBasicDetail.address;
                 lbnRel.Text = seniorBasicDetail.religion;
                 lbnPOB.Text = seniorBasicDetail.pob;
-                pix1.ImageLocation = seniorBasicDetail.imgPath;
-
-
-                //label12.Text = seniorPayment.Payment.ToString();
+                pix1.ImageLocation = seniorBasicDetail.imgPath;                
             }
 
-
-            //Console.WriteLine(regTemplate);
-            //if (!result)
-            //{
-            //    MessageBox.Show("No Data");
-            //    return;
-            //}
-
-            //SeniorBasicDetail seniorBasicDetail = await fpController.getData(strtemp);
-
-            //label11.Text = seniorBasicDetail.sno;
-         
-            //    label9.Text = seniorBasicDetail.fullName;
-
-
-
-            //Image img = pictureBox1.Image;
-            
-
-            //pictureBox1.Image = img;
-            //fpTemp = fp.GetTemplateAsString();
-
-
+            auditTrailControl.addAudit(label13.Text, "View Senior Record " + foundsno);
         }
 
         private void fp_OnImageReceived(ref bool AImageValid)

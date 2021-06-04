@@ -85,7 +85,7 @@ namespace CST.Models
         public void fillDataHist(ref DataGridView dg)
         {
             string sql = String.Format(@"SELECT 
-                                            `sno`, `OSCA`, `TIN`, `PHILHEALTH`, `GSIS`, `SSS` FROM `senior_id_details` WHERE senior_id");
+                                           `senior_id`,`sno`, `OSCA`, `TIN`, `PHILHEALTH`, `GSIS`, `SSS` FROM `senior_id_details` WHERE senior_id");
 
             cs.FillDataGrid(sql, ref dg);
         }
@@ -114,6 +114,11 @@ namespace CST.Models
             cs.CloseConnection();
             return IDDetail;
         }
+        public void deleteIdDetails(int id)
+        {
+            string sql = String.Format(@"DELETE FROM senior_id_details WHERE senior_id = {0}", id);
 
+            cs.ExecuteQuery(sql);
+        }
     }
 }

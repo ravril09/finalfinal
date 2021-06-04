@@ -65,5 +65,14 @@ namespace CST.Models
 
             cs.ExecuteQuery(sql);
         }
+
+        public void searchGid(string condition, string searchKeys, ref DataGridView dg)
+        {
+            string sql = String.Format(@"SELECT id, sno, Fullname, ContactNo, Address, Age,
+                                                EyeGrade, Remarks FROM requesteyeglasss
+                                                WHERE {0} LIKE '%{1}%'", condition, searchKeys);
+
+            cs.FillDataGrid(sql, ref dg);
+        }
     }
 }

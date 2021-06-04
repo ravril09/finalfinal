@@ -13,7 +13,7 @@ namespace CST.Models
     class BasicDetailsController
     {
         crudFile cs = new crudFile();
-     
+
 
         public async Task<DataSet> getDs()
         {
@@ -45,7 +45,7 @@ namespace CST.Models
                                                                     `gender`, `age`, `CivilStatus`, `birthdate`, `pob`, `contact_no`, 
                                                                     `nationality`, `religion`, `Education_Attainment`, `address`) 
                                                                     VALUES ('{0}','{1}','{2}','{3}','{4}',{5},'{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')",
-                                        sno,firstname, lastname, middlename, gender, age, civil, birthday, pob, contact,
+                                        sno, firstname, lastname, middlename, gender, age, civil, birthday, pob, contact,
                                         nation, religion, EduAt, address);
 
             cs.ExecuteQuery(sql);
@@ -65,14 +65,14 @@ namespace CST.Models
             return last_id;
         }
 
-        public void updateStudDetails(string fn,string ln,string mn,string gen,int age,
-                                    string civil,string bd,string pob, string cn,string 
-                                    nat,string rel,string EducAt, string add, string sno)
+        public void updateStudDetails(string fn, string ln, string mn, string gen, int age,
+                                    string civil, string bd, string pob, string cn, string
+                                    nat, string rel, string EducAt, string add, string sno)
         {
             string sql = String.Format(@"UPDATE `senior_basic_detail` SET `firstname`='{0}',`lastname`='{1}',`middlename`='{2}',`gender`='{3}',
                                                             `age`='{4}',`CivilStatus`='{5}',`birthdate`='{6}',`pob`='{7}',`contact_no`='{8}',
                                                             `nationality`='{9}',`religion`='{10}',`Education_Attainment`='{11}' ,`address`='{12}' WHERE sno = '{13}'",
-                                        fn,ln,mn,gen,age,civil,bd,pob,cn,nat,rel,EducAt,add,sno);
+                                        fn, ln, mn, gen, age, civil, bd, pob, cn, nat, rel, EducAt, add, sno);
             cs.ExecuteQuery(sql);
         }
 
@@ -135,7 +135,7 @@ namespace CST.Models
             return cbItems;
         }
 
-        public async Task updateImgPath(string path,string sno)
+        public async Task updateImgPath(string path, string sno)
         {
             string sql = @"UPDATE senior_basic_detail SET imgPath = @img WHERE sno  = @sno";
 
@@ -174,7 +174,7 @@ namespace CST.Models
 
             DbDataReader reader = await cs.RetrieveRecordsAsync(sql, mySqlParameters);
 
-            if(await reader.ReadAsync())
+            if (await reader.ReadAsync())
             {
                 imgPath = reader["imgPath"].ToString();
             }
@@ -186,7 +186,7 @@ namespace CST.Models
             return imgPath;
         }
 
-       
+
         public void fillDataGridDetails(ref DataGridView dg)
         {
             string sql = String.Format(@"SELECT sno,firstname,lastname,middlename,gender,age,CivilStatus,birthdate,pob,contact_no,nationality,religion,Education_Attainment,address
@@ -195,31 +195,48 @@ namespace CST.Models
             cs.FillDataGrid(sql, ref dg);
         }
 
-         public string[] searchAllDetails(string sno)
-        {
-            string[] details = new string[13];
-            string sql = String.Format(@"SELECT * FROM senior_basic_detail WHERE sno = '{0}' ", sno);
-            MySqlDataReader reader = null;
-            cs.RetrieveRecords(sql, ref reader);
-            if (reader.Read())
-            {
-                details[0] = reader["firstname"].ToString();
-                details[1] = reader["lastname"].ToString();
-                details[2] = reader["middlename"].ToString();
-                details[3] = reader["gender"].ToString();
-                details[4] = reader["age"].ToString();
-                details[5] = reader["CivilStatus"].ToString();
-                details[7] = reader["pob"].ToString();
-                details[8] = reader["contact_no"].ToString();
-                details[9] = reader["nationality"].ToString();
-                details[10] = reader["religion"].ToString();
-                details[11] = reader["address"].ToString();
-                // details[12] = reader["grade_level"].ToString();
-            }
+        //public string[] searchAllDetails(string sno)
+        //{
+        //    string[] details = new string[13];
+        //    string sql = String.Format(@"SELECT * FROM senior_basic_detail WHERE sno = '{0}' ", sno);
+        //    MySqlDataReader reader = null;
+        //    cs.RetrieveRecords(sql, ref reader);
+        //    if (reader.Read())
+        //    {
+        //        details[0] = reader["firstname"].ToString();
+        //        details[1] = reader["lastname"].ToString();
+        //        details[2] = reader["middlename"].ToString();
+        //        details[3] = reader["gender"].ToString();
+        //        details[4] = reader["age"].ToString();
+        //        details[5] = reader["CivilStatus"].ToString();
+        //        details[7] = reader["pob"].ToString();
+        //        details[8] = reader["contact_no"].ToString();
+        //        details[9] = reader["nationality"].ToString();
+        //        details[10] = reader["religion"].ToString();
+        //        details[11] = reader["address"].ToString();
+        //        // details[12] = reader["grade_level"].ToString();
+        //    }
 
-            cs.CloseConnection();
-            return details;
+        //    cs.CloseConnection();
+        //    return details;
+        //}
+
+        public void deleteBasicDetails(int id)
+        {
+            string sql = String.Format(@"DELETE FROM senior_basic_detail WHERE senior_id = {0}", id);
+
+            cs.ExecuteQuery(sql);
         }
-    
+
+        public void searchGid(string condition, string searchKeys, ref DataGridView dg)
+        {
+            string sql = String.Format(@"SELECT senior_id, sno, firstname,lastname, middlename,
+                                            gender, age, CivilStatus, birthdate, pob, contact_no,
+                                            nationality, religion, Education_Attainment,address,imgPath, 
+                                            imgPath2 FROM senior_basic_detail WHERE {0} LIKE '%{1}%'", condition, searchKeys);
+
+            cs.FillDataGrid(sql, ref dg);
+        }
+
     }
 }

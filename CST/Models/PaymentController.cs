@@ -113,6 +113,15 @@ namespace CST.Models
             cs.FillDataGrid(sql, ref dg);
         }
 
+        public void fillDataPaidInYear(int year, ref DataGridView dg)
+        {
+            string sql = String.Format(@"SELECT DISTINCT(membership_fee.sno),CONCAT(senior_basic_detail.firstname,' ',senior_basic_detail.lastname) as 'Member_Name',
+                        membership_fee.payment_date,Payment FROM `membership_fee`
+                        INNER JOIN senior_basic_detail ON membership_fee.sno = senior_basic_detail.sno
+                         WHERE YEAR(payment_date) = {0}", year);
+
+            cs.FillDataGrid(sql, ref dg);
+        }
 
 
         public async Task<DataSet> getPaymentSum()

@@ -30,7 +30,7 @@ namespace CST.Registrar
             txtPOB.Text = pob;
             txtReligion.Text = rel;
             textBox24.Text = cn;
-            textBox19.Text = age +"";
+            textBox19.Text = age + "";
 
             gender = gen;
             civilstatus = civil;

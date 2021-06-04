@@ -54,6 +54,7 @@
             this.pix1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pix1)).BeginInit();
@@ -156,7 +157,7 @@
             this.label7.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(628, 197);
+            this.label7.Location = new System.Drawing.Point(509, 286);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(161, 40);
             this.label7.TabIndex = 221;
@@ -168,7 +169,7 @@
             this.label8.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(552, 251);
+            this.label8.Location = new System.Drawing.Point(433, 336);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(237, 40);
             this.label8.TabIndex = 222;
@@ -305,7 +306,7 @@
             this.lbnRel.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbnRel.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbnRel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbnRel.Location = new System.Drawing.Point(795, 197);
+            this.lbnRel.Location = new System.Drawing.Point(676, 286);
             this.lbnRel.Name = "lbnRel";
             this.lbnRel.Size = new System.Drawing.Size(77, 40);
             this.lbnRel.TabIndex = 235;
@@ -317,7 +318,7 @@
             this.lbnPOB.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbnPOB.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lbnPOB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbnPOB.Location = new System.Drawing.Point(795, 251);
+            this.lbnPOB.Location = new System.Drawing.Point(676, 336);
             this.lbnPOB.Name = "lbnPOB";
             this.lbnPOB.Size = new System.Drawing.Size(77, 40);
             this.lbnPOB.TabIndex = 236;
@@ -338,9 +339,9 @@
             this.pix1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pix1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pix1.Image = global::CST.Properties.Resources.download10;
-            this.pix1.Location = new System.Drawing.Point(909, 96);
+            this.pix1.Location = new System.Drawing.Point(886, 106);
             this.pix1.Name = "pix1";
-            this.pix1.Size = new System.Drawing.Size(139, 141);
+            this.pix1.Size = new System.Drawing.Size(156, 115);
             this.pix1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pix1.TabIndex = 224;
             this.pix1.TabStop = false;
@@ -351,7 +352,7 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(470, 298);
+            this.label4.Location = new System.Drawing.Point(425, 389);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(328, 40);
             this.label4.TabIndex = 238;
@@ -363,11 +364,23 @@
             this.label12.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(795, 298);
+            this.label12.Location = new System.Drawing.Point(759, 389);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(77, 40);
             this.label12.TabIndex = 239;
             this.label12.Text = "N/A";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label13.Location = new System.Drawing.Point(19, 29);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(124, 26);
+            this.label13.TabIndex = 240;
+            this.label13.Text = "Date & Time";
             // 
             // Biometric
             // 
@@ -375,6 +388,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.ClientSize = new System.Drawing.Size(1159, 530);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
@@ -441,5 +455,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }

@@ -68,9 +68,7 @@ namespace CST {
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
-                //// Icon Current Child Form
-                //CurrentChildForm.IconChar = currentBtn.IconChar;
-                //CurrentChildForm.IconColor = color;
+               
             }
         }
 
@@ -254,6 +252,11 @@ namespace CST {
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pbMinimized_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 

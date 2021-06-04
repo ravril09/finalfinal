@@ -41,15 +41,7 @@ namespace CST.Volunteer
         }
         private void Webcam_Load(object sender, EventArgs e)
         {
-            //CaptureDevice = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            //foreach (FilterInfo Device in CaptureDevice)
-            //{
-            //    comboBox1.Items.Add(Device.Name);
-
-            //}
-            //comboBox1.SelectedIndex = 0;
-            //videoSource = new VideoCaptureDevice();
-
+            
         }
 
         private void BtnStart_Click(object sender, EventArgs e)

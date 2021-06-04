@@ -11,7 +11,7 @@ namespace CST.Models.Member
 
         public int senior_id { get; set; }
         public string sno { get; set; }
-        public string firstname {get;set; }
+        public string firstname { get; set; }
         public string middlename { get; set; }
         public string lastname { get; set; }
         public int age { get; set; }

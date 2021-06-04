@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.label7 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
@@ -47,12 +48,14 @@
             this.btnUsercontrol = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.mySqlTransactionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pbMinimized = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mySqlTransactionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMinimized)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -75,6 +78,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
+            this.panel1.Controls.Add(this.pbMinimized);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
@@ -347,6 +351,21 @@
             // 
             this.mySqlTransactionBindingSource.DataSource = typeof(MySql.Data.MySqlClient.MySqlTransaction);
             // 
+            // pbMinimized
+            // 
+            this.pbMinimized.BackColor = System.Drawing.Color.Transparent;
+            this.pbMinimized.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbMinimized.BackgroundImage")));
+            this.pbMinimized.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbMinimized.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbMinimized.Image = global::CST.Properties.Resources.minimize;
+            this.pbMinimized.Location = new System.Drawing.Point(1316, 3);
+            this.pbMinimized.Name = "pbMinimized";
+            this.pbMinimized.Size = new System.Drawing.Size(41, 35);
+            this.pbMinimized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMinimized.TabIndex = 170;
+            this.pbMinimized.TabStop = false;
+            this.pbMinimized.Click += new System.EventHandler(this.pbMinimized_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -372,6 +391,7 @@
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mySqlTransactionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMinimized)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -395,5 +415,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox btnHome;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbMinimized;
     }
 }

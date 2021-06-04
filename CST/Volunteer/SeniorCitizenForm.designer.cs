@@ -531,7 +531,7 @@
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.ForeColor = System.Drawing.Color.IndianRed;
             this.label54.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label54.Location = new System.Drawing.Point(921, 421);
+            this.label54.Location = new System.Drawing.Point(984, 421);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(24, 29);
             this.label54.TabIndex = 269;
@@ -665,7 +665,7 @@
             this.label42.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.ForeColor = System.Drawing.Color.Black;
             this.label42.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label42.Location = new System.Drawing.Point(806, 419);
+            this.label42.Location = new System.Drawing.Point(807, 419);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(123, 31);
             this.label42.TabIndex = 186;
@@ -1089,7 +1089,7 @@
             this.groupBox10.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox10.Location = new System.Drawing.Point(899, 199);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(375, 77);
+            this.groupBox10.Size = new System.Drawing.Size(391, 77);
             this.groupBox10.TabIndex = 7;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Civil Status";
@@ -1101,10 +1101,10 @@
             this.radioButton14.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton14.Location = new System.Drawing.Point(236, 30);
             this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(139, 35);
+            this.radioButton14.Size = new System.Drawing.Size(150, 35);
             this.radioButton14.TabIndex = 190;
             this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "Divorced";
+            this.radioButton14.Text = "Separated";
             this.radioButton14.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -1291,9 +1291,9 @@
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label4.Location = new System.Drawing.Point(925, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(181, 31);
+            this.label4.Size = new System.Drawing.Size(185, 31);
             this.label4.TabIndex = 131;
-            this.label4.Text = "Middle Name:";
+            this.label4.Text = "Middle Initial:";
             // 
             // txtAddress
             // 

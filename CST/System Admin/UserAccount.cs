@@ -73,17 +73,7 @@ namespace CST
         private void cbUsertype_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (cbUsertype.SelectedItem.Equals("Teacher"))
-            {
-
-                //gbTeachForm.Show();
-                //gbUserForm.Hide();
-              //  gbTeachForm.Enabled = true;
-            }
-            else
-            {
-                //gbTeachForm.Enabled = false;
-            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -128,19 +118,11 @@ namespace CST
        {
             Random random = new Random();
             int value = random.Next(1000000);
-         //   txtPassword.Text = value.ToString();
-
-
+        
             Random randomen = new Random();
             int values = random.Next(10000);
-            //textBox3.Text = "CST-2013-" + values.ToString();
-
+            
             string userId = "SCO-2020-" + values.ToString(); 
-
-
-            //string newString = txtFirstname.Text.Substring(0, 1);
-            //string newStrings = txtPassword.Text.Substring(0, 4);
-            //txtUsername.Text = newString + txtLastname.Text + newStrings;
 
 
             DialogResult form2 = MessageBox.Show("Do you really want to Add this New User ?",
@@ -161,7 +143,6 @@ namespace CST
 
         private void button3_Click(object sender, EventArgs e)
         {
-          //  gbResetPass.Hide();
             gbUserForm.Show();
             btnRemove.Show();
             btnSave.Show();
@@ -170,7 +151,6 @@ namespace CST
 
         private void button4_Click(object sender, EventArgs e)
         {
-          //  gbTeachForm.Hide();
             gbUserForm.Show();
             btnRemove.Show();
             btnSave.Show();
@@ -189,11 +169,7 @@ namespace CST
         }
                 
             
-           
-        
-
-
-
+         
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -214,7 +190,6 @@ namespace CST
             txtLastname.Enabled = true;
             txtMiddlename.Enabled = true;
             txtUsername.Enabled = true;
-          //  txtPassword.Enabled = true;
             cbUsertype.Enabled = true;
 
 

@@ -43,7 +43,7 @@
             // 
             // gbResetPass
             // 
-            this.gbResetPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(164)))), ((int)(((byte)(67)))));
+            this.gbResetPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gbResetPass.Controls.Add(this.label3);
             this.gbResetPass.Controls.Add(this.label2);
             this.gbResetPass.Controls.Add(this.label1);
@@ -56,7 +56,7 @@
             this.gbResetPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbResetPass.Location = new System.Drawing.Point(12, 32);
             this.gbResetPass.Name = "gbResetPass";
-            this.gbResetPass.Size = new System.Drawing.Size(485, 239);
+            this.gbResetPass.Size = new System.Drawing.Size(485, 261);
             this.gbResetPass.TabIndex = 199;
             this.gbResetPass.TabStop = false;
             // 
@@ -97,24 +97,24 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
+            this.button1.BackColor = System.Drawing.Color.Gray;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(387, 72);
+            this.button1.Location = new System.Drawing.Point(387, 70);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(59, 26);
+            this.button1.Size = new System.Drawing.Size(59, 36);
             this.button1.TabIndex = 141;
             this.button1.Text = "Show";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
+            this.button2.BackColor = System.Drawing.Color.Gray;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.ForeColor = System.Drawing.Color.Gainsboro;
             this.button2.Location = new System.Drawing.Point(84, 199);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(325, 30);
+            this.button2.Size = new System.Drawing.Size(325, 45);
             this.button2.TabIndex = 140;
             this.button2.Text = "Change Password";
             this.button2.UseVisualStyleBackColor = false;
