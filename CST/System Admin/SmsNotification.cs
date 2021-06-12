@@ -115,5 +115,21 @@ namespace CST.System_Admin
         {
             snoValue = (cbox1.SelectedItem as ComboBoxItem).Value.ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Stream mystream;
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                if ((mystream = openFileDialog.OpenFile()) != null)
+                {
+                    string strfilename = openFileDialog.FileName;
+                    string filetext = File.ReadAllText(strfilename);
+                    txtMessage.Text = filetext;
+                }
+            }
+        }
     }
 }

@@ -25,15 +25,20 @@ namespace CST.Volunteer
         bool isValid = false;
         string sno = "";
         string name = "";
+        string name1 = "";
         
         public Payment(string sno , string name)
         {
             InitializeComponent();
 
+            fullName.Text = UserLog.getFullName();
+            
             label2.Text = label2.Text + " \t" + name;
             label1.Text = label1.Text + " \t" + sno;
+            name1 = fullName.Text;
             this.sno = sno;
             this.name = name;
+            
         }
 
         private void label21_Click(object sender, EventArgs e)
@@ -45,16 +50,17 @@ namespace CST.Volunteer
         {
    
             label44.Hide();
-           
-        }
+            fullName.Hide();
+            label1.Hide();
+        }   
 
         private async void btnSave_Click(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
 
-            float payment = float.Parse(txtGSIS.Text.Trim());
+            float payment = float.Parse(txtMembship.Text.Trim());
 
-            paymentController.addPayment(sno, float.Parse(txtOSCA.Text.Trim()), float.Parse(txtGSIS.Text.Trim()));
+            paymentController.addPayment(sno, float.Parse(txtMembship.Text.Trim()), float.Parse(txtGSIS.Text.Trim()));
 
             membershipfeeController.addMembershipfee(sno,payment);
 
@@ -68,7 +74,8 @@ namespace CST.Volunteer
             rec.SetParameterValue("payername", name);
             rec.SetParameterValue("totalAmt", payment);
             int no = await membershipfeeController.getLatestNo();
-            rec.SetParameterValue("noParam", sno);
+            rec.SetParameterValue("noParam", no);
+            rec.SetParameterValue("preparedBy", name1);
 
 
             //rep.ShowDialog();

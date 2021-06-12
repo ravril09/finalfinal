@@ -13,12 +13,13 @@ namespace CST.Registrar
 {
     public partial class editStudentForm : Form
     {
-        BasicDetailsController studentsDetailsController = new BasicDetailsController();
+        BasicDetailsController basicDetailsController = new BasicDetailsController();
         string gender = "";
         string civilstatus = "";
         string eduattain = "";
+        string Status = "";
         public editStudentForm(string fn, string ln, string mn, string gen,
-                                int age, string civil, string bd, string pob, string cn, string nat, string rel, string EducAt, string add, string sno )
+                                int age, string civil, string bd, string pob, string cn, string nat, string rel, string EducAt, string add, string status, string sno )
         {
             InitializeComponent();
             txtStudentID.Text = sno;
@@ -35,8 +36,18 @@ namespace CST.Registrar
             gender = gen;
             civilstatus = civil;
             eduattain = EducAt;
+            Status = status;
 
-            if(gen == "Male")
+            if (status == "Active")
+            {
+                radioButton9.Checked = true;
+            }
+            else
+            {
+                radioButton8.Checked = true;
+            }
+
+            if (gen == "Male")
             {
                 radioButton12.Checked = true;
             }
@@ -44,7 +55,7 @@ namespace CST.Registrar
             {
                 radioButton13.Checked = true;
             }
-
+            
             if (civil == "Single")
             {
                 radioButton1.Checked = true;
@@ -86,42 +97,17 @@ namespace CST.Registrar
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bool isValid = validationTab1();
-
-            if (isValid)
-            {
-                studentsDetailsController.updateStudDetails(txtFirstname.Text.Trim(), txtLastname.Text.Trim(), txtMiddlename.Text.Trim(), gender,
+          
+                basicDetailsController.basicDetailsUpdate(txtFirstname.Text.Trim(), txtLastname.Text.Trim(), txtMiddlename.Text.Trim(), gender,
                                                             int.Parse(textBox19.Text.Trim()), civilstatus, dateTimePicker1.Value.ToShortDateString(), txtPOB.Text.Trim(),
-                                                            textBox24.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), eduattain ,txtAddress.Text.Trim(), txtStudentID.Text.Trim());
+                                                            textBox24.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), eduattain ,txtAddress.Text.Trim(), Status, txtStudentID.Text.Trim());
                 MessageBox.Show("Succesfully Updated Student Personal Info");
                 this.Hide();
-            }
+           
+            
         }
-
-        private bool validationTab1()
-        {
-            bool isValid = true;
-
-            isValid = !(txtFirstname.Text == "") && isValid;
-
-            isValid = !(txtLastname.Text == "") && isValid;
-
-            isValid = !(txtNationality.Text == "") && isValid;
-
-            isValid = !(txtAddress.Text == "") && isValid;
-
-            isValid = !(txtPOB.Text == "") && isValid;
-
-            isValid = !(txtReligion.Text == "") && isValid;
-
-            isValid = !(textBox24.Text == "") && isValid;
-
-            isValid = !(textBox19.Text == "") && isValid;
 
        
-
-            return isValid;
-        }
 
         private void pbClose_Click(object sender, EventArgs e)
         {

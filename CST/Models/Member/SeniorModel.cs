@@ -24,6 +24,7 @@ namespace CST.Models.Student
         private static string nationality;
         private static string eduAttain;
         private static string addressGlob;
+        private static string Status;
 
         //setter Details
         public static void setFn(string firstname)
@@ -97,6 +98,10 @@ namespace CST.Models.Student
             addressGlob = address;
         }
 
+        public static void setStatus(string status)
+        {
+            Status = status;
+        }
         //getter Details
 
         public static string getSno()
@@ -176,6 +181,10 @@ namespace CST.Models.Student
             return addressGlob;
         }
 
+        public static string getStatus()
+        {
+            return Status;
+        }
 
         //Children Details
 

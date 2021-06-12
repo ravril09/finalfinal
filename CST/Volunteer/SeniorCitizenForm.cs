@@ -39,7 +39,10 @@ namespace CST
         string gender = "";
         string civil = "";
         string eduatt = "";
+        string Status = "";
+
         
+
 
         public StudentForm(string sno)
         {
@@ -53,6 +56,7 @@ namespace CST
         private void StudentForm_Load(object sender, EventArgs e)
         {
             label44.Hide();
+            groupBox6.Hide();
             SetValueForText1 = txtStudentID.Text;
 
             txtStudentID.Text = generateSNO();
@@ -67,6 +71,7 @@ namespace CST
             radioButton1.Checked = true;
             radioButton12.Checked = true;
             radioButton5.Checked = true;
+            radioButton9.Checked = true;
 
 
             SeniorModel.setBd(dateTimePicker1.Value.ToString().Split()[0]);
@@ -176,7 +181,7 @@ namespace CST
 
                 basicdetailController.addStudDetails(txtStudentID.Text.Trim(), txtFirstname.Text.Trim(), txtLastname.Text.Trim(), txtMiddlename.Text.Trim(), gender,
                                                             int.Parse(textBox19.Text.Trim()), civil, dateTimePicker1.Value.ToShortDateString(), txtPOB.Text.Trim(),
-                                                            txtContact.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), eduatt, txtAddress.Text.Trim());
+                                                            txtContact.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), eduatt, txtAddress.Text.Trim(),Status);
                 studFam.addFamDetails(txtStudentID.Text.Trim(), txtC1Fullname.Text.Trim(), txtC1Mobile.Text.Trim(), txtC1Address.Text.Trim(), txtC2Fullname.Text.Trim(),
                                         txtC2Mobile.Text.Trim(), txtC2Address.Text.Trim(), txtC3Fullname.Text.Trim(), txtC3Mobile.Text.Trim(), txtC3Address.Text.Trim(), txtEfullName.Text.Trim(),
                                          txtEAddress.Text.Trim(), txtERelation.Text.Trim(), txtEContactNo.Text.Trim());
@@ -847,6 +852,20 @@ namespace CST
         private void pbClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            SeniorModel.setStatus(radioButton9.Text.Trim());
+            if (radioButton9.Checked)
+            {
+                Status = "Active";
+            }
+            else if (radioButton8.Checked)
+            {
+                Status = "Inactive";
+            }
+            
         }
     }
 }

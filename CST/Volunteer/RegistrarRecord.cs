@@ -99,6 +99,7 @@ namespace CST
                                                                   dataGridView1.SelectedRows[0].Cells[11].Value.ToString(),
                                                                   dataGridView1.SelectedRows[0].Cells[12].Value.ToString(),
                                                                   dataGridView1.SelectedRows[0].Cells[13].Value.ToString(),
+                                                                  dataGridView1.SelectedRows[0].Cells[14].Value.ToString(),
                                                                   dataGridView1.SelectedRows[0].Cells[0].Value.ToString()
                                                                   );
                         frm.ShowDialog();
@@ -204,7 +205,7 @@ namespace CST
             //{
                 DataSet ds = new DataSet();
 
-           
+
             //DataTable dt = new DataTable();
 
             ds = await basicDetailsController.getDs();
@@ -223,7 +224,7 @@ namespace CST
             //dataGridView1.DataSource = ds.Tables[0];
             //dataGridView1.AutoResizeColumns();
 
-            //ds.WriteXmlSchema("C:\\xmlrep\\PrintSummaryRecord.xml");
+            //ds.WriteXmlSchema("C:\\xmlrep\\PrintSummaryRecordtry.xml");
 
 
 
@@ -342,6 +343,7 @@ namespace CST
                                                                     dataGridView1.SelectedRows[0].Cells[11].Value.ToString(),
                                                                     dataGridView1.SelectedRows[0].Cells[12].Value.ToString(),
                                                                     dataGridView1.SelectedRows[0].Cells[13].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[14].Value.ToString(),
                                                                     dataGridView1.SelectedRows[0].Cells[0].Value.ToString()
                                                                     );
                         frm.ShowDialog();

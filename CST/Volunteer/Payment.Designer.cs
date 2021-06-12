@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.txtOSCA = new System.Windows.Forms.TextBox();
+            this.txtMembship = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
             this.txtGSIS = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
@@ -42,13 +42,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.fullName = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
-            this.groupBox4.Controls.Add(this.txtOSCA);
+            this.groupBox4.Controls.Add(this.txtMembship);
             this.groupBox4.Controls.Add(this.label47);
             this.groupBox4.Controls.Add(this.txtGSIS);
             this.groupBox4.Controls.Add(this.label48);
@@ -65,15 +66,15 @@
             this.groupBox4.Text = "    PAYMENT";
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
-            // txtOSCA
+            // txtMembship
             // 
-            this.txtOSCA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtOSCA.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOSCA.ForeColor = System.Drawing.Color.Black;
-            this.txtOSCA.Location = new System.Drawing.Point(178, 92);
-            this.txtOSCA.Name = "txtOSCA";
-            this.txtOSCA.Size = new System.Drawing.Size(323, 38);
-            this.txtOSCA.TabIndex = 1;
+            this.txtMembship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMembship.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMembship.ForeColor = System.Drawing.Color.Black;
+            this.txtMembship.Location = new System.Drawing.Point(178, 92);
+            this.txtMembship.Name = "txtMembship";
+            this.txtMembship.Size = new System.Drawing.Size(323, 38);
+            this.txtMembship.TabIndex = 1;
             // 
             // label47
             // 
@@ -224,12 +225,25 @@
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
+            // fullName
+            // 
+            this.fullName.AutoSize = true;
+            this.fullName.BackColor = System.Drawing.Color.Transparent;
+            this.fullName.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fullName.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.fullName.Location = new System.Drawing.Point(413, 15);
+            this.fullName.Name = "fullName";
+            this.fullName.Size = new System.Drawing.Size(156, 40);
+            this.fullName.TabIndex = 268;
+            this.fullName.Text = "Fullname";
+            // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
             this.ClientSize = new System.Drawing.Size(709, 478);
+            this.Controls.Add(this.fullName);
             this.Controls.Add(this.label44);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -250,7 +264,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox4;
-        public System.Windows.Forms.TextBox txtOSCA;
+        public System.Windows.Forms.TextBox txtMembship;
         private System.Windows.Forms.Label label47;
         public System.Windows.Forms.TextBox txtGSIS;
         private System.Windows.Forms.Label label48;
@@ -263,5 +277,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Label fullName;
     }
 }
