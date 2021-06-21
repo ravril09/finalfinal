@@ -15,9 +15,23 @@ namespace CST.Models
         crudFile cs = new crudFile();
 
 
+        public async Task<DataSet> getActiveMember()
+        {
+            DataSet ds = await cs.GetDataSetAsync(@"SELECT * FROM `senior_basic_detail` WHERE Status = 'Active'", null);
+
+            return ds;
+        }
+
+        public async Task<DataSet> getInactiveActiveMember()
+        {
+            DataSet ds = await cs.GetDataSetAsync(@"SELECT * FROM `senior_basic_detail` WHERE Status = 'Inactive'", null);
+
+            return ds;
+        }
+
         public async Task<DataSet> getDs()
         {
-            DataSet ds = await cs.GetDataSetAsync(@"SELECT senior_basic_detail.sno, CONCAT(lastname,',',firstname) AS 'Name' ,
+            DataSet ds = await cs.GetDataSetAsync(@"SELECT senior_basic_detail.sno, CONCAT(lastname,',',firstname) AS 'Name',
                                                     address,birthdate,gender,age,Status FROM `senior_basic_detail` INNER JOIN 
                                                         senior_id_details ON senior_id_details.sno = senior_basic_detail.sno",
                 null);
@@ -39,15 +53,16 @@ namespace CST.Models
                         string religion,
                         string EduAt,
                         string address,
-                        string status)
+                        string status,
+                        string remark)
         {
 
             string sql = String.Format(@"INSERT INTO senior_basic_detail(`sno`, `firstname`, `lastname`, `middlename`,
                                                                     `gender`, `age`, `CivilStatus`, `birthdate`, `pob`, `contact_no`, 
-                                                                    `nationality`, `religion`, `Education_Attainment`, `address`,`Status`) 
-                                                                    VALUES ('{0}','{1}','{2}','{3}','{4}',{5},'{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}')",
+                                                                    `nationality`, `religion`, `Education_Attainment`, `address`,`Status`,`Remarks`) 
+                                                                    VALUES ('{0}','{1}','{2}','{3}','{4}',{5},'{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}','{15}')",
                                         sno, firstname, lastname, middlename, gender, age, civil, birthday, pob, contact,
-                                        nation, religion, EduAt, address,status);
+                                        nation, religion, EduAt, address,status,remark);
 
             cs.ExecuteQuery(sql);
         }
@@ -68,12 +83,12 @@ namespace CST.Models
 
         public void basicDetailsUpdate(string fn, string ln, string mn, string gen, int age,
                                     string civil, string bd, string pob, string cn, string
-                                    nat, string rel, string EducAt, string add,string status, string sno)
+                                    nat, string rel, string EducAt, string add,string status, string remark,string sno)
         {
             string sql = String.Format(@"UPDATE senior_basic_detail SET firstname = '{0}', lastname = '{1}', middlename = '{2}', gender = '{3}',
                                                              age = '{4}', CivilStatus = '{5}', birthdate = '{6}', pob = '{7}', contact_no ='{8}',
-                                                             nationality = '{9}', religion = '{10}', Education_Attainment = '{11}' , address = '{12}', Status = '{13}' WHERE sno = '{14}'",
-                                        fn, ln, mn, gen, age, civil, bd, pob, cn, nat, rel, EducAt, add, status, sno);
+                                                             nationality = '{9}', religion = '{10}', Education_Attainment = '{11}' , address = '{12}', Status = '{13}', Remarks = '{14}' WHERE sno = '{15}'",
+                                        fn, ln, mn, gen, age, civil, bd, pob, cn, nat, rel, EducAt, add, status,remark, sno);
             cs.ExecuteQuery(sql);
         }
 
@@ -190,7 +205,7 @@ namespace CST.Models
 
         public void fillDataGridDetails(ref DataGridView dg)
         {
-            string sql = String.Format(@"SELECT sno,firstname,lastname,middlename,gender,age,CivilStatus,birthdate,pob,contact_no,nationality,religion,Education_Attainment,address,Status
+            string sql = String.Format(@"SELECT sno,firstname,lastname,middlename,gender,age,CivilStatus,birthdate,pob,contact_no,nationality,religion,Education_Attainment,address,Status,Remarks
                                         FROM senior_basic_detail WHERE senior_id");
 
             cs.FillDataGrid(sql, ref dg);

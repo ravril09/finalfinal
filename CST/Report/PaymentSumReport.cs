@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CST.Models;
+using CST.Models.Member;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +15,12 @@ namespace CST.Report
     public partial class PaymentSumReport : Form
     {
         DataSet ds = new DataSet();
+        SeniorBasicDetail seniorBasicDetail = new SeniorBasicDetail();
         public PaymentSumReport(DataSet ds)
         {
             InitializeComponent();
+            
+
             this.ds = ds;
         }
 
@@ -24,6 +29,8 @@ namespace CST.Report
             PrintSum cs = new PrintSum();
             cs.SetDataSource(ds);
             crystalReportViewer1.ReportSource = cs;
+
+           
         }
     }
 }

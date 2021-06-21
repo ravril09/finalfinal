@@ -39,6 +39,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.fullName = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -121,7 +123,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button5.Location = new System.Drawing.Point(49, 73);
+            this.button5.Location = new System.Drawing.Point(49, 60);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(347, 61);
             this.button5.TabIndex = 310;
@@ -137,7 +139,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Location = new System.Drawing.Point(49, 160);
+            this.button2.Location = new System.Drawing.Point(49, 142);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(347, 54);
             this.button2.TabIndex = 313;
@@ -153,7 +155,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button3.Location = new System.Drawing.Point(49, 336);
+            this.button3.Location = new System.Drawing.Point(49, 299);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(347, 55);
             this.button3.TabIndex = 314;
@@ -169,7 +171,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button4.Location = new System.Drawing.Point(49, 248);
+            this.button4.Location = new System.Drawing.Point(49, 228);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(347, 50);
             this.button4.TabIndex = 315;
@@ -201,13 +203,41 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button6.Location = new System.Drawing.Point(49, 426);
+            this.button6.Location = new System.Drawing.Point(49, 373);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(347, 55);
             this.button6.TabIndex = 317;
             this.button6.Text = "Search Year Paid";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // fullName
+            // 
+            this.fullName.AutoSize = true;
+            this.fullName.BackColor = System.Drawing.Color.Transparent;
+            this.fullName.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fullName.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.fullName.Location = new System.Drawing.Point(53, 9);
+            this.fullName.Name = "fullName";
+            this.fullName.Size = new System.Drawing.Size(156, 40);
+            this.fullName.TabIndex = 318;
+            this.fullName.Text = "Fullname";
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button7.Location = new System.Drawing.Point(49, 452);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(347, 55);
+            this.button7.TabIndex = 319;
+            this.button7.Text = "Members Reports";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // PaymentRecord
             // 
@@ -216,6 +246,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.BackgroundImage = global::CST.Properties.Resources.cool_white_background_free_download_desktop_white_background_hd1;
             this.ClientSize = new System.Drawing.Size(1149, 539);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.fullName);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
@@ -233,6 +265,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -249,5 +282,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label fullName;
+        public System.Windows.Forms.Button button7;
     }
 }

@@ -51,6 +51,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -80,6 +82,8 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(184)))), ((int)(((byte)(173)))));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Controls.Add(this.button14);
+            this.panel2.Controls.Add(this.button13);
             this.panel2.Controls.Add(this.button12);
             this.panel2.Controls.Add(this.button11);
             this.panel2.Controls.Add(this.button10);
@@ -102,7 +106,7 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button12.Location = new System.Drawing.Point(427, 530);
+            this.button12.Location = new System.Drawing.Point(420, 506);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(171, 50);
             this.button12.TabIndex = 312;
@@ -118,7 +122,7 @@
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button11.Location = new System.Drawing.Point(646, 530);
+            this.button11.Location = new System.Drawing.Point(672, 506);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(249, 50);
             this.button11.TabIndex = 311;
@@ -134,9 +138,9 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button10.Location = new System.Drawing.Point(241, 619);
+            this.button10.Location = new System.Drawing.Point(410, 578);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(215, 51);
+            this.button10.Size = new System.Drawing.Size(197, 51);
             this.button10.TabIndex = 310;
             this.button10.Text = "Add Signature";
             this.button10.UseVisualStyleBackColor = false;
@@ -150,9 +154,9 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button9.Location = new System.Drawing.Point(44, 619);
+            this.button9.Location = new System.Drawing.Point(124, 578);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(155, 51);
+            this.button9.Size = new System.Drawing.Size(171, 51);
             this.button9.TabIndex = 309;
             this.button9.Text = "Camera";
             this.button9.UseVisualStyleBackColor = false;
@@ -166,7 +170,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button7.Location = new System.Drawing.Point(506, 619);
+            this.button7.Location = new System.Drawing.Point(672, 578);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(254, 51);
             this.button7.TabIndex = 308;
@@ -182,11 +186,11 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button6.Location = new System.Drawing.Point(783, 619);
+            this.button6.Location = new System.Drawing.Point(693, 642);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(179, 48);
+            this.button6.Size = new System.Drawing.Size(246, 48);
             this.button6.TabIndex = 306;
-            this.button6.Text = "Print Record";
+            this.button6.Text = "Print Master List";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -198,7 +202,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(178, 530);
+            this.button1.Location = new System.Drawing.Point(124, 506);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(171, 50);
             this.button1.TabIndex = 209;
@@ -387,6 +391,38 @@
             this.panel4.TabIndex = 242;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button13.Location = new System.Drawing.Point(33, 642);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(294, 51);
+            this.button13.TabIndex = 313;
+            this.button13.Text = "Print Active Member";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button14.Location = new System.Drawing.Point(365, 642);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(298, 51);
+            this.button14.TabIndex = 314;
+            this.button14.Text = "Print Inactive Member";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
@@ -450,5 +486,7 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
     }
 }

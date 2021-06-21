@@ -100,6 +100,7 @@ namespace CST
                                                                   dataGridView1.SelectedRows[0].Cells[12].Value.ToString(),
                                                                   dataGridView1.SelectedRows[0].Cells[13].Value.ToString(),
                                                                   dataGridView1.SelectedRows[0].Cells[14].Value.ToString(),
+                                                                  dataGridView1.SelectedRows[0].Cells[15].Value.ToString(),
                                                                   dataGridView1.SelectedRows[0].Cells[0].Value.ToString()
                                                                   );
                         frm.ShowDialog();
@@ -206,7 +207,7 @@ namespace CST
                 DataSet ds = new DataSet();
 
 
-            //DataTable dt = new DataTable();
+            DataTable dt = new DataTable();
 
             ds = await basicDetailsController.getDs();
 
@@ -224,7 +225,7 @@ namespace CST
             //dataGridView1.DataSource = ds.Tables[0];
             //dataGridView1.AutoResizeColumns();
 
-            //ds.WriteXmlSchema("C:\\xmlrep\\PrintSummaryRecordtry.xml");
+            //ds.WriteXmlSchema("C:\\xmlrep\\PrintMasterlist.xml");
 
 
 
@@ -344,6 +345,7 @@ namespace CST
                                                                     dataGridView1.SelectedRows[0].Cells[12].Value.ToString(),
                                                                     dataGridView1.SelectedRows[0].Cells[13].Value.ToString(),
                                                                     dataGridView1.SelectedRows[0].Cells[14].Value.ToString(),
+                                                                    dataGridView1.SelectedRows[0].Cells[15].Value.ToString(),
                                                                     dataGridView1.SelectedRows[0].Cells[0].Value.ToString()
                                                                     );
                         frm.ShowDialog();
@@ -427,6 +429,44 @@ namespace CST
                 }
             }
 
+
+        }
+
+        private async void button14_Click(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+
+            DataTable dt = new DataTable();
+
+            ds = await basicDetailsController.getInactiveActiveMember();
+
+            //ds.Tables.Add(dt);
+            //dataGridView1.DataSource = null;
+            //dataGridView1.DataSource = ds.Tables[0];
+            //dataGridView1.AutoResizeColumns();
+
+            //ds.WriteXmlSchema("C:\\xmlrep\\PrintInactiveMember.xml");
+
+            PrintInactive rep = new PrintInactive(ds);
+            rep.ShowDialog();
+        }
+
+        private async void button13_Click(object sender, EventArgs e)
+        {
+            
+            DataSet ds = new DataSet();
+
+            DataTable dt = new DataTable();
+
+            ds = await basicDetailsController.getActiveMember();
+
+            //ds.Tables.Add(dt);
+            //dataGridView1.DataSource = null;
+            //dataGridView1.DataSource = ds.Tables[0];
+            //dataGridView1.AutoResizeColumns();
+
+            PrintActiveMember rep = new PrintActiveMember(ds);
+            rep.ShowDialog();
 
         }
     }

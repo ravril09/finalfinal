@@ -21,7 +21,7 @@ namespace CST.System_Admin
 
         string sno = "";
         string snoValue = "";
-
+        string template = "";
 
         public SmsNotification()
         {
@@ -49,8 +49,8 @@ namespace CST.System_Admin
         {
             string number = txtPhoneNumber.Text.Trim();
             string message = txtMessage.Text.Trim();
-            string api = "TR-AFRIL915016_RFHGQ";
-            string password = "b{$&u$x}y9";
+            string api = "TR-INTIA543288_V2QMF";
+            string password = "1}$]la8us$";
 
             dynamic result = itexmo(number, message, api, password);
             if (result == "0")
@@ -116,19 +116,37 @@ namespace CST.System_Admin
             snoValue = (cbox1.SelectedItem as ComboBoxItem).Value.ToString();
         }
 
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            template = "Magandang Umaga po! Ito po ang SCOM - 6 para iupdate kayo sa mga sumusunod na paalala:";
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            template = "Magandang Tanghali po! Ito po ang SCOM - 6 para iupdate kayo sa mga sumusunod na paalala:";
+        }
+
+        private void radioButton14_CheckedChanged(object sender, EventArgs e)
+        {
+            template = "Magandang Gabi po! Ito po ang SCOM - 6 para iupdate kayo sa mga sumusunod na paalala:";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            Stream mystream;
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-
-            if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (radioButton1.Checked)
             {
-                if ((mystream = openFileDialog.OpenFile()) != null)
-                {
-                    string strfilename = openFileDialog.FileName;
-                    string filetext = File.ReadAllText(strfilename);
-                    txtMessage.Text = filetext;
-                }
+                txtMessage.ResetText();
+                txtMessage.AppendText("Magandang Umaga po! Ito po ang SCOM - 6 para iupdate kayo sa mga sumusunod na paalala:");
+            }
+            else if (radioButton2.Checked)
+            {
+                txtMessage.ResetText();
+                txtMessage.AppendText("Magandang Tanghali po! Ito po ang SCOM - 6 para iupdate kayo sa mga sumusunod na paalala:");
+            }
+            else if (radioButton14.Checked)
+            {
+                txtMessage.ResetText();
+                txtMessage.AppendText("Magandang Gabi po! Ito po ang SCOM - 6 para iupdate kayo sa mga sumusunod na paalala:");
             }
         }
     }

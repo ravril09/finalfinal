@@ -1,5 +1,6 @@
 ﻿using CST.Models;
 using CST.Report;
+using CST.System_Admin;
 using CST.Volunteer.Dialog;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,8 @@ namespace CST.Volunteer
         BasicDetailsController basicDetailsController = new BasicDetailsController();
         PaymentController paymentController = new PaymentController();
         AuditTrailController auditTrail = new AuditTrailController();
-     
+
+       
 
         public PaymentRecord()
         {
@@ -68,7 +70,7 @@ namespace CST.Volunteer
 
         private void PaymentRecord_Load(object sender, EventArgs e)
         {
-           
+            fullName.Hide();
         }
 
         private async void button1_Click_1(object sender, EventArgs e)
@@ -84,7 +86,7 @@ namespace CST.Volunteer
             //dataGridView1.AutoResizeColumns();
             //ds.WriteXmlSchema("C:\\xmlrep\\PrintContribution.xml");
 
-            PaymentSumReport rep = new PaymentSumReport(ds);
+            PaymentSumReport rep = new PaymentSumReport(ds);           
             rep.ShowDialog();
         }
 
@@ -94,6 +96,13 @@ namespace CST.Volunteer
             form.ShowDialog();
             paymentController.fillDataPaidInYear(form.year, ref dataGridView1);
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ReportMember reportMember = new ReportMember();
+            reportMember.Show();
+            this.Hide();
         }
     }
 }

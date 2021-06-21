@@ -41,7 +41,6 @@ C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Admin.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Login.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Properties.Resources.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.System_Admin.Biometric.resources
-C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.System_Admin.Report.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.System_Admin.SmsNotification.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.UserAccount.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.ApplicationForm.resources
@@ -77,3 +76,6 @@ C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.PaymentS
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.ApplicationforNationalIDReport.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.Dialog.YearDialog.resources
 C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Volunteer.PermissionDelete.resources
+C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.PrintActiveMember.resources
+C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.Report.PrintInactive.resources
+C:\Users\ravril\Documents\EnrollmentC-master\CST\obj\Release\CST.System_Admin.ReportMember.resources

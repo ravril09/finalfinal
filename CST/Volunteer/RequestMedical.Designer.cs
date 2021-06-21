@@ -187,8 +187,8 @@
             this.panel2.Controls.Add(this.txtContactNumber);
             this.panel2.Controls.Add(this.txtRemarks);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.txtFullname);
             this.panel2.Controls.Add(this.txtAddress);
+            this.panel2.Controls.Add(this.txtFullname);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label8);
@@ -229,7 +229,7 @@
             // txtFullname
             // 
             this.txtFullname.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFullname.Location = new System.Drawing.Point(238, 79);
+            this.txtFullname.Location = new System.Drawing.Point(217, 78);
             this.txtFullname.Name = "txtFullname";
             this.txtFullname.Size = new System.Drawing.Size(368, 39);
             this.txtFullname.TabIndex = 4;

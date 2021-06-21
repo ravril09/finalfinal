@@ -159,6 +159,7 @@
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.pbClose = new System.Windows.Forms.PictureBox();
+            this.Remarks = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -947,6 +948,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.groupBox1.Controls.Add(this.Remarks);
             this.groupBox1.Controls.Add(this.groupBox6);
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.label56);
@@ -1043,7 +1045,7 @@
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(24, 411);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(789, 77);
+            this.groupBox5.Size = new System.Drawing.Size(818, 77);
             this.groupBox5.TabIndex = 256;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Education Attainment";
@@ -1052,7 +1054,7 @@
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(548, 30);
+            this.radioButton6.Location = new System.Drawing.Point(574, 30);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(238, 35);
             this.radioButton6.TabIndex = 191;
@@ -1066,10 +1068,10 @@
             this.radioButton3.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.Location = new System.Drawing.Point(352, 30);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(175, 35);
+            this.radioButton3.Size = new System.Drawing.Size(225, 35);
             this.radioButton3.TabIndex = 190;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Under Grad";
+            this.radioButton3.Text = "Under Graduate";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton4
@@ -1794,6 +1796,17 @@
             this.pbClose.TabStop = false;
             this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
             // 
+            // Remarks
+            // 
+            this.Remarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Remarks.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Remarks.ForeColor = System.Drawing.Color.Black;
+            this.Remarks.Location = new System.Drawing.Point(464, 389);
+            this.Remarks.MaxLength = 15;
+            this.Remarks.Name = "Remarks";
+            this.Remarks.Size = new System.Drawing.Size(291, 32);
+            this.Remarks.TabIndex = 257;
+            // 
             // StudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1801,7 +1814,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1370, 789);
+            this.ClientSize = new System.Drawing.Size(1370, 772);
             this.Controls.Add(this.pbClose);
             this.Controls.Add(this.label51);
             this.Controls.Add(this.progressBar1);
@@ -1981,5 +1994,6 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.RadioButton radioButton9;
+        public System.Windows.Forms.TextBox Remarks;
     }
 }

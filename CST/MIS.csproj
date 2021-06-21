@@ -222,6 +222,18 @@
     <Compile Include="Report\ApplicationforNationalIDReport.Designer.cs">
       <DependentUpon>ApplicationforNationalIDReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\ActiveReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActiveReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\InactiveReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InactiveReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Report\memberReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -239,6 +251,18 @@
     </Compile>
     <Compile Include="Report\PaymentSumReport.Designer.cs">
       <DependentUpon>PaymentSumReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PrintActiveMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\PrintActiveMember.Designer.cs">
+      <DependentUpon>PrintActiveMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PrintInactive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\PrintInactive.Designer.cs">
+      <DependentUpon>PrintInactive.cs</DependentUpon>
     </Compile>
     <Compile Include="Report\PrintNational.cs">
       <AutoGen>True</AutoGen>
@@ -339,11 +363,11 @@
     <Compile Include="System Admin\Biometric.Designer.cs">
       <DependentUpon>Biometric.cs</DependentUpon>
     </Compile>
-    <Compile Include="System Admin\Report.cs">
+    <Compile Include="System Admin\ReportMember.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="System Admin\Report.Designer.cs">
-      <DependentUpon>Report.cs</DependentUpon>
+    <Compile Include="System Admin\ReportMember.Designer.cs">
+      <DependentUpon>ReportMember.cs</DependentUpon>
     </Compile>
     <Compile Include="System Admin\SmsNotification.cs">
       <SubType>Form</SubType>
@@ -514,6 +538,14 @@
     <EmbeddedResource Include="Report\ApplicationforNationalIDReport.resx">
       <DependentUpon>ApplicationforNationalIDReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\ActiveReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ActiveReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\InactiveReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InactiveReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\memberReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>memberReport.cs</LastGenOutput>
@@ -523,6 +555,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report\PaymentSumReport.resx">
       <DependentUpon>PaymentSumReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PrintActiveMember.resx">
+      <DependentUpon>PrintActiveMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PrintInactive.resx">
+      <DependentUpon>PrintInactive.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\PrintNational.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -583,8 +621,8 @@
     <EmbeddedResource Include="System Admin\Biometric.resx">
       <DependentUpon>Biometric.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="System Admin\Report.resx">
-      <DependentUpon>Report.cs</DependentUpon>
+    <EmbeddedResource Include="System Admin\ReportMember.resx">
+      <DependentUpon>ReportMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="System Admin\SmsNotification.resx">
       <DependentUpon>SmsNotification.cs</DependentUpon>

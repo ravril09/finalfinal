@@ -18,8 +18,9 @@ namespace CST.Registrar
         string civilstatus = "";
         string eduattain = "";
         string Status = "";
+
         public editStudentForm(string fn, string ln, string mn, string gen,
-                                int age, string civil, string bd, string pob, string cn, string nat, string rel, string EducAt, string add, string status, string sno )
+                                int age, string civil, string bd, string pob, string cn, string nat, string rel, string EducAt, string add, string status, string remark, string sno )
         {
             InitializeComponent();
             txtStudentID.Text = sno;
@@ -32,6 +33,7 @@ namespace CST.Registrar
             txtReligion.Text = rel;
             textBox24.Text = cn;
             textBox19.Text = age + "";
+            textBox1.Text = remark;
 
             gender = gen;
             civilstatus = civil;
@@ -58,6 +60,7 @@ namespace CST.Registrar
             
             if (civil == "Single")
             {
+               
                 radioButton1.Checked = true;
 
             }
@@ -92,7 +95,14 @@ namespace CST.Registrar
 
         private void editStudentForm_Load(object sender, EventArgs e)
         {
-
+            if (radioButton9.Checked)
+            {
+                textBox1.Enabled = false;
+            }
+            else if (radioButton8.Checked)
+            {
+                textBox1.Enabled = true;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -100,7 +110,7 @@ namespace CST.Registrar
           
                 basicDetailsController.basicDetailsUpdate(txtFirstname.Text.Trim(), txtLastname.Text.Trim(), txtMiddlename.Text.Trim(), gender,
                                                             int.Parse(textBox19.Text.Trim()), civilstatus, dateTimePicker1.Value.ToShortDateString(), txtPOB.Text.Trim(),
-                                                            textBox24.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), eduattain ,txtAddress.Text.Trim(), Status, txtStudentID.Text.Trim());
+                                                            textBox24.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), eduattain ,txtAddress.Text.Trim(), Status,textBox1.Text.Trim(), txtStudentID.Text.Trim());
                 MessageBox.Show("Succesfully Updated Student Personal Info");
                 this.Hide();
            
@@ -126,10 +136,88 @@ namespace CST.Registrar
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-
+           
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+            if (radioButton8.Checked)
+            {
+                textBox1.Enabled = false;
+            }
+            else if (radioButton9.Checked)
+            {
+                textBox1.Enabled = true;
+            }
+        }
+
+        //cs
+        private void radioButton1_Click(object sender, EventArgs e)
+        {
+            civilstatus = "Single";
+        }
+
+        private void radioButton2_Click(object sender, EventArgs e)
+        {
+            civilstatus = "Married";
+        }
+
+        private void radioButton14_Click(object sender, EventArgs e)
+        {
+            civilstatus = "Divorced";
+        }
+
+        private void radioButton9_Click(object sender, EventArgs e)
+        {
+            Status = "Active"; 
+        }
+
+        private void radioButton8_Click(object sender, EventArgs e)
+        {
+            Status = "Inactive";
+        }
+
+        private void radioButton12_Click(object sender, EventArgs e)
+        {
+            gender = "Male";
+        }
+
+        private void radioButton13_Click(object sender, EventArgs e)
+        {
+            gender = "Female";
+        }
+
+        private void radioButton5_Click(object sender, EventArgs e)
+        {
+            eduattain = "Elementary";
+        }
+
+        private void radioButton4_Click(object sender, EventArgs e)
+        {
+            eduattain = "Highschool";
+        }
+
+        private void radioButton3_Click(object sender, EventArgs e)
+        {
+            eduattain = "Under Graduate";
+        }
+
+        private void radioButton6_Click(object sender, EventArgs e)
+        {
+            eduattain = "College Graduate";
+        }
+
+        private void radioButton9_CheckedChanged(object sender, EventArgs e)
         {
 
         }

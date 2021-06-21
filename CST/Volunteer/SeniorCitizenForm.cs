@@ -57,6 +57,7 @@ namespace CST
         {
             label44.Hide();
             groupBox6.Hide();
+            Remarks.Hide();
             SetValueForText1 = txtStudentID.Text;
 
             txtStudentID.Text = generateSNO();
@@ -181,7 +182,7 @@ namespace CST
 
                 basicdetailController.addStudDetails(txtStudentID.Text.Trim(), txtFirstname.Text.Trim(), txtLastname.Text.Trim(), txtMiddlename.Text.Trim(), gender,
                                                             int.Parse(textBox19.Text.Trim()), civil, dateTimePicker1.Value.ToShortDateString(), txtPOB.Text.Trim(),
-                                                            txtContact.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), eduatt, txtAddress.Text.Trim(),Status);
+                                                            txtContact.Text.Trim(), txtNationality.Text.Trim(), txtReligion.Text.Trim(), eduatt, txtAddress.Text.Trim(), Status, Remarks.Text.Trim());
                 studFam.addFamDetails(txtStudentID.Text.Trim(), txtC1Fullname.Text.Trim(), txtC1Mobile.Text.Trim(), txtC1Address.Text.Trim(), txtC2Fullname.Text.Trim(),
                                         txtC2Mobile.Text.Trim(), txtC2Address.Text.Trim(), txtC3Fullname.Text.Trim(), txtC3Mobile.Text.Trim(), txtC3Address.Text.Trim(), txtEfullName.Text.Trim(),
                                          txtEAddress.Text.Trim(), txtERelation.Text.Trim(), txtEContactNo.Text.Trim());
@@ -840,7 +841,7 @@ namespace CST
             }
             else if (radioButton4.Checked)
             {
-                eduatt = "Under Grad";
+                eduatt = "Under Graduate";
             }
             else
             {

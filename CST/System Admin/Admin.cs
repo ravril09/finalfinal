@@ -258,6 +258,11 @@ namespace CST {
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 
