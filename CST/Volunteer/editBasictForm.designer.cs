@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(editStudentForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
@@ -71,6 +70,7 @@
             this.txtNationality = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pbClose = new System.Windows.Forms.PictureBox();
+            this.cbRemarks = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -82,7 +82,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.cbRemarks);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.groupBox6);
             this.groupBox1.Controls.Add(this.groupBox5);
@@ -118,16 +118,6 @@
             this.groupBox1.TabIndex = 183;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(568, 700);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(449, 40);
-            this.textBox1.TabIndex = 259;
             // 
             // label5
             // 
@@ -614,6 +604,24 @@
             this.pbClose.TabStop = false;
             this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
             // 
+            // cbRemarks
+            // 
+            this.cbRemarks.DropDownHeight = 150;
+            this.cbRemarks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbRemarks.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRemarks.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cbRemarks.FormattingEnabled = true;
+            this.cbRemarks.IntegralHeight = false;
+            this.cbRemarks.ItemHeight = 29;
+            this.cbRemarks.Items.AddRange(new object[] {
+            "Deceased",
+            "Transfered",
+            "Other"});
+            this.cbRemarks.Location = new System.Drawing.Point(568, 700);
+            this.cbRemarks.Name = "cbRemarks";
+            this.cbRemarks.Size = new System.Drawing.Size(339, 37);
+            this.cbRemarks.TabIndex = 261;
+            // 
             // editStudentForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -686,7 +694,7 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.RadioButton radioButton9;
-        public System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.ComboBox cbRemarks;
     }
 }

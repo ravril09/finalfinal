@@ -159,7 +159,7 @@
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.pbClose = new System.Windows.Forms.PictureBox();
-            this.Remarks = new System.Windows.Forms.TextBox();
+            this.cbRemarks = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -948,7 +948,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(251)))), ((int)(((byte)(244)))));
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.groupBox1.Controls.Add(this.Remarks);
+            this.groupBox1.Controls.Add(this.cbRemarks);
             this.groupBox1.Controls.Add(this.groupBox6);
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.label56);
@@ -1796,16 +1796,23 @@
             this.pbClose.TabStop = false;
             this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
             // 
-            // Remarks
+            // cbRemarks
             // 
-            this.Remarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Remarks.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Remarks.ForeColor = System.Drawing.Color.Black;
-            this.Remarks.Location = new System.Drawing.Point(464, 389);
-            this.Remarks.MaxLength = 15;
-            this.Remarks.Name = "Remarks";
-            this.Remarks.Size = new System.Drawing.Size(291, 32);
-            this.Remarks.TabIndex = 257;
+            this.cbRemarks.DropDownHeight = 150;
+            this.cbRemarks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbRemarks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbRemarks.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cbRemarks.FormattingEnabled = true;
+            this.cbRemarks.IntegralHeight = false;
+            this.cbRemarks.ItemHeight = 20;
+            this.cbRemarks.Items.AddRange(new object[] {
+            "Deceased",
+            "Transfered",
+            "Other"});
+            this.cbRemarks.Location = new System.Drawing.Point(464, 391);
+            this.cbRemarks.Name = "cbRemarks";
+            this.cbRemarks.Size = new System.Drawing.Size(209, 28);
+            this.cbRemarks.TabIndex = 190;
             // 
             // StudentForm
             // 
@@ -1994,6 +2001,6 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.RadioButton radioButton9;
-        public System.Windows.Forms.TextBox Remarks;
+        public System.Windows.Forms.ComboBox cbRemarks;
     }
 }

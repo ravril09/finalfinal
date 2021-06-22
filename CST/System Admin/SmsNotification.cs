@@ -136,17 +136,17 @@ namespace CST.System_Admin
             if (radioButton1.Checked)
             {
                 txtMessage.ResetText();
-                txtMessage.AppendText("Magandang Umaga po! Ito po ang SCOM - 6 para iupdate kayo sa mga sumusunod na paalala:");
+                txtMessage.AppendText("Magandang araw po. Ito po ang SCOM-VI para ipaalala ang mga sumusunod tungkol sa FINANCIAL ASSISTANCE");
             }
             else if (radioButton2.Checked)
             {
                 txtMessage.ResetText();
-                txtMessage.AppendText("Magandang Tanghali po! Ito po ang SCOM - 6 para iupdate kayo sa mga sumusunod na paalala:");
+                txtMessage.AppendText("Magandang araw po. Ito po ang SCOM-VI para ipaalala ang mga sumusunod tungkol sa BENEFITS ASSISTANCE");
             }
             else if (radioButton14.Checked)
             {
                 txtMessage.ResetText();
-                txtMessage.AppendText("Magandang Gabi po! Ito po ang SCOM - 6 para iupdate kayo sa mga sumusunod na paalala:");
+                txtMessage.AppendText("Magandang araw po. Ito po ang SCOM-VI para ipaalala ang mga sumusunod tungkol sa mga darating na EVENT");
             }
         }
     }

@@ -283,12 +283,12 @@
             // 
             this.radioButton14.AutoSize = true;
             this.radioButton14.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton14.Location = new System.Drawing.Point(277, 30);
+            this.radioButton14.Location = new System.Drawing.Point(243, 30);
             this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(126, 28);
+            this.radioButton14.Size = new System.Drawing.Size(163, 28);
             this.radioButton14.TabIndex = 190;
             this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "Template 3";
+            this.radioButton14.Text = "Announcement";
             this.radioButton14.UseVisualStyleBackColor = true;
             this.radioButton14.CheckedChanged += new System.EventHandler(this.radioButton14_CheckedChanged);
             // 
@@ -296,12 +296,12 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(142, 30);
+            this.radioButton2.Location = new System.Drawing.Point(138, 30);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(126, 28);
+            this.radioButton2.Size = new System.Drawing.Size(106, 28);
             this.radioButton2.TabIndex = 189;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Template 2";
+            this.radioButton2.Text = "Benefits ";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
@@ -311,10 +311,10 @@
             this.radioButton1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(10, 30);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(126, 28);
+            this.radioButton1.Size = new System.Drawing.Size(111, 28);
             this.radioButton1.TabIndex = 188;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Template 1";
+            this.radioButton1.Text = "Financial";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 

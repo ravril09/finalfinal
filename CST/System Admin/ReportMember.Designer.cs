@@ -76,11 +76,11 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(285, 41);
+            this.label2.Location = new System.Drawing.Point(279, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(243, 32);
+            this.label2.Size = new System.Drawing.Size(268, 32);
             this.label2.TabIndex = 315;
-            this.label2.Text = "Membship Record";
+            this.label2.Text = "Membership Record";
             // 
             // button14
             // 
